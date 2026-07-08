@@ -124,6 +124,28 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: var(--reka-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--reka-accordion-content-height);
+    }
+
+    to {
+      height: 0;
+    }
+  }
 }
 
 @theme {
@@ -140,7 +162,7 @@
   }
 
   .organism-header {
-    @apply min-h-16 flex items-center justify-between px-2 fixed top-0 border-foreground border-b w-full bg-background;
+    @apply min-h-16 flex items-center justify-between px-2 fixed top-0 border-foreground border-b w-full bg-background z-10;
   }
 
   main {
@@ -153,8 +175,10 @@
 
   .platform-android,
   .platform-ios {
+    @apply select-none;
+
     .organism-header {
-      @apply fixed bg-background top-0 pt-(--mobile-safe-area-inset-top) min-h-[calc(4rem+var(--mobile-safe-area-inset-top))] flex items-center justify-between w-full px-2 border-foreground border-b;
+      @apply fixed overflow-y-auto overscroll-none bg-background z-50 top-0 pt-(--mobile-safe-area-inset-top) min-h-[calc(4rem+var(--mobile-safe-area-inset-top))] flex items-center justify-between w-full px-2 border-foreground border-b;
     }
 
     main {

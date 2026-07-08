@@ -86,27 +86,31 @@ module.exports = function (plop) {
           },
           when: (answers) => answers.category !== 'custom',
           validate: (input, answers) => {
-            if (!input.trim()) return 'Component name cannot be empty'
+            const name = input.trim()
+            if (!name) return 'Component name cannot be empty'
 
-            const category = answers.category
-            const atomicDesignValue = getCategoryValue(category).value
-            const atmoicDesignCategory = atomicDesignValue.replace('Component', '')
-            const isView = answers.category.includes('src/views/')
+            const { category } = answers
+            const isView = category?.includes('src/views/')
 
-            if (!pascalCaseRegex.test(input)) {
-              return `Component name must be in PascalCase (e.g., ${isView ? 'HomeView' : atomicDesignValue})`
+            const atomicValue = category ? getCategoryValue(category).value : ''
+            const atomicPrefix = atomicValue.replace('Component', '')
+            const expectedName = isView ? 'HomeView' : atomicValue
+
+            if (!pascalCaseRegex.test(name)) {
+              return `Component name must be in PascalCase (e.g., ${expectedName})`
             }
 
-            if (category && atomicDesignValue !== 'MyComponent') {
-              if (!input.startsWith(atmoicDesignCategory)) {
-                return `Component name in ${atmoicDesignCategory.toLocaleLowerCase()}s must have "${atmoicDesignCategory}" prefix (e.g., ${atomicDesignValue})`
-              }
+            if (isView && !name.endsWith('View')) {
+              return 'Component name in views must have "View" suffix (e.g., HomeView)'
             }
 
-            if (category && isView) {
-              if (!input.endsWith('View')) {
-                return 'Component name in views must have "View" suffix (e.g., HomeView)'
-              }
+            if (
+              category &&
+              !isView &&
+              atomicValue !== 'MyComponent' &&
+              !name.startsWith(atomicPrefix)
+            ) {
+              return `Component name in ${atomicPrefix.toLocaleLowerCase()}s must have "${atomicPrefix}" prefix (e.g., ${atomicValue})`
             }
 
             return true

@@ -14,6 +14,14 @@ const routes: Array<RouteRecordRaw> = [
     name: ROUTES.LANDING_VIEW.name,
     component: () => import('@/views/LandingView'),
   },
+  {
+    path: ROUTES.EXAM_VIEW.path,
+    name: ROUTES.EXAM_VIEW.name,
+    component: () => import('@/views/ExamView'),
+    meta: {
+      layout: 'DefaultLayout',
+    },
+  },
   // plop:inject-routes-component-do-not-removed
   {
     path: ROUTES.NOT_FOUND_VIEW.path,

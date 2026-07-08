@@ -35,6 +35,9 @@ importers:
       '@capacitor/status-bar':
         specifier: ^8.0.2
         version: 8.0.2(@capacitor/core@8.4.1)
+      '@capgo/capacitor-speech-synthesis':
+        specifier: ^8.0.19
+        version: 8.0.19(@capacitor/core@8.4.1)
       '@lucide/vue':
         specifier: ^1.23.0
         version: 1.23.0(vue@3.5.39(typescript@6.0.3))
@@ -458,6 +461,11 @@ packages:
 
   '@capacitor/synapse@1.0.4':
     resolution: {integrity: sha512-/C1FUo8/OkKuAT4nCIu/34ny9siNHr9qtFezu4kxm6GY1wNFxrCFWjfYx5C1tUhVGz3fxBABegupkpjXvjCHrw==}
+
+  '@capgo/capacitor-speech-synthesis@8.0.19':
+    resolution: {integrity: sha512-QhKvflNIcPfMT7eS6J8y5tupV2Mfo/lpe9PnctE02Waj4Aln9SldDn9AIVClOJraYDkyemKj6aQVqLVtd1qyNg==}
+    peerDependencies:
+      '@capacitor/core': '>=8.0.0'
 
   '@chromatic-com/storybook@5.2.1':
     resolution: {integrity: sha512-z6I7NJk/0VngA64y5TNYaB4Hc2X8+90n4op6lBt9PvWk5TmIlFLDqdX33rlrwbNRkkYijVgA/wO04rVYXi5Mlg==}
@@ -5127,6 +5135,10 @@ snapshots:
       '@capacitor/core': 8.4.1
 
   '@capacitor/synapse@1.0.4': {}
+
+  '@capgo/capacitor-speech-synthesis@8.0.19(@capacitor/core@8.4.1)':
+    dependencies:
+      '@capacitor/core': 8.4.1
 
   '@chromatic-com/storybook@5.2.1(storybook@10.4.6(@testing-library/dom@10.4.1)(@types/react@19.2.17)(prettier@3.9.4)(react@19.2.7))':
     dependencies:

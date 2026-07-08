@@ -22,6 +22,6 @@ const toggleDark = () => {
   >
     <Sun v-if="!isDark" />
     <Moon v-else />
-    <span class="sr-only">theme-toggle</span>
+    <span class="sr-only">atom-theme-toggle</span>
   </Button>
 </template>

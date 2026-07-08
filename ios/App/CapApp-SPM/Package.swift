@@ -16,7 +16,8 @@ let package = Package(
         .package(name: "CapacitorFilesystem", path: "..\..\..\node_modules\.pnpm\@capacitor+filesystem@8.1.2_@capacitor+core@8.4.1\node_modules\@capacitor\filesystem"),
         .package(name: "CapacitorGeolocation", path: "..\..\..\node_modules\.pnpm\@capacitor+geolocation@8.2.0_@capacitor+core@8.4.1\node_modules\@capacitor\geolocation"),
         .package(name: "CapacitorShare", path: "..\..\..\node_modules\.pnpm\@capacitor+share@8.0.1_@capacitor+core@8.4.1\node_modules\@capacitor\share"),
-        .package(name: "CapacitorStatusBar", path: "..\..\..\node_modules\.pnpm\@capacitor+status-bar@8.0.2_@capacitor+core@8.4.1\node_modules\@capacitor\status-bar")
+        .package(name: "CapacitorStatusBar", path: "..\..\..\node_modules\.pnpm\@capacitor+status-bar@8.0.2_@capacitor+core@8.4.1\node_modules\@capacitor\status-bar"),
+        .package(name: "CapgoCapacitorSpeechSynthesis", path: "..\..\..\node_modules\.pnpm\@capgo+capacitor-speech-syn_f00e5ebe278cc31e68e8f29c7032cddc\node_modules\@capgo\capacitor-speech-synthesis")
     ],
     targets: [
         .target(
@@ -28,7 +29,8 @@ let package = Package(
                 .product(name: "CapacitorFilesystem", package: "CapacitorFilesystem"),
                 .product(name: "CapacitorGeolocation", package: "CapacitorGeolocation"),
                 .product(name: "CapacitorShare", package: "CapacitorShare"),
-                .product(name: "CapacitorStatusBar", package: "CapacitorStatusBar")
+                .product(name: "CapacitorStatusBar", package: "CapacitorStatusBar"),
+                .product(name: "CapgoCapacitorSpeechSynthesis", package: "CapgoCapacitorSpeechSynthesis")
             ]
         )
     ]

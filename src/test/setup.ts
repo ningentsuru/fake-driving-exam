@@ -1,9 +1,22 @@
 import { vi } from 'vitest'
+class MockIntersectionObserver {
+  observe = vi.fn<(target: Element) => void>()
+  unobserve = vi.fn<(target: Element) => void>()
+  disconnect = vi.fn<() => void>()
+  takeRecords = vi.fn<() => IntersectionObserverEntry[]>()
+  root = null
+  rootMargin = ''
+  thresholds = []
+}
 
-vi.mock('/linkedin.ico', () => ({
-  default: 'mocked-linkedin-icon',
-}))
+Object.defineProperty(window, 'IntersectionObserver', {
+  writable: true,
+  configurable: true,
+  value: MockIntersectionObserver,
+})
 
-vi.mock('/github.ico', () => ({
-  default: 'mocked-github-icon',
-}))
+Object.defineProperty(global, 'IntersectionObserver', {
+  writable: true,
+  configurable: true,
+  value: MockIntersectionObserver,
+})

@@ -12,7 +12,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ningentsuru/omnivue-boilerplate.git"
+    "url": "https://github.com/ningentsuru/fake-driving-exam.git"
   },
   "keywords": [
     "boilerplate",
@@ -27,9 +27,9 @@
     "cross-platform"
   ],
   "bugs": {
-    "url": "https://github.com/ningentsuru/omnivue-boilerplate/issues"
+    "url": "https://github.com/ningentsuru/fake-driving-exam/issues"
   },
-  "homepage": "https://github.com/ningentsuru/omnivue-boilerplate#readme",
+  "homepage": "https://github.com/ningentsuru/fake-driving-exam#readme",
   "scripts": {
     "dev": "vite",
     "dev:android": "cross-env CAPACITOR_DEV=true pnpm build:android && pnpm dev",
@@ -64,6 +64,7 @@
     "@capacitor/ios": "^8.4.1",
     "@capacitor/share": "^8.0.1",
     "@capacitor/status-bar": "^8.0.2",
+    "@capgo/capacitor-speech-synthesis": "^8.0.19",
     "@lucide/vue": "^1.23.0",
     "@tailwindcss/vite": "^4.3.2",
     "@vee-validate/zod": "^4.15.1",

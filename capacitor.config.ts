@@ -6,7 +6,7 @@ const isDev = process.env.CAPACITOR_DEV === 'true'
 
 const config: CapacitorConfig = {
   appId: 'com.omnivue.boilerplate',
-  appName: 'omnivue-boilerplate',
+  appName: 'fake-driving-exam',
   webDir: 'dist',
   plugins: {
     SystemBars: {
