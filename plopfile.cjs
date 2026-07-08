@@ -3,7 +3,11 @@ const SPLIT_REGEX = /([a-z\d])([A-Z])|[-_\s]+/g
 const pascalCaseRegex = /^[A-Z][a-zA-Z0-9]*$/
 const singleWordRegex = /^[A-Z][a-z0-9]*$/
 
-const camelCase = (name) => {
+function checkPrefixRegex(prefix, name) {
+  return new RegExp(`^${prefix}[A-Z]`).test(name)
+}
+
+function camelCase(name) {
   if (!name) return ''
   const words = name.replace(SPLIT_REGEX, '$1 $2').split(' ').filter(Boolean)
 
@@ -14,7 +18,7 @@ const camelCase = (name) => {
     .join('')
 }
 
-const constantCase = (name) => {
+function constantCase(name) {
   if (!name) return ''
   return name
     .replace(SPLIT_REGEX, '$1 $2')
@@ -24,7 +28,7 @@ const constantCase = (name) => {
     .join('_')
 }
 
-const removeViewText = (name) => {
+function removeViewText(name) {
   if (!name) return ''
   const withoutView = name.replace(/View$/, '')
   return withoutView.replace(/([a-z\d])([A-Z])/g, '$1-$2').toLowerCase()
@@ -53,8 +57,9 @@ const srcCategories = [
   },
 ]
 
-const getCategoryValue = (category) =>
-  srcCategories.find((item) => category.includes(item.category)) || 'MyComponent'
+function getCategoryValue(category) {
+  return srcCategories.find((item) => category.includes(item.category))
+}
 
 module.exports = function (plop) {
   plop.setHelper('eq', (a, b) => a === b)
@@ -98,35 +103,31 @@ module.exports = function (plop) {
           when: (answers) => answers.category !== 'custom',
           validate: (input, answers) => {
             const name = input.trim()
-
             if (!name) return 'Component name cannot be empty'
+            if (!pascalCaseRegex.test(name)) return 'Component name must be in PascalCase'
+            if (singleWordRegex.test(name))
+              return 'Component name must be composed of at least two words'
 
             const { category } = answers
             const isView = category?.includes('src/views/')
+            const config = getCategoryValue(category)
 
-            const atomicValue = category ? getCategoryValue(category).value : ''
-            const atomicPrefix = atomicValue.replace('Component', '')
-            const expectedName = isView ? 'HomeView' : atomicValue
+            // Fallback if category not found
+            if (!config) return true
 
-            if (!pascalCaseRegex.test(name)) {
-              return `Component name must be in PascalCase (e.g., ${expectedName})`
-            }
+            const atomicValue = config.value
+            // Extract singular prefix: "AtomComponent" → "Atom", "ComponentView" → "" (handled separately)
+            const prefix = atomicValue.replace('Component', '')
+            const isGeneric = atomicValue === 'ComponentView' // Special case for views helper value
 
-            if (singleWordRegex.test(name)) {
-              return `Component name must be composed of at least two words (e.g., ${atomicValue}).`
-            }
-
-            if (isView && !name.endsWith('View')) {
-              return 'Component name in views must have "View" suffix (e.g., HomeView)'
-            }
-
-            if (
-              category &&
-              !isView &&
-              atomicValue !== 'MyComponent' &&
-              !name.startsWith(atomicPrefix)
-            ) {
-              return `Component name in ${atomicPrefix.toLocaleLowerCase()}s must have "${atomicPrefix}" prefix (e.g., ${atomicValue})`
+            if (isView) {
+              if (!name.endsWith('View'))
+                return 'Component name in views must have "View" suffix (e.g., HomeView)'
+            } else if (!isGeneric && prefix) {
+              // Enforce singular prefix (e.g., must start with "Atom", not "Atoms")
+              if (!name.startsWith(prefix) || !checkPrefixRegex(prefix, name)) {
+                return `Component name must start with "${prefix}" (e.g., ${prefix}Button)`
+              }
             }
 
             return true

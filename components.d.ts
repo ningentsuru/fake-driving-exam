@@ -27,6 +27,7 @@ declare module 'vue' {
     CardTitle: typeof import('./src/components/ui/card/CardTitle.vue')['default']
     MoleculeQuestionItem: typeof import('./src/components/molecules/MoleculeQuestionItem/MoleculeQuestionItem.vue')['default']
     MoleculeQuizHeader: typeof import('./src/components/molecules/MoleculeQuizHeader/MoleculeQuizHeader.vue')['default']
+    OrganismApplicationSetting: typeof import('./src/components/organisms/OrganismApplicationSetting/OrganismApplicationSetting.vue')['default']
     OrganismFooter: typeof import('./src/components/organisms/OrganismFooter/OrganismFooter.vue')['default']
     OrganismHeader: typeof import('./src/components/organisms/OrganismHeader/OrganismHeader.vue')['default']
     OrganismQuiz: typeof import('./src/components/organisms/OrganismQuiz/OrganismQuiz.vue')['default']

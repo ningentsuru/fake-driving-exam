@@ -1,8 +1,10 @@
 <script setup lang="ts">
 interface Props {
+  title: string
   modelValue: string
 }
 const props = withDefaults(defineProps<Props>(), {
+  title: '',
   modelValue: '',
 })
 
@@ -13,7 +15,7 @@ const emit = defineEmits(['update:modelValue'])
   <div
     class="molecule-quiz-header mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
   >
-    <h2 class="text-2xl font-bold tracking-tight">Driving Theory Quiz</h2>
+    <h2 class="text-2xl font-bold tracking-tight">{{ props.title }}</h2>
 
     <Select :model-value="props.modelValue" @update:model-value="emit('update:modelValue', $event)">
       <SelectTrigger class="w-50">

@@ -22,6 +22,14 @@ const routes: Array<RouteRecordRaw> = [
       layout: 'DefaultLayout',
     },
   },
+  {
+    path: ROUTES.SELECT_EXAM_VIEW.path,
+    name: ROUTES.SELECT_EXAM_VIEW.name,
+    component: () => import('@/views/SelectExamView'),
+    meta: {
+      layout: 'DefaultLayout',
+    },
+  },
   // plop:inject-routes-component-do-not-removed
   {
     path: ROUTES.NOT_FOUND_VIEW.path,

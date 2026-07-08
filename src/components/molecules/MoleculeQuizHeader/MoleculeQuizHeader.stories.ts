@@ -11,6 +11,7 @@ type Story = StoryObj<typeof MoleculeQuizHeader>
 
 export const Default: Story = {
   args: {
+    title: '',
     modelValue: '',
   },
 }

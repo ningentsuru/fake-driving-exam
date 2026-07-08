@@ -18,7 +18,7 @@ onBeforeUnmount(stopSpeaking)
 
 <template>
   <div class="organism-quiz">
-    <MoleculeQuizHeader v-model="selectedCategory" />
+    <MoleculeQuizHeader title="Driving Theory Quiz" v-model="selectedCategory" />
 
     <MoleculeQuestionItem
       :questions="filteredQuestions"

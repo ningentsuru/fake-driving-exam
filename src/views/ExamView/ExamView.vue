@@ -2,7 +2,7 @@
 
 <template>
   <TemplateDefault class="exam-view">
-    <OrganismQuiz />
+    <OrganismQuiz title="Theoretical Driving Exam" />
     <span class="sr-only">exam-view</span>
   </TemplateDefault>
 </template>

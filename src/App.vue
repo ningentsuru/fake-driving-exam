@@ -1,12 +1,14 @@
 <script setup lang="ts">
 import { usePlatform } from '@/composables/usePlatform'
 import { setupStatusBar } from '@/composables/useStatusBar'
+import { useBackButton } from '@/composables/useBackButton'
 
 const { isMobile, platform } = usePlatform()
 
-onMounted(async () => {
+onMounted(() => {
   if (isMobile) {
-    await setupStatusBar()
+    setupStatusBar()
+    useBackButton()
   }
   document.documentElement.classList.add(`platform-${platform}`)
 })

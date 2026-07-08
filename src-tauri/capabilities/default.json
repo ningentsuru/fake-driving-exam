@@ -1,11 +1,20 @@
 {
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "default",
-  "description": "enables the default permissions",
-  "windows": [
-    "main"
-  ],
+  "description": "enables default permissions and OpenWeatherMap access",
+  "windows": ["main"],
   "permissions": [
-    "core:default"
+    "core:default",
+    {
+      "identifier": "http:default",
+      "allow": [
+        {
+          "url": "https://api.openweathermap.org/*"
+        },
+        {
+          "url": "https://openweathermap.org/*"
+        }
+      ]
+    }
   ]
 }

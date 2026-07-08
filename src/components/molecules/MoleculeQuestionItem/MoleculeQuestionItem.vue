@@ -14,6 +14,7 @@ interface Props {
     correctAnswer: string,
   ) => 'correct' | 'wrong' | 'default'
 }
+
 const props = withDefaults(defineProps<Props>(), {
   questions: () =>
     [
@@ -115,7 +116,8 @@ function clearAnswer(id: number) {
                     question.id,
                     String.fromCharCode(65 + idx),
                     question.correctAnswer,
-                  )
+                  ),
+                  props.speakingIndex === index && props.speakQuestion(index, question)
                 "
                 class="hover:bg-muted/50 flex w-full cursor-pointer items-center gap-3 rounded-md border p-3 transition-colors"
                 :class="{

@@ -1,9 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
+import { asyncVueRouter } from 'storybook-vue3-router'
 import LandingView from './LandingView.vue'
 
 const meta: Meta<typeof LandingView> = {
   component: LandingView,
   title: 'Components/LandingView',
+  decorators: [asyncVueRouter()],
 }
 
 export default meta

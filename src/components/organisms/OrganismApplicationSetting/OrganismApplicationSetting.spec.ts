@@ -1,29 +1,27 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import MoleculeQuizHeader from './MoleculeQuizHeader.vue'
-import { Default } from './MoleculeQuizHeader.stories'
+import OrganismApplicationSetting from './OrganismApplicationSetting.vue'
+import { Default } from './OrganismApplicationSetting.stories'
+
 interface defaultProps {
   title: string
-  modelValue: string
 }
 
-describe('MoleculeQuizHeader', () => {
+describe('OrganismApplicationSetting', () => {
   it('renders properly using Storybook args', () => {
-    const wrapper = mount(MoleculeQuizHeader, {
+    const wrapper = mount(OrganismApplicationSetting, {
       props: Default.args as defaultProps,
     })
 
-    expect(wrapper.text()).toContain('molecule-quiz-header')
+    expect(wrapper.text()).toContain('organism-application-setting')
   })
 
   it('receives correct props from Storybook args', () => {
-    const wrapper = mount(MoleculeQuizHeader, {
+    const wrapper = mount(OrganismApplicationSetting, {
       props: Default.args as defaultProps,
     })
 
     // Verify title (string)
     expect(wrapper.props('title')).toEqual('')
-    // Verify modelValue (string)
-    expect(wrapper.props('modelValue')).toEqual('')
   })
 })
