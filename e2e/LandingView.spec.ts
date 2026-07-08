@@ -6,6 +6,6 @@ test('visits the landing-view url', async ({ page }) => {
 
   const container = page.locator('.landing-view')
 
-  await expect(container).toHaveClass('landing-view')
   await expect(container).toBeAttached()
+  await expect(container).toContainClass('landing-view')
 })

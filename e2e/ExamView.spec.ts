@@ -6,6 +6,6 @@ test('visits the exam-view url', async ({ page }) => {
 
   const container = page.locator('.exam-view')
 
-  await expect(container).toContainClass('exam-view')
   await expect(container).toBeAttached()
+  await expect(container).toContainClass('exam-view')
 })

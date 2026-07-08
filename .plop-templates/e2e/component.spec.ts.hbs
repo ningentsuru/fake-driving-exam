@@ -6,6 +6,6 @@ test('visits the {{kebabCase name}} url', async ({ page }) => {
 
   const container = page.locator('.{{kebabCase name}}')
 
-  await expect(container).toContainClass('{{kebabCase name}}')
   await expect(container).toBeAttached()
+  await expect(container).toContainClass('{{kebabCase name}}')
 })

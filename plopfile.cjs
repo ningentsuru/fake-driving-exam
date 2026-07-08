@@ -1,23 +1,34 @@
+const SPLIT_REGEX = /([a-z\d])([A-Z])|[-_\s]+/g
+
 const pascalCaseRegex = /^[A-Z][a-zA-Z0-9]*$/
+const singleWordRegex = /^[A-Z][a-z0-9]*$/
 
-const camelCase = (name) =>
-  name
-    .replace(/([a-z\d])([A-Z])/g, '$1_$2')
-    .replace(/[-\s]/g, '_')
-    .toLowerCase()
-    .replace(/_([a-z\d])/g, (_, c) => c.toUpperCase())
+const camelCase = (name) => {
+  if (!name) return ''
+  const words = name.replace(SPLIT_REGEX, '$1 $2').split(' ').filter(Boolean)
 
-const constantCase = (name) =>
-  name
-    .replace(/([a-z\d])([A-Z])/g, '$1_$2')
-    .replace(/[-\s]/g, '_')
-    .toUpperCase()
+  return words
+    .map((word, i) =>
+      i === 0 ? word.toLowerCase() : word.charAt(0).toUpperCase() + word.slice(1).toLowerCase(),
+    )
+    .join('')
+}
 
-const removeViewText = (name) =>
-  name
-    .replace(/View$/, '')
-    .replace(/([a-z\d])([A-Z])/g, '$1-$2')
-    .toLowerCase()
+const constantCase = (name) => {
+  if (!name) return ''
+  return name
+    .replace(SPLIT_REGEX, '$1 $2')
+    .split(' ')
+    .filter(Boolean)
+    .map((word) => word.toUpperCase())
+    .join('_')
+}
+
+const removeViewText = (name) => {
+  if (!name) return ''
+  const withoutView = name.replace(/View$/, '')
+  return withoutView.replace(/([a-z\d])([A-Z])/g, '$1-$2').toLowerCase()
+}
 
 const srcCategories = [
   {
@@ -87,6 +98,7 @@ module.exports = function (plop) {
           when: (answers) => answers.category !== 'custom',
           validate: (input, answers) => {
             const name = input.trim()
+
             if (!name) return 'Component name cannot be empty'
 
             const { category } = answers
@@ -98,6 +110,10 @@ module.exports = function (plop) {
 
             if (!pascalCaseRegex.test(name)) {
               return `Component name must be in PascalCase (e.g., ${expectedName})`
+            }
+
+            if (singleWordRegex.test(name)) {
+              return `Component name must be composed of at least two words (e.g., ${atomicValue}).`
             }
 
             if (isView && !name.endsWith('View')) {

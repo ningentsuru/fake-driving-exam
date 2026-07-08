@@ -3,8 +3,7 @@ import type { QuizCategory, QuizQuestion } from '@/data/quizData'
 import { Square, Volume2 } from '@lucide/vue'
 
 interface Props {
-  question: QuizQuestion
-  index: number
+  questions: QuizQuestion[]
   userAnswers: Record<number, string[]>
   speakingIndex: number | null
   speakQuestion: (index: number, question: QuizQuestion) => void
@@ -16,18 +15,19 @@ interface Props {
   ) => 'correct' | 'wrong' | 'default'
 }
 const props = withDefaults(defineProps<Props>(), {
-  question: () =>
-    ({
-      id: 0,
-      category: '' as QuizCategory,
-      question: '',
-      image: '',
-      options: [''],
-      correctAnswer: '',
-      explanation: '',
-      source: '',
-    }) as QuizQuestion,
-  index: 0,
+  questions: () =>
+    [
+      {
+        id: 0,
+        category: '' as QuizCategory,
+        question: '',
+        image: '',
+        options: [''],
+        correctAnswer: '',
+        explanation: '',
+        source: '',
+      },
+    ] as QuizQuestion[],
   userAnswers: () => ({}) as Record<number, string[]>,
   speakingIndex: null,
   speakQuestion: () => {},
@@ -52,6 +52,7 @@ function clearAnswer(id: number) {
   <div class="molecule-question-item">
     <Accordion type="multiple" collapsible class="w-full space-y-4">
       <AccordionItem
+        v-for="(question, index) in questions"
         :key="question.id"
         :value="`item-${question.id}`"
         class="bg-card text-card-foreground rounded-lg border shadow-sm"

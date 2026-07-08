@@ -21,10 +21,7 @@ onBeforeUnmount(stopSpeaking)
     <MoleculeQuizHeader v-model="selectedCategory" />
 
     <MoleculeQuestionItem
-      v-for="(q, index) in filteredQuestions"
-      :key="q.id"
-      :question="q"
-      :index="index"
+      :questions="filteredQuestions"
       :user-answers="userAnswers"
       :speaking-index="speakingIndex"
       :speak-question="speakQuestion"

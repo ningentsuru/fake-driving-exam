@@ -12,17 +12,18 @@ type Story = StoryObj<typeof MoleculeQuestionItem>
 
 export const Default: Story = {
   args: {
-    question: {
-      id: 0,
-      category: '' as QuizCategory,
-      question: '',
-      image: '',
-      options: [''],
-      correctAnswer: '',
-      explanation: '',
-      source: '',
-    } as QuizQuestion,
-    index: 0,
+    questions: [
+      {
+        id: 0,
+        category: '' as QuizCategory,
+        question: '',
+        image: '',
+        options: [''],
+        correctAnswer: '',
+        explanation: '',
+        source: '',
+      },
+    ] as QuizQuestion[],
     userAnswers: {} as Record<number, string[]>,
     speakQuestion: () => undefined,
     handleAnswer: () => undefined,
