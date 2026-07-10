@@ -178,7 +178,7 @@
     @apply select-none;
 
     .organism-header {
-      @apply fixed overflow-y-auto overscroll-none bg-background z-50 top-0 pt-(--mobile-safe-area-inset-top) min-h-[calc(4rem+var(--mobile-safe-area-inset-top))] flex items-center justify-between w-full px-2 border-foreground border-b;
+      @apply fixed bg-background z-50 top-0 pt-(--mobile-safe-area-inset-top) min-h-[calc(4rem+var(--mobile-safe-area-inset-top))] flex items-center justify-between w-full px-2 border-foreground border-b;
     }
 
     main {
@@ -189,13 +189,4 @@
       @apply w-full border-foreground items-center border-t pb-5 flex justify-center min-h-17.25 bg-background;
     }
   }
-}
-
-html,
-body {
-  @apply overscroll-none h-full overflow-hidden
-}
-
-#app {
-  @apply h-full overflow-y-auto overscroll-none
 }

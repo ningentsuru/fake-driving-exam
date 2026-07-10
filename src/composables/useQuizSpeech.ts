@@ -1,5 +1,5 @@
 import { SpeechSynthesis, type SpeakOptions } from '@capgo/capacitor-speech-synthesis'
-import type { QuizQuestion } from '@/data/quizData'
+import type { QuizQuestion } from '@/types'
 
 export function useQuizSpeech() {
   const speakingIndex = ref<number | null>(null)

@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
 import MoleculeQuestionItem from './MoleculeQuestionItem.vue'
 import { Default } from './MoleculeQuestionItem.stories'
-import type { QuizQuestion } from '@/data/quizData'
+import type { QuizQuestion } from '@/types'
 
 interface defaultProps {
   questions: QuizQuestion[]

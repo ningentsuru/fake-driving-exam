@@ -2,7 +2,6 @@ import { config } from '@vue/test-utils'
 import { createRouter, createMemoryHistory } from 'vue-router'
 import { vi } from 'vitest'
 
-// --- 1. Mock IntersectionObserver ---
 class MockIntersectionObserver {
   observe = vi.fn<(target: Element) => void>()
   unobserve = vi.fn<(target: Element) => void>()
@@ -25,7 +24,6 @@ Object.defineProperty(global, 'IntersectionObserver', {
   value: MockIntersectionObserver,
 })
 
-// --- 2. Mock Router ---
 const mockRouter = createRouter({
   history: createMemoryHistory(),
   routes: [

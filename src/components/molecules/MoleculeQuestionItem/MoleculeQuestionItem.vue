@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { QuizCategory, QuizQuestion } from '@/data/quizData'
+import type { QuizCategory, QuizQuestion } from '@/types'
 import { Square, Volume2 } from '@lucide/vue'
 
 interface Props {
@@ -46,6 +46,50 @@ const emit = defineEmits<{
 
 function clearAnswer(id: number) {
   emit('clear-answer', id)
+}
+
+function handleAsk(question: QuizQuestion, site: 'google' | 'brave'): string {
+  const answerData = props.userAnswers[question.id]
+
+  if (!answerData) {
+    console.warn(`No answer data found for question ${question.id}`)
+    return ''
+  }
+
+  const [userAnswer, correctAnswer] = answerData
+
+  const optionsText = question.options
+    .map((item, idx) => `${String.fromCharCode(65 + idx)}. ${item}`)
+    .join('\n')
+
+  const status = userAnswer === correctAnswer ? 'correct' : 'wrong'
+
+  const prompt = [
+    'You are an expert tutor. Analyze the following multiple-choice question and provide a detailed explanation.',
+    `**Question:** ${question.question}`,
+    `**Options:**\n${optionsText}`,
+    `**Your Answer:** ${userAnswer}`,
+    `**Correct Answer:** ${correctAnswer}`,
+    `**Instructions:**`,
+    `1. Briefly explain what the question is testing.`,
+    `2. Confirm whether the provided correct answer is indeed correct, and justify why.`,
+    `3. Evaluate the user's answer and explain why it is ${status}.`,
+    `4. If the user's answer is incorrect, clarify the misconception and guide them toward the correct reasoning.`,
+  ].join('\n\n')
+
+  const encodedQuery = encodeURIComponent(prompt)
+
+  if (site === 'google') {
+    const baseUrl = 'https://www.google.com/search?q='
+    return `${baseUrl}${encodedQuery}&udm=50`
+  }
+
+  if (site === 'brave') {
+    const baseUrl = 'https://search.brave.com/ask?q='
+    return `${baseUrl}${encodedQuery}`
+  }
+
+  return ''
 }
 </script>
 
@@ -112,12 +156,12 @@ function clearAnswer(id: number) {
                 variant="link"
                 as-child
                 @click="
-                  props.handleAnswer(
+                  (props.handleAnswer(
                     question.id,
                     String.fromCharCode(65 + idx),
                     question.correctAnswer,
                   ),
-                  props.speakingIndex === index && props.speakQuestion(index, question)
+                  props.speakingIndex === index && props.speakQuestion(index, question))
                 "
                 class="hover:bg-muted/50 flex w-full cursor-pointer items-center gap-3 rounded-md border p-3 transition-colors"
                 :class="{
@@ -167,12 +211,33 @@ function clearAnswer(id: number) {
               </div>
 
               <Button
+                v-if="false"
                 variant="ghost"
                 size="sm"
                 class="mt-2 h-8 cursor-pointer text-xs text-green-700 hover:bg-green-100 hover:text-green-900"
                 @click="clearAnswer(question.id)"
               >
                 Try Again
+              </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                class="mt-2 h-8 cursor-pointer text-xs text-green-700 hover:bg-green-100 hover:text-green-900"
+                as-child
+              >
+                <a :href="handleAsk(question, 'google')" target="_blank">
+                  Double check with google?
+                </a>
+              </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                class="mt-2 h-8 cursor-pointer text-xs text-green-700 hover:bg-green-100 hover:text-green-900"
+                as-child
+              >
+                <a :href="handleAsk(question, 'brave')" target="_blank">
+                  Double check with brave?
+                </a>
               </Button>
             </CardFooter>
           </Card>

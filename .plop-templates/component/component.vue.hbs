@@ -10,6 +10,10 @@ const props = withDefaults(defineProps<Props>(), {
   {{this.propName}}: {{#if (eq this.propType 'string')}}''{{else if (eq this.propType 'number')}}0{{else if (eq this.propType 'boolean')}}false{{else if (eq this.propType 'object')}}() => ({}){{else if (eq this.propType 'string[]')}}() => ['']{{else if (eq this.propType 'number[]')}}() => [0]{{else if (eq this.propType 'boolean[]')}}() => [false]{{else if (eq this.propType 'object[]')}}() => [{}]{{else if (eq this.propType 'function')}}() => {}{{/if}},
   {{/each}}
 });
+{{#if (hasModelValue props)}}
+
+const emit = defineEmits(['update:modelValue'])
+{{/if}}
 {{/if}}
 </script>
 

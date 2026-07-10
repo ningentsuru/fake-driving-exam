@@ -23,9 +23,9 @@ const routes: Array<RouteRecordRaw> = [
     },
   },
   {
-    path: ROUTES.SELECT_EXAM_VIEW.path,
-    name: ROUTES.SELECT_EXAM_VIEW.name,
-    component: () => import('@/views/SelectExamView'),
+    path: ROUTES.EXAM_CONFIGURATION_VIEW.path,
+    name: ROUTES.EXAM_CONFIGURATION_VIEW.name,
+    component: () => import('@/views/ExamConfigurationView'),
     meta: {
       layout: 'DefaultLayout',
     },

@@ -1,0 +1,1455 @@
+[
+  {
+    "id": 1,
+    "category": "Defensive Driving",
+    "question": "You are approaching an uncontrolled intersection (no signs or signals) at the same time as another vehicle on your right. Both of you arrive simultaneously. What is the safest and legal action?",
+    "image": "",
+    "options": [
+      "Accelerate slightly to cross before the other vehicle",
+      "Yield the right-of-way to the vehicle on your right",
+      "Sound your horn to claim your right-of-way",
+      "Flash your headlights to signal the other driver to stop"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Under RA 4136 Sec. 42, at an uncontrolled intersection, the driver on the LEFT must yield to the vehicle on the RIGHT when both arrive at approximately the same time. Defensive driving dictates yielding even if you feel you arrived first to avoid collision.",
+    "source": "Republic Act No. 4136 (Land Transportation and Traffic Code), Section 42; LTO Exam Reviewer 2026"
+  },
+  {
+    "id": 2,
+    "category": "Defensive Driving",
+    "question": "While driving uphill and parking parallel to the curb, you turn off your engine. In the event of brake failure, how should your front wheels be positioned to prevent the car from rolling into traffic?",
+    "image": "",
+    "options": [
+      "Turned sharply towards the curb",
+      "Turned sharply away from the curb (towards the road)",
+      "Kept straight and parallel to the curb",
+      "Turned at a 45-degree angle towards the sidewalk"
+    ],
+    "correctAnswer": "B",
+    "explanation": "When parking uphill with a curb, wheels should be turned away from the curb. If the brakes fail, the vehicle will roll backward, and the curb will block the rear tire, or the front wheels will catch on the curb, preventing the car from rolling into the street.",
+    "source": "LTO Theoretical Driving Course (TDC) Manual; Philippine Road Safety Action Plan"
+  },
+  {
+    "id": 3,
+    "category": "Defensive Driving",
+    "question": "A vehicle approaching you at night has high beams on, blinding your vision. What is the immediate defensive action you should take?",
+    "image": "",
+    "options": [
+      "Switch your own high beams on to signal them to lower theirs",
+      "Stare directly at their lights to gauge their distance",
+      "Look quickly towards the right edge of the road and slow down",
+      "Flash your lights repeatedly until they respond"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Staring at glaring lights causes temporary blindness. The safest response is to avoid looking directly at the light, glance toward the right side of the road to maintain lane position, and reduce speed until the vehicle passes.",
+    "source": "LTO Driver's License Exam Reviewer 2026; RA 4136 Safety Guidelines"
+  },
+  {
+    "id": 4,
+    "category": "Defensive Driving",
+    "question": "You have the right-of-way at an intersection, but another driver aggressively attempts to cut you off. What is the correct defensive driving response?",
+    "image": "",
+    "options": [
+      "Accelerate to maintain your right-of-way",
+      "Sound your horn continuously to warn them",
+      "Yield and let them pass to avoid an accident",
+      "Flash your headlights to assert your position"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Defensive driving principle states that the safest response, even if you have the right-of-way, is to not force your rights. Preventing an accident is more important than proving you are legally correct.",
+    "source": "LTO Theoretical Driving Course (TDC) Module on Defensive Driving"
+  },
+  {
+    "id": 5,
+    "category": "Defensive Driving",
+    "question": "You are driving on a two-lane highway with a broken yellow line on your side and a solid yellow line on the opposing side. What does this indicate?",
+    "image": "",
+    "options": [
+      "Overtaking is prohibited for both directions",
+      "Overtaking is allowed only for vehicles on the side with the broken line",
+      "Overtaking is allowed on the right side only",
+      "The road is restricted to emergency vehicles only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "A broken yellow line on your side indicates that you may overtake if the way is clear. The solid line on the other side means oncoming traffic is prohibited from overtaking. Overtaking on the right is generally prohibited unless there are multiple lanes in one direction.",
+    "source": "Republic Act No. 4136, Section 37 & 38; LTO Road Markings Guide"
+  },
+  {
+    "id": 6,
+    "category": "Defensive Driving",
+    "question": "When approaching a curve, when should you apply your brakes to maintain maximum control?",
+    "image": "",
+    "options": [
+      "While turning inside the curve",
+      "Just as you enter the curve",
+      "Before entering the curve, while still on the straight section",
+      "After exiting the curve to stabilize the vehicle"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Braking while turning can cause the vehicle to skid or lose traction. Defensive driving requires slowing down to a safe speed *before* entering the curve, then accelerating gently once you are through the apex.",
+    "source": "LTO Practical Driving Course (PDC) Guidelines; RA 4136 Safety Standards"
+  },
+  {
+    "id": 7,
+    "category": "Defensive Driving",
+    "question": "Why is overtaking near the foot of a pedestrian bridge or intersection considered highly dangerous?",
+    "image": "",
+    "options": [
+      "The road surface is usually slippery in these areas",
+      "Pedestrians are legally allowed to cross anywhere near a bridge",
+      "Your view of oncoming vehicles and pedestrians is obstructed",
+      "The speed limit is automatically reduced to 10 kph"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Overtaking is prohibited where visibility is limited. Structures like bridges or intersections block the line of sight, making it impossible to see oncoming traffic or pedestrians stepping onto the road, significantly increasing accident risk.",
+    "source": "Republic Act No. 4136, Section 41 (Overtaking Restrictions)"
+  },
+  {
+    "id": 8,
+    "category": "Defensive Driving",
+    "question": "You are following a large truck that obscures your view of the road ahead and traffic signals. What is the safest course of action?",
+    "image": "",
+    "options": [
+      "Tailgate slightly to force the truck to move over",
+      "Increase your following distance until you can see around the truck",
+      "Overtake immediately on the right shoulder",
+      "Flash your lights to ask the truck to speed up"
+    ],
+    "correctAnswer": "B",
+    "explanation": "If you cannot see the road ahead or traffic signals because of a large vehicle, you are driving blind. Increasing your following distance restores your view of the road and gives you more time to react to sudden stops.",
+    "source": "LTO Defensive Driving Principles; RA 10913 (Anti-Distracted Driving Act) context on visibility"
+  },
+  {
+    "id": 9,
+    "category": "Defensive Driving",
+    "question": "What is the primary purpose of the '15-second rule' in defensive driving when scanning the road ahead?",
+    "image": "",
+    "options": [
+      "To ensure you check your mirrors every 15 seconds",
+      "To identify potential hazards 12 to 15 seconds ahead of your vehicle",
+      "To count the seconds before a traffic light changes",
+      "To time how long it takes to change lanes safely"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Defensive drivers scan the road 12 to 15 seconds ahead (about one city block or a quarter mile on highways) to identify potential hazards early, giving them ample time to react smoothly rather than panic braking.",
+    "source": "LTO Theoretical Driving Course (TDC) 2026; National Road Safety Program"
+  },
+  {
+    "id": 10,
+    "category": "Defensive Driving",
+    "question": "In a roundabout (rotunda), a vehicle is already circulating inside the ring while you are approaching the entry point. Who has the right-of-way?",
+    "image": "",
+    "options": [
+      "The vehicle approaching the roundabout",
+      "The vehicle already inside the roundabout",
+      "The larger vehicle regardless of position",
+      "The vehicle on the right side of the entry"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vehicles already inside the roundabout have the right-of-way over vehicles attempting to enter. Entering drivers must yield and wait for a safe gap in the circulating traffic before merging.",
+    "source": "Republic Act No. 4136; LTO Memorandum Circular on Roundabout Rules"
+  },
+
+  {
+    "id": 11,
+    "category": "Defensive Driving",
+    "question": "According to defensive driving principles, you should always insist on your legal right-of-way to prevent other drivers from taking advantage of you.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, but only on highways",
+      "False, unless the other driver signals"
+    ],
+    "correctAnswer": "B",
+    "explanation": "FALSE. A core principle of defensive driving is to never insist on your right-of-way if it leads to a collision. It is safer to yield than to be legally right and involved in an accident.",
+    "source": "LTO Theoretical Driving Course (TDC) Module 4; RA 4136 Safety Principles"
+  },
+  {
+    "id": 12,
+    "category": "Defensive Driving",
+    "question": "When driving on wet roads, the safe following distance should be doubled to at least 4 seconds instead of the standard 2 seconds.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, but only for trucks",
+      "False, the 2-second rule applies to all conditions"
+    ],
+    "correctAnswer": "A",
+    "explanation": "TRUE. Wet roads reduce tire traction and increase stopping distance. Defensive driving requires doubling the following distance to 4 seconds to allow adequate time to stop safely.",
+    "source": "LTO Defensive Driving Guidelines; RA 4136 Section on Safe Following Distance"
+  },
+  {
+    "id": 13,
+    "category": "Defensive Driving",
+    "question": "It is legal to overtake another vehicle on a curve if you sound your horn to warn oncoming traffic.",
+    "image": "",
+    "options": ["True", "False", "True, if the curve is wide", "False, unless it is daytime"],
+    "correctAnswer": "B",
+    "explanation": "FALSE. Overtaking on a curve is strictly prohibited under RA 4136 Sec. 41 because visibility is obstructed. Sounding the horn does not make the maneuver legal or safe.",
+    "source": "Republic Act No. 4136, Section 41 (Restrictions on Overtaking)"
+  },
+  {
+    "id": 14,
+    "category": "Defensive Driving",
+    "question": "When waiting to make a left turn at an intersection, your front wheels should be kept straight to prevent being pushed into oncoming traffic if rear-ended.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, but only for automatic cars",
+      "False, wheels should be turned left to prepare"
+    ],
+    "correctAnswer": "A",
+    "explanation": "TRUE. Keeping wheels straight while waiting ensures that if you are hit from behind, the car moves forward into the intersection rather than being pushed into the path of oncoming vehicles.",
+    "source": "LTO Practical Driving Course (PDC) Manual; Defensive Driving Best Practices"
+  },
+  {
+    "id": 15,
+    "category": "Defensive Driving",
+    "question": "Scanning the road 12 to 15 seconds ahead of your vehicle is a recommended technique to identify potential hazards early.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, but only in city traffic",
+      "False, you should only look 5 seconds ahead"
+    ],
+    "correctAnswer": "A",
+    "explanation": "TRUE. Scanning 12–15 seconds ahead (about one city block) allows drivers to anticipate hazards like pedestrians or slowing traffic, providing time to react smoothly without panic braking.",
+    "source": "LTO Theoretical Driving Course (TDC) 2026; National Road Safety Program"
+  },
+  {
+    "id": 16,
+    "category": "Defensive Driving",
+    "question": "If a vehicle approaches you with high beams on at night, the safest defensive action is to flash your own high beams repeatedly to signal them to lower theirs.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, flashing lights is the universal signal to request lower beams.",
+      "False, you should look toward the right edge of the road and slow down to avoid temporary blindness."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Flashing lights can escalate aggression or blind the other driver further. The correct defensive action is to avoid looking directly at the lights, glance at the right road edge, and reduce speed.",
+    "source": "LTO Exam Reviewer 2026; RA 4136 Safety Guidelines on Night Driving"
+  },
+  {
+    "id": 17,
+    "category": "Defensive Driving",
+    "question": "When parking downhill with a curb, you should turn your wheels away from the curb so the car rolls into the street if the brakes fail.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, this engages the transmission gear more effectively.",
+      "False, wheels must be turned TOWARDS the curb so the curb blocks the tire if the car rolls."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. When parking downhill, wheels must be turned TOWARDS the curb. If brakes fail, the car rolls forward and the curb acts as a block. Turning them away would let the car roll into traffic.",
+    "source": "LTO Theoretical Driving Course (TDC) Manual; Philippine Road Safety Action Plan"
+  },
+  {
+    "id": 18,
+    "category": "Defensive Driving",
+    "question": "Overtaking on the right side is strictly prohibited in the Philippines under all circumstances, even in business districts with multiple lanes.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, RA 4136 mandates overtaking only on the left side for safety.",
+      "False, RA 4136 Sec. 39 allows overtaking on the right in business/residential districts with multiple lanes."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. While overtaking is generally done on the left, RA 4136 Sec. 39 explicitly permits overtaking on the right in business or residential districts where there are multiple lanes for traffic in the same direction.",
+    "source": "Republic Act No. 4136, Section 39"
+  },
+  {
+    "id": 19,
+    "category": "Defensive Driving",
+    "question": "If you feel drowsy while driving, opening the window or turning up the radio is an effective long-term solution to stay alert.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, fresh air and noise stimulate the brain effectively.",
+      "False, these are temporary; the only safe action is to pull over and rest or sleep."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Tricks like cold air or loud music do not prevent microsleep. The only effective defensive measure against drowsiness is to stop driving and rest, as drowsy driving is comparable to drunk driving.",
+    "source": "LTO Defensive Driving Principles; RA 10586 context on impairment"
+  },
+  {
+    "id": 20,
+    "category": "Defensive Driving",
+    "question": "When entering a roundabout, you have the right-of-way over vehicles already circulating inside the ring if you arrive at the entry point first.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, the 'first come, first served' rule applies to all intersections.",
+      "False, vehicles already inside the roundabout always have the right-of-way over entering vehicles."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. The golden rule of roundabouts is that circulating traffic has the right-of-way. Entering drivers must yield regardless of who arrived first, waiting for a safe gap to merge.",
+    "source": "Republic Act No. 4136; LTO Memorandum Circular on Roundabout Rules"
+  },
+
+  {
+    "id": 21,
+    "category": "Traffic Rules",
+    "question": "You are approaching an intersection with a green light, but the traffic ahead is stopped, blocking the intersection box. What is the correct legal action?",
+    "image": "",
+    "options": [
+      "Proceed into the intersection and wait for the traffic to move",
+      "Enter the intersection partially to show you are ready",
+      "Stop behind the stop line and wait until the intersection is clear",
+      "Flash your headlights to signal the traffic ahead to move"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Even with a green light, you are prohibited from entering an intersection if you cannot clear it completely. Blocking the intersection (gridlock) is a violation of RA 4136 and causes traffic congestion.",
+    "source": "Republic Act No. 4136, Section 42; LTO Traffic Rules on Intersection Blocking"
+  },
+  {
+    "id": 22,
+    "category": "Traffic Rules",
+    "question": "When is a 'Right Turn on Red' legally permissible in the Philippines?",
+    "image": "",
+    "options": [
+      "Always, provided you slow down",
+      "Only if there are no pedestrians crossing",
+      "After a complete stop, yielding to all traffic and pedestrians, and if no sign prohibits it",
+      "Never, right turns on red are illegal in the Philippines"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Right turn on red is allowed ONLY after coming to a complete stop, yielding to pedestrians and cross-traffic, and ensuring no 'No Turn on Red' sign is posted. Failing to stop completely is a violation.",
+    "source": "Republic Act No. 4136; LTO Memorandum on Right Turn on Red"
+  },
+  {
+    "id": 23,
+    "category": "Traffic Rules",
+    "question": "What is the maximum speed limit for a car passing through a school zone during school hours, unless otherwise posted?",
+    "image": "",
+    "options": ["60 kph", "40 kph", "30 kph", "20 kph"],
+    "correctAnswer": "D",
+    "explanation": "The standard maximum speed limit in school zones is strictly 20 kph during school hours to ensure the safety of children. This is lower than the 40 kph for city streets and 60 kph for open roads.",
+    "source": "Republic Act No. 4136, Section 35; RA 10697 (Comprehensive Highway Safety Program)"
+  },
+  {
+    "id": 24,
+    "category": "Traffic Rules",
+    "question": "You are driving on a two-way road with a SOLID YELLOW line on your side. What does this indicate?",
+    "image": "",
+    "options": [
+      "You may overtake if the road is clear",
+      "Overtaking is prohibited; do not cross the line",
+      "You are entering a no-parking zone",
+      "The road is restricted to emergency vehicles only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "A solid yellow line on your side of the road indicates a no-overtaking zone. You are prohibited from crossing this line to pass another vehicle due to limited visibility or high risk.",
+    "source": "Republic Act No. 4136, Section 37; LTO Road Markings Guide"
+  },
+  {
+    "id": 25,
+    "category": "Traffic Rules",
+    "question": "An ambulance with sirens and flashing lights is approaching you from behind in heavy traffic. What is your legal obligation?",
+    "image": "",
+    "options": [
+      "Speed up to clear the way before it reaches you",
+      "Maintain your lane and let it pass through the gap",
+      "Pull over to the rightmost edge of the road and stop until it passes",
+      "Stop immediately in the middle of the lane regardless of traffic"
+    ],
+    "correctAnswer": "C",
+    "explanation": "RA 4136 Sec. 49 requires drivers to yield to emergency vehicles. You must pull over to the right edge of the road and stop to give a clear path. Stopping abruptly in the middle of the lane can cause accidents.",
+    "source": "Republic Act No. 4136, Section 49; RA 10697"
+  },
+  {
+    "id": 26,
+    "category": "Traffic Rules",
+    "question": "Pedestrians always have the right-of-way, even if they are jaywalking (crossing outside a designated crosswalk).",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, drivers must always yield to pedestrians regardless of where they cross.",
+      "False, pedestrians must use crosswalks; while drivers must exercise caution, jaywalkers do not have absolute right-of-way."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. While drivers must exercise extreme caution to avoid hitting pedestrians, the law (RA 4136 Sec. 44) grants absolute right-of-way to pedestrians only at marked crosswalks. Jaywalkers are technically violating the law, though drivers can still be held liable for negligence if an accident occurs.",
+    "source": "Republic Act No. 4136, Section 44; LTO Guidelines on Pedestrian Right of Way"
+  },
+  {
+    "id": 27,
+    "category": "Traffic Rules",
+    "question": "If you miss your exit on an expressway, it is legal to reverse slightly on the shoulder to reach it if no traffic is coming.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, reversing on the shoulder is allowed in emergencies only.",
+      "False, reversing on an expressway is strictly prohibited; you must proceed to the next exit."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Reversing, backing up, or driving against the flow of traffic on an expressway is extremely dangerous and illegal under RA 4136. You must continue to the next exit and make a U-turn there.",
+    "source": "Republic Act No. 4136; Expressway Rules and Regulations (NLEX/SLEX/MCX)"
+  },
+  {
+    "id": 28,
+    "category": "Traffic Rules",
+    "question": "A white rectangular sign with black text usually indicates a regulatory rule that must be obeyed, such as a speed limit.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, white signs are regulatory and mandatory.",
+      "False, white signs are only for information; regulatory signs are yellow."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The statement is TRUE. In the Philippines, white signs with black text (or red circles) are Regulatory Signs, indicating laws that must be obeyed (e.g., Speed Limit, No Parking, One Way). Yellow signs are for Warning.",
+    "source": "LTO Road Signs Manual; RA 4136 on Traffic Control Devices"
+  },
+  {
+    "id": 29,
+    "category": "Traffic Rules",
+    "question": "When two vehicles arrive at a four-way stop intersection at the exact same time, the vehicle turning left has the right-of-way.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, turning vehicles have priority to clear the intersection faster.",
+      "False, the vehicle going straight has right-of-way; if both go straight, the vehicle on the right proceeds first."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. At a four-way stop, if vehicles arrive simultaneously, the vehicle going straight has priority over a turning vehicle. If both are going straight or both turning, the vehicle on the RIGHT has the right-of-way.",
+    "source": "Republic Act No. 4136, Section 42; LTO Right-of-Way Rules"
+  },
+  {
+    "id": 30,
+    "category": "Traffic Rules",
+    "question": "It is legal to park within 6 meters of a fire hydrant or fire station entrance as long as you leave your hazard lights on.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, hazard lights indicate temporary parking is allowed.",
+      "False, parking near fire hydrants/stations is strictly prohibited regardless of hazard lights to ensure emergency access."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. RA 4136 prohibits parking within 6 meters of a fire station entrance or fire hydrant. Using hazard lights does not exempt you from this rule, as it obstructs emergency response.",
+    "source": "Republic Act No. 4136, Section 47 (Prohibited Parking Areas)"
+  },
+
+  {
+    "id": 31,
+    "category": "Traffic Rules",
+    "question": "You are driving on a national highway outside a city proper. Unless a sign indicates otherwise, what is the maximum speed limit for a private car?",
+    "image": "",
+    "options": ["40 kph", "60 kph", "80 kph", "100 kph"],
+    "correctAnswer": "B",
+    "explanation": "The default maximum speed limit for cars on open country roads (national highways) without posted signs is 60 kph under RA 4136 Sec. 35. 80-100 kph is only allowed on specific expressways with posted signs.",
+    "source": "Republic Act No. 4136, Section 35; LTO Speed Limits Guide 2026"
+  },
+  {
+    "id": 32,
+    "category": "Traffic Rules",
+    "question": "A traffic enforcer signals you to stop, but the traffic light ahead is green. What is your legal obligation?",
+    "image": "",
+    "options": [
+      "Ignore the enforcer and proceed because the light is green",
+      "Slow down and proceed with caution",
+      "Stop immediately as the enforcer's signal overrides the traffic light",
+      "Flash your headlights to ask for clarification"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Human traffic control signals (from LTO, PNP, or authorized enforcers) always override mechanical traffic lights. If an enforcer signals you to stop, you must stop regardless of the green light.",
+    "source": "Republic Act No. 4136, Section 39; LTO Traffic Control Hierarchy"
+  },
+  {
+    "id": 33,
+    "category": "Traffic Rules",
+    "question": "Which of the following vehicles is EXEMPT from the 'No Contact Apprehension Policy' (NCAP) when responding to an emergency?",
+    "image": "",
+    "options": [
+      "Private sedans with hazard lights on",
+      "Government vehicles with official plates",
+      "Emergency vehicles (Ambulance/Fire Truck) with sirens and flashing lights",
+      "Motorcycles weaving through traffic"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Emergency vehicles responding to calls with active sirens and flashing lights are exempt from certain traffic restrictions (like red lights or speed limits) provided they do so safely. They are also prioritized in NCAP exemptions during emergency response.",
+    "source": "Republic Act No. 4136, Section 49; MMDA NCAP Guidelines"
+  },
+  {
+    "id": 34,
+    "category": "Traffic Rules",
+    "question": "You see a YELLOW diamond-shaped sign with a symbol of a car skidding. What does this indicate?",
+    "image": "",
+    "options": [
+      "Road construction ahead",
+      "Slippery road when wet",
+      "End of the highway",
+      "Mandatory chain-up area"
+    ],
+    "correctAnswer": "B",
+    "explanation": "A yellow diamond is a Warning Sign. The skidding car symbol specifically warns that the road surface becomes slippery when wet, requiring reduced speed and increased following distance.",
+    "source": "LTO Road Signs Manual; DOTr Standard Warning Signs"
+  },
+  {
+    "id": 35,
+    "category": "Traffic Rules",
+    "question": "When is it legal to drive in the 'shoulder' of an expressway?",
+    "image": "",
+    "options": [
+      "When traffic is heavy and you are in a hurry",
+      "To overtake a slow-moving vehicle on the right",
+      "Only in case of vehicle breakdown or emergency, or when directed by traffic enforcers",
+      "During rush hour (7 AM - 9 AM)"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The shoulder is strictly for emergencies (breakdowns, accidents) or when opened by enforcers during extreme congestion. Using it for overtaking or beating traffic is a violation subject to fines and demerit points.",
+    "source": "Expressway Rules and Regulations (NLEX/SLEX); RA 4136 Sec. 54"
+  },
+  {
+    "id": 36,
+    "category": "Traffic Rules",
+    "question": "A 'No Parking' sign with an arrow pointing to the right means parking is prohibited only on the right side of the street.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, the arrow indicates the side of the road affected.",
+      "False, the arrow indicates the DIRECTION and DISTANCE the prohibition applies, not just the side."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. The arrow on a No Parking sign indicates the direction (forward or backward) and the extent of the zone where parking is prohibited, not which side of the street. It applies to the side of the road where the sign is posted.",
+    "source": "LTO Road Signs Manual; MMDA Parking Guidelines"
+  },
+  {
+    "id": 37,
+    "category": "Traffic Rules",
+    "question": "It is legal to make a U-turn at an intersection if there is no 'No U-Turn' sign posted.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, U-turns are allowed everywhere unless explicitly prohibited.",
+      "False, U-turns are prohibited at intersections unless a 'U-Turn Permitted' sign is present, regardless of 'No U-Turn' signs."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Under current MMDA and LTO rules, U-turns are generally PROHIBITED at intersections unless there is a specific 'U-Turn Permitted' sign. The absence of a 'No U-Turn' sign does not automatically make it legal.",
+    "source": "MMDA Joint Memorandum Circular on U-Turn Rules; LTO Traffic Regulations"
+  },
+  {
+    "id": 38,
+    "category": "Traffic Rules",
+    "question": "A solid WHITE line between lanes moving in the same direction means you are allowed to change lanes if safe.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, white lines separate traffic moving in the same direction and can be crossed.",
+      "False, a SOLID white line prohibits lane changing; only BROKEN white lines allow lane changes."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. While white lines do separate traffic moving in the same direction, a SOLID white line indicates that lane changing is discouraged or prohibited (e.g., near intersections or tunnels). Only BROKEN white lines permit lane changes.",
+    "source": "RA 4136 Section 37; LTO Pavement Markings Guide"
+  },
+  {
+    "id": 39,
+    "category": "Traffic Rules",
+    "question": "Motorcycles are allowed to filter (weave) between lanes of stopped or slow-moving traffic at any speed.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, motorcycles have the right to filter through traffic to reduce congestion.",
+      "False, lane filtering is only allowed at low speeds (typically under 30 kph) and with extreme caution; reckless weaving is penalized."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. While lane filtering is tolerated under specific guidelines (low speed, safe distance), doing so at high speeds or recklessly weaving between cars is considered dangerous driving and is penalized under RA 4136.",
+    "source": "LTO Motorcycle Safety Guidelines; RA 4136 on Reckless Driving"
+  },
+  {
+    "id": 40,
+    "category": "Traffic Rules",
+    "question": "If your vehicle breaks down on an expressway, you should push it to the leftmost lane to wait for help.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, the left lane is closer to the median and safer.",
+      "False, you must move the vehicle to the RIGHTMOST shoulder or emergency bay to avoid high-speed traffic."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. On expressways, traffic moves fastest in the left lane. If you break down, you must attempt to coast to the RIGHTMOST shoulder or an emergency bay. Staying in the left lane is extremely dangerous and illegal.",
+    "source": "Expressway Rules and Regulations (NLEX/SLEX); RA 4136 Safety Standards"
+  },
+
+  {
+    "id": 41,
+    "category": "Penalties",
+    "question": "What is the penalty for a first-time offense of using a mobile phone while driving under RA 10913 (Anti-Distracted Driving Act)?",
+    "image": "",
+    "options": [
+      "₱1,000 fine",
+      "₱3,000 fine",
+      "₱5,000 fine",
+      "₱10,000 fine and immediate suspension"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Under RA 10913, the fine for the first offense of distracted driving (using a mobile phone) is ₱5,000. Suspension only occurs on the third offense.",
+    "source": "Republic Act No. 10913, Section 6; LTO Fine Schedule 2026"
+  },
+  {
+    "id": 42,
+    "category": "Penalties",
+    "question": "How many demerit points will a driver incur for 'Reckless Driving' resulting in an accident?",
+    "image": "",
+    "options": ["1 Point", "3 Points", "5 Points", "10 Points"],
+    "correctAnswer": "C",
+    "explanation": "Reckless driving is classified as a Grave Violation. Under the LTO Demerit System, grave violations carry 5 demerit points. If it results in an accident, penalties are higher, but the base demerit is 5.",
+    "source": "LTO Demerit Points System 2026; RA 4136"
+  },
+  {
+    "id": 43,
+    "category": "Penalties",
+    "question": "What happens to a driver's license if they accumulate 40 or more demerit points?",
+    "image": "",
+    "options": [
+      "The license is suspended for 3 months",
+      "The license is suspended for 1 year",
+      "The license is revoked",
+      "The driver must attend a seminar but keeps the license"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Accumulating 40 or more demerit points leads to License Revocation. The driver is barred from applying for a new license for up to two years.",
+    "source": "LTO Demerit Points System 2026; LTO Administrative Order"
+  },
+  {
+    "id": 44,
+    "category": "Penalties",
+    "question": "A driver is caught driving under the influence of alcohol (DUI) for the first time. What is the mandatory penalty under RA 10586?",
+    "image": "",
+    "options": [
+      "₱5,000 fine and warning",
+      "₱20,000 fine, 12-month license suspension, and community service",
+      "₱10,000 fine and 3-month suspension",
+      "Immediate license revocation"
+    ],
+    "correctAnswer": "B",
+    "explanation": "RA 10586 mandates a fine of ₱20,000 to ₱80,000, a 12-month license suspension for the first offense, and mandatory community service. Revocation happens on the second offense.",
+    "source": "Republic Act No. 10586 (Anti-Drunk and Drugged Driving Act); LTO Guidelines 2026"
+  },
+  {
+    "id": 45,
+    "category": "Penalties",
+    "question": "If a driver fails to pay a traffic violation fine within 15 days, what is the likely consequence?",
+    "image": "",
+    "options": [
+      "The fine amount is doubled automatically",
+      "A warrant of arrest is immediately issued",
+      "Late payment surcharges are added, and license renewal is blocked",
+      "The violation is erased from the record"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Unpaid fines incur late payment surcharges. More critically, the violation will flag the driver's record, blocking any license renewal or vehicle registration until settled.",
+    "source": "LTO Payment Guidelines 2026; RA 4136"
+  },
+  {
+    "id": 46,
+    "category": "Penalties",
+    "question": "What is the fine for 'No Contact Apprehension' (NCAP) violation for beating the red light in Metro Manila (MMDA)?",
+    "image": "",
+    "options": ["₱1,000", "₱2,000", "₱5,000", "₱10,000"],
+    "correctAnswer": "B",
+    "explanation": "Under MMDA's NCAP, beating the red light carries a fine of ₱2,000. This is higher than the standard ₱1,000 for simple disregard of traffic signs.",
+    "source": "MMDA NCAP Fine Schedule 2026"
+  },
+  {
+    "id": 47,
+    "category": "Penalties",
+    "question": "A student permit holder accumulates 5 demerit points. What is the consequence?",
+    "image": "",
+    "options": [
+      "They must attend a seminar",
+      "The permit is suspended for 30 days",
+      "The student permit is revoked",
+      "They are fined an additional ₱5,000"
+    ],
+    "correctAnswer": "C",
+    "explanation": "For Student Permit holders, accumulating just 5 demerit points results in immediate revocation of the permit. They cannot apply for a new one for one year.",
+    "source": "LTO Demerit Points System 2026; Student Permit Guidelines"
+  },
+  {
+    "id": 48,
+    "category": "Penalties",
+    "question": "What is the penalty for a third offense of speeding more than 41 kph over the limit?",
+    "image": "",
+    "options": [
+      "₱3,000 fine",
+      "₱5,000 fine",
+      "₱10,000 fine and impounding of the vehicle",
+      "₱15,000 fine and license revocation"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Speeding 41+ kph over the limit is a severe violation. On the third offense, the fine is ₱10,000, and the vehicle is subject to impounding.",
+    "source": "LTO Fine Schedule 2026; RA 4136 Section 35"
+  },
+  {
+    "id": 49,
+    "category": "Penalties",
+    "question": "Which of the following violations carries the highest fine for a first offense?",
+    "image": "",
+    "options": [
+      "No Seatbelt (₱1,000)",
+      "Distracted Driving (₱5,000)",
+      "Reckless Driving (₱2,000)",
+      "Illegal Parking (₱1,000)"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Among the choices, Distracted Driving (RA 10913) has the highest first-offense fine at ₱5,000. Reckless driving is ₱2,000, while seatbelt and parking are ₱1,000.",
+    "source": "LTO Fine Schedule 2026; RA 10913"
+  },
+  {
+    "id": 50,
+    "category": "Penalties",
+    "question": "If a driver has zero demerit points upon license renewal, what reward do they receive?",
+    "image": "",
+    "options": [
+      "A cash rebate",
+      "A 10-year license validity",
+      "Exemption from future fines",
+      "A free driving seminar"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Drivers with a clean record (zero demerit points) upon renewal are eligible for a 10-year license validity instead of the standard 5 years.",
+    "source": "LTO Demerit Points System 2026; RA 10930"
+  },
+  {
+    "id": 51,
+    "category": "Penalties",
+    "question": "Paying a traffic fine immediately erases the demerit points from your driving record.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, payment clears all records instantly.",
+      "False, paying the fine settles the monetary penalty, but demerit points remain on your record for 12 months."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Paying the fine removes the financial obligation and allows license renewal, but the demerit points stay on your record for 12 months from the date of violation.",
+    "source": "LTO Demerit Points System 2026"
+  },
+  {
+    "id": 52,
+    "category": "Penalties",
+    "question": "A driver caught using a hands-free headset to talk on the phone while driving is violating RA 10913.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, any phone use while driving is prohibited.",
+      "False, hands-free devices (Bluetooth/Earphones) are allowed as long as the driver does not hold the phone."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. RA 10913 prohibits *holding* or *manipulating* a device. Using hands-free modes (speaker, Bluetooth) without touching the phone is legal.",
+    "source": "Republic Act No. 10913, Section 4"
+  },
+  {
+    "id": 53,
+    "category": "Penalties",
+    "question": "If your license is revoked due to accumulating 40 demerit points, you can apply for a new license immediately after paying the fines.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, payment reinstates all driving privileges.",
+      "False, revocation means you are barred from applying for a new license for up to two years."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. License Revocation (40+ points) is more severe than suspension. You cannot apply for a new license for a period of up to two years, even if fines are paid.",
+    "source": "LTO Demerit Points System 2026"
+  },
+  {
+    "id": 54,
+    "category": "Penalties",
+    "question": "The penalty for DUI (Driving Under the Influence) is the same for private car drivers and Public Utility Vehicle (PUV) drivers.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, the law applies equally to all drivers.",
+      "False, PUV drivers face higher fines (₱30,000+) and stricter penalties for DUI than private drivers."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. RA 10586 imposes heavier penalties on PUV drivers, school bus drivers, and those hauling hazardous materials. A first offense for a PUV driver can cost ₱30,000.",
+    "source": "Republic Act No. 10586, Section 5"
+  },
+  {
+    "id": 55,
+    "category": "Penalties",
+    "question": "Unsettled MMDA NCAP violations will prevent you from renewing your vehicle registration at the LTO.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, LTO and MMDA systems are linked; unpaid fines block renewal.",
+      "False, NCAP violations are separate and do not affect LTO registration."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The statement is TRUE. Unpaid NCAP violations create a 'hit' on the vehicle's plate number in the LTO system, blocking registration renewal until the fine is settled.",
+    "source": "MMDA NCAP Guidelines 2026; LTO Registration Requirements"
+  },
+  {
+    "id": 56,
+    "category": "Penalties",
+    "question": "A driver with a suspended license due to reckless driving can still drive if they are accompanied by a licensed instructor.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, supervised driving is allowed during suspension.",
+      "False, a suspended license means ZERO driving privileges; driving while suspended is a criminal offense."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. License suspension means you have no legal right to drive any motor vehicle on public roads, even with an instructor. Doing so is 'Driving Without a Valid License'.",
+    "source": "RA 4136; LTO Suspension Guidelines"
+  },
+  {
+    "id": 57,
+    "category": "Penalties",
+    "question": "The fine for 'No Helmet' for motorcycle riders is ₱1,500 for the first offense.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, this is the standard fine under RA 10000.",
+      "False, the fine is ₱3,000 for the first offense under the updated 2026 schedule."
+    ],
+    "correctAnswer": "A",
+    "explanation": "The statement is TRUE (based on standard RA 10000 implementation). The fine for the first offense of not wearing a helmet is typically ₱1,500. (Note: Some LGUs may vary, but ₱1,500 is the national baseline).",
+    "source": "Republic Act No. 10000; LTO Fine Schedule 2026"
+  },
+  {
+    "id": 58,
+    "category": "Penalties",
+    "question": "If you commit the same light violation (1 point) three times within 12 months, your license will be suspended.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, three strikes of any violation lead to suspension.",
+      "False, repeating the same violation 3 times requires a seminar and exam, but suspension usually requires accumulating 10+ points or a grave violation."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Repeating the same violation 3 times triggers a requirement to attend a reorientation course and pass the theoretical exam. Suspension typically requires accumulating 10+ demerit points or a specific grave offense.",
+    "source": "LTO Demerit Points System 2026"
+  },
+  {
+    "id": 59,
+    "category": "Penalties",
+    "question": "Smoke belching penalties include vehicle impounding for the third offense.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, repeat offenders face impounding to enforce emission standards.",
+      "False, smoke belching only results in fines, never impounding."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The statement is TRUE. For repeated smoke belching offenses (3rd offense), the LTO/MMDA may impound the vehicle to force compliance with emission standards.",
+    "source": "RA 8749 (Clean Air Act); LTO Smoke Belching Guidelines"
+  },
+  {
+    "id": 60,
+    "category": "Penalties",
+    "question": "A driver caught driving with an expired license (more than 1 year) is treated as 'Driving Without a Valid License' and faces vehicle impounding.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, an license expired >1 year is deemed invalid, leading to impounding.",
+      "False, expired licenses only incur a renewal fee penalty, not impounding."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The statement is TRUE. If a license is expired for more than one year, it is considered invalid. Driving with it is equivalent to 'Driving Without a Valid License', which carries a ₱10,000 fine and vehicle impounding.",
+    "source": "LTO License Renewal Guidelines 2026; RA 4136"
+  },
+
+  {
+    "id": 61,
+    "category": "General & Republic Acts",
+    "question": "Under RA 11229 (Child Safety in Motor Vehicles Act), children of what age are PROHIBITED from sitting in the front seat of a motor vehicle?",
+    "image": "",
+    "options": [
+      "Below 10 years old",
+      "Below 12 years old",
+      "Below 13 years old",
+      "Below 15 years old"
+    ],
+    "correctAnswer": "B",
+    "explanation": "RA 11229 strictly prohibits children 12 years old and below from sitting in the front seat. They must be seated in the rear and secured in an appropriate Child Restraint System (CRS) based on their age, height, and weight.",
+    "source": "Republic Act No. 11229, Section 5; LTO Guidelines on Child Safety"
+  },
+  {
+    "id": 62,
+    "category": "General & Republic Acts",
+    "question": "What is the validity period of a Non-Professional Driver's License issued to a driver with a clean record (zero demerit points)?",
+    "image": "",
+    "options": ["3 years", "5 years", "8 years", "10 years"],
+    "correctAnswer": "D",
+    "explanation": "Under RA 10930, a driver with a clean record (no violations/demerit points) upon renewal is eligible for a 10-year validity license. Those with violations receive the standard 5-year license.",
+    "source": "Republic Act No. 10930; LTO License Renewal Guidelines 2026"
+  },
+  {
+    "id": 63,
+    "category": "General & Republic Acts",
+    "question": "Which Republic Act mandates the use of seatbelts for ALL passengers in the front and rear seats of private vehicles?",
+    "image": "",
+    "options": ["RA 4136", "RA 8750", "RA 10586", "RA 10913"],
+    "correctAnswer": "B",
+    "explanation": "RA 8750 (Seat Belts Use Act of 1999) mandates that all drivers and front-seat passengers wear seatbelts. Amendments and LTO enforcement now extend this to rear-seat passengers in private vehicles as well.",
+    "source": "Republic Act No. 8750; LTO Enforcement Guidelines 2026"
+  },
+  {
+    "id": 64,
+    "category": "General & Republic Acts",
+    "question": "A driver with Restriction Code '7' on their license is permitted to drive which type of vehicle?",
+    "image": "",
+    "options": [
+      "Motorcycles only",
+      "Vehicles with Manual Transmission only",
+      "Vehicles with Automatic Transmission only",
+      "Heavy trucks and buses"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Restriction Code 7 indicates 'Automatic Transmission Only'. The driver is legally prohibited from driving manual transmission vehicles. Violating this carries a fine and potential suspension.",
+    "source": "LTO Restriction Codes Guide 2026; RA 4136"
+  },
+  {
+    "id": 65,
+    "category": "General & Republic Acts",
+    "question": "Under RA 10586, what is the Blood Alcohol Concentration (BAC) limit for a Professional Driver (PUV/Truck/Bus)?",
+    "image": "",
+    "options": ["0.05%", "0.08%", "0.00% (Zero Tolerance)", "0.10%"],
+    "correctAnswer": "C",
+    "explanation": "Professional drivers (PUV, trucks, buses) are held to a Zero Tolerance policy under RA 10586. Any detectable amount of alcohol (0.00%) is a violation. Non-professional drivers have a 0.05% limit.",
+    "source": "Republic Act No. 10586, Section 5; LTO DUI Guidelines"
+  },
+  {
+    "id": 66,
+    "category": "General & Republic Acts",
+    "question": "How long before the expiration date can a driver's license be renewed without needing to take the written and practical exams again?",
+    "image": "",
+    "options": ["30 days", "60 days", "90 days", "Up to 6 months before expiration"],
+    "correctAnswer": "D",
+    "explanation": "Licenses can be renewed up to 6 months (180 days) before expiration without additional exams. If expired beyond 1 year, the driver must retake the theoretical and practical exams.",
+    "source": "LTO License Renewal Guidelines 2026; RA 4136"
+  },
+  {
+    "id": 67,
+    "category": "General & Republic Acts",
+    "question": "What is the mandatory requirement for all motor vehicles registered in the Philippines to cover liability for death or injury to third parties?",
+    "image": "",
+    "options": [
+      "Comprehensive Insurance",
+      "Compulsory Third Party Liability (CTPL) Insurance",
+      "Personal Accident Insurance",
+      "Vehicle Warranty"
+    ],
+    "correctAnswer": "B",
+    "explanation": "CTPL (Compulsory Third Party Liability) insurance is mandatory for vehicle registration under RA 4136. It covers death or injury to third parties only, not damage to the owner's vehicle.",
+    "source": "Republic Act No. 4136, Section 21; LTO Registration Requirements"
+  },
+  {
+    "id": 68,
+    "category": "General & Republic Acts",
+    "question": "Under RA 10913, which of the following is ALLOWED while driving?",
+    "image": "",
+    "options": [
+      "Holding the phone to check GPS directions",
+      "Writing a text message while stopped at a red light",
+      "Using a hands-free device (Bluetooth/Earphone) without holding the phone",
+      "Video calling using a mounted device"
+    ],
+    "correctAnswer": "C",
+    "explanation": "RA 10913 prohibits holding or manipulating a device. Using hands-free modes (Bluetooth, speakerphone, earphones) is allowed as long as the driver does not hold the phone or look at the screen excessively.",
+    "source": "Republic Act No. 10913, Section 4; LTO Distracted Driving Guidelines"
+  },
+  {
+    "id": 69,
+    "category": "General & Republic Acts",
+    "question": "What is the penalty for driving a motor vehicle with an expired registration for MORE than one year?",
+    "image": "",
+    "options": [
+      "Simple fine with surcharge",
+      "Vehicle impounding and ₱10,000 fine",
+      "Confiscation of the vehicle",
+      "Warning and 7-day grace period"
+    ],
+    "correctAnswer": "B",
+    "options": [
+      "Simple fine with surcharge",
+      "Vehicle impounding and ₱10,000 fine",
+      "Confiscation of the vehicle",
+      "Warning and 7-day grace period"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Driving with a registration expired for more than one year is treated as 'Operating an Unregistered Vehicle'. This carries a ₱10,000 fine and vehicle impounding until registration is renewed.",
+    "source": "LTO Penalty Matrix 2026; RA 4136"
+  },
+  {
+    "id": 70,
+    "category": "General & Republic Acts",
+    "question": "Which document must be carried by the driver at all times while operating a motor vehicle?",
+    "image": "",
+    "options": [
+      "Official Receipt (OR) and Certificate of Registration (CR) only",
+      "Driver's License only",
+      "Driver's License, OR, and CR of the vehicle",
+      "Insurance policy only"
+    ],
+    "correctAnswer": "C",
+    "explanation": "Drivers must carry their valid Driver's License, and the vehicle's Original OR/CR (or certified copies). Failure to present these upon apprehension results in fines and potential vehicle impounding.",
+    "source": "Republic Act No. 4136, Section 15 & 21; LTO Enforcement Guidelines"
+  },
+  {
+    "id": 71,
+    "category": "General & Republic Acts",
+    "question": "A Student Permit holder is allowed to drive alone on public roads as long as they have completed the Theoretical Driving Course (TDC).",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, TDC completion grants solo driving privileges.",
+      "False, student Permit holders must ALWAYS be accompanied by a licensed driver (Non-Pro or Pro) inside the vehicle."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. A Student Permit does NOT allow solo driving. The holder must be accompanied by a duly licensed driver (Non-Professional or Professional) sitting beside them at all times.",
+    "source": "LTO Student Permit Guidelines 2026; RA 4136"
+  },
+  {
+    "id": 72,
+    "category": "General & Republic Acts",
+    "question": "Motorcycles with an engine displacement below 400cc are allowed to use expressways like NLEX and SLEX.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, all motorcycles with valid plates can use expressways.",
+      "False, motorcycles must be 400cc or larger to legally enter expressways for safety reasons."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Under LTO and TRB regulations, only motorcycles with 400cc displacement or higher are allowed on limited-access expressways (NLEX, SLEX, Skyway) due to speed safety requirements.",
+    "source": "LTO Administrative Order 2008-15; TRB Expressway Rules"
+  },
+  {
+    "id": 73,
+    "category": "General & Republic Acts",
+    "question": "A Non-Professional Driver's License allows the holder to drive a vehicle for hire (e.g., Grab, Taxi, Jeepney).",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, non-Pro licenses cover all light vehicles including for-hire.",
+      "False, driving for hire requires a Professional Driver's License regardless of vehicle size."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. A Non-Professional license is for private use only. Driving a vehicle for hire (transporting passengers/goods for payment) requires a Professional Driver's License.",
+    "source": "LTO License Classifications 2026; RA 4136"
+  },
+  {
+    "id": 74,
+    "category": "General & Republic Acts",
+    "question": "If your license is lost, you can immediately apply for a duplicate without reporting the loss to the police.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, LTO only requires an affidavit of loss.",
+      "False, an Affidavit of Loss is required, and in some cases, a police report is needed to prevent fraud before a duplicate is issued."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE (with nuance). While an Affidavit of Loss is the primary requirement, LTO strictly verifies records to prevent fraud. In many cases, especially for recent losses, a police report or strict verification is mandated before a duplicate is released.",
+    "source": "LTO Duplicate License Requirements 2026; RA 4136"
+  },
+  {
+    "id": 75,
+    "category": "General & Republic Acts",
+    "question": "The 'No Contact Apprehension Policy' (NCAP) allows authorities to issue tickets based solely on camera footage without stopping the vehicle.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, NCAP uses cameras to record violations and mail tickets to owners.",
+      "False, NCAP requires the vehicle to be stopped first before a ticket is issued."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The statement is TRUE. NCAP utilizes CCTV and cameras to capture violations. The ticket is then sent to the registered owner via mail or email, without the need for a traffic enforcer to stop the vehicle at the scene.",
+    "source": "MMDA NCAP Guidelines 2026; LTO Joint Memorandum Circular"
+  },
+  {
+    "id": 76,
+    "category": "General & Republic Acts",
+    "question": "A driver with a Restriction Code '8' is prohibited from driving at night.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, Code 8 indicates night blindness.",
+      "False, Code 8 means the driver must wear corrective lenses (glasses/contacts) at all times while driving."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Restriction Code 8 means 'With Corrective Lenses'. The driver must wear glasses or contact lenses while driving, day or night. It does not ban night driving.",
+    "source": "LTO Restriction Codes Guide 2026"
+  },
+  {
+    "id": 77,
+    "category": "General & Republic Acts",
+    "question": "It is legal to modify a vehicle's exhaust system to make it louder as long as the engine performance is improved.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, performance modifications are allowed under RA 4136.",
+      "False, RA 4136 and RA 8749 prohibit modifications that increase noise or exceed emission standards."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Modifying exhaust systems to increase noise (tintin/tambay exhaust) is prohibited under RA 4136 and the Clean Air Act (RA 8749). Such vehicles fail inspection and face fines/impounding.",
+    "source": "Republic Act No. 4136; RA 8749 (Clean Air Act); LTO Modification Guidelines"
+  },
+  {
+    "id": 78,
+    "category": "General & Republic Acts",
+    "question": "A Professional Driver's License is valid for 5 years regardless of the driver's record.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, professional licenses have a fixed 5-year term.",
+      "False, a Professional driver with a clean record can also avail of a 10-year validity license under RA 10930."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Under RA 10930, Professional Drivers with a clean record (zero demerit points) upon renewal are also eligible for a 10-year validity license, not just 5 years.",
+    "source": "Republic Act No. 10930; LTO License Renewal Guidelines"
+  },
+  {
+    "id": 79,
+    "category": "General & Republic Acts",
+    "question": "Foreigners with a valid driver's license from their home country can drive in the Philippines indefinitely without converting to a Philippine license.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, international licenses are valid for life in the Philippines.",
+      "False, foreign licenses are valid for only 90 days from arrival; conversion to a Philippine license is required thereafter."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Foreign licenses are valid for only 90 days from the date of arrival in the Philippines. After 90 days, the foreigner must convert their license to a Philippine one at the LTO.",
+    "source": "LTO Foreign License Conversion Guidelines 2026; RA 4136"
+  },
+  {
+    "id": 80,
+    "category": "General & Republic Acts",
+    "question": "A vehicle with a 'For Hire' body marking can be used for private family trips without violating RA 4136.",
+    "image": "",
+    "options": [
+      "True",
+      "False",
+      "True, owners can use their for-hire vehicles for personal use anytime.",
+      "False, vehicles marked 'For Hire' must operate under a franchise/PCO; using them purely for private use without proper authorization can be a violation."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE (in context). While owners can use their vehicles, a vehicle marked 'For Hire' (e.g., Taxi, Jeepney) is legally bound to operate as public transport. Using it strictly as a private vehicle without proper de-registration or PCO compliance can lead to regulatory issues, though the primary violation is usually operating without a franchise if picking up passengers. However, for the exam: 'For Hire' implies public service, not private exclusivity.",
+    "source": "LTFRB Guidelines; RA 4136 on Public Utility Vehicles"
+  },
+
+  {
+    "id": 81,
+    "category": "Road Signs",
+    "question": "You see an OCTAGON-shaped sign with a red background. Even if the text is faded, what action must you take?",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Stop-Sign.png",
+    "options": [
+      "Slow down and proceed if clear",
+      "Yield to traffic on the right",
+      "Come to a COMPLETE STOP",
+      "Stop only if there are pedestrians"
+    ],
+    "correctAnswer": "C",
+    "explanation": "The Octagon shape is exclusively used for the STOP sign. Regardless of visibility of the text, the shape alone mandates a complete stop at the stop line.",
+    "source": "LTO Road Signs Manual; RA 4136 Section on Regulatory Signs"
+  },
+  {
+    "id": 82,
+    "category": "Road Signs",
+    "question": "What is the difference between a 'No Parking' sign and a 'No Stopping' sign?",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/No-Parking-Sign.png",
+    "options": [
+      "There is no difference; both mean do not stop",
+      "'No Parking' allows brief loading/unloading; 'No Stopping' prohibits any halt",
+      "'No Stopping' allows loading/unloading; 'No Parking' prohibits it",
+      "'No Parking' is only effective at night"
+    ],
+    "correctAnswer": "B",
+    "explanation": "'No Parking' (P with a slash) often allows temporary stopping for loading/unloading of passengers or goods. 'No Stopping' (often an X or specific text) prohibits the vehicle from halting for any reason, even briefly.",
+    "source": "LTO Road Signs Manual; MMDA Parking Guidelines"
+  },
+  {
+    "id": 83,
+    "category": "Road Signs",
+    "question": "A YELLOW diamond-shaped sign with a black symbol of a car leaving skid marks indicates:",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Slippery-Road-Sign.png",
+    "options": [
+      "Road construction ahead",
+      "Slippery road when wet",
+      "Race track nearby",
+      "Test driving zone"
+    ],
+    "correctAnswer": "B",
+    "explanation": "This is the standard Warning Sign for a Slippery Road. It alerts drivers that the road surface has reduced traction, especially during rain.",
+    "source": "DPWH Standard Warning Signs; LTO Exam Reviewer"
+  },
+  {
+    "id": 84,
+    "category": "Road Signs",
+    "question": "What does a RED circle with a WHITE horizontal bar mean?",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/No-Entry-Sign.png",
+    "options": ["No Parking", "No Overtaking", "No Entry", "End of Road"],
+    "correctAnswer": "C",
+    "explanation": "A red circle with a white horizontal bar is the international symbol for 'No Entry'. It means vehicles are prohibited from entering that road or lane (often used for one-way exits).",
+    "source": "LTO Road Signs Manual; Vienna Convention on Road Signs"
+  },
+  {
+    "id": 85,
+    "category": "Road Signs",
+    "question": "You see a BLUE circle with a white number '60' inside. What does this indicate on an expressway?",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Minimum-Speed-Sign.png",
+    "options": [
+      "Maximum speed limit is 60 kph",
+      "Minimum speed limit is 60 kph",
+      "Recommended speed is 60 kph",
+      "Speed limit ends"
+    ],
+    "correctAnswer": "B",
+    "explanation": "While red circles indicate Maximum Speed, BLUE circles with white numbers indicate a MINIMUM speed limit. This is common on expressways to prevent slow-moving vehicles from obstructing traffic.",
+    "source": "Expressway Rules and Regulations; LTO Sign Color Code"
+  },
+  {
+    "id": 86,
+    "category": "Road Signs",
+    "question": "A GREEN rectangular sign with white text listing cities and distances is classified as:",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Destination-Sign.png",
+    "options": ["Regulatory Sign", "Warning Sign", "Guide/Informational Sign", "Construction Sign"],
+    "correctAnswer": "C",
+    "explanation": "Green rectangular signs are Guide Signs used on expressways and highways to provide directional information, destinations, and distances. They do not impose rules.",
+    "source": "LTO Road Signs Manual; DPWH Guide Signs Standard"
+  },
+  {
+    "id": 87,
+    "category": "Road Signs",
+    "question": "What is the shape of a 'YIELD' sign?",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Yield-Sign.png",
+    "options": ["Octagon", "Inverted Triangle", "Circle", "Diamond"],
+    "correctAnswer": "B",
+    "explanation": "The Yield sign is uniquely shaped as an inverted triangle (point down) with a red border and white center. It means you must slow down and give right-of-way.",
+    "source": "LTO Road Signs Manual; RA 4136"
+  },
+  {
+    "id": 88,
+    "category": "Road Signs",
+    "question": "An ORANGE diamond-shaped sign with a symbol of a person digging indicates:",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Road-Work-Sign.png",
+    "options": [
+      "Pedestrian crossing",
+      "Road construction or maintenance ahead",
+      "Park nearby",
+      "School zone"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Orange is the standard color for temporary warning signs related to road construction, maintenance, or utility work. Drivers should reduce speed and watch for workers.",
+    "source": "DPWH Temporary Traffic Control Signs; LTO Exam Reviewer"
+  },
+  {
+    "id": 89,
+    "category": "Road Signs",
+    "question": "A sign showing a 'T' shape indicates:",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/T-Intersection-Sign.png",
+    "options": [
+      "Truck crossing",
+      "T-Intersection ahead (road ends)",
+      "Traffic light ahead",
+      "Turn left only"
+    ],
+    "correctAnswer": "B",
+    "explanation": "This is a Warning Sign for a T-Intersection. It means the road you are on ends soon, and you must turn either left or right.",
+    "source": "LTO Road Signs Manual; Warning Signs Category"
+  },
+  {
+    "id": 90,
+    "category": "Road Signs",
+    "question": "What does a sign with a 'U-turn' symbol inside a red circle with a slash mean?",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/No-U-Turn-Sign.png",
+    "options": [
+      "U-turn permitted",
+      "U-turn only for trucks",
+      "No U-turn allowed",
+      "U-turn at next intersection"
+    ],
+    "correctAnswer": "C",
+    "explanation": "A red circle with a slash is a prohibitory regulatory sign. Over a U-turn symbol, it strictly means 'No U-Turn' is allowed at that location.",
+    "source": "MMDA U-Turn Rules; LTO Regulatory Signs"
+  },
+  {
+    "id": 91,
+    "category": "Road Signs",
+    "question": "A yellow diamond sign with a school building and children means you must stop completely regardless of whether children are present.",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/School-Zone-Sign.png",
+    "options": [
+      "True",
+      "False",
+      "True, school zones always require a complete stop.",
+      "False, it is a warning to slow down and watch for children; a complete stop is only required at a Stop sign or crosswalk with pedestrians."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. A School Zone sign is a WARNING sign. It requires drivers to reduce speed (usually to 20 kph) and be alert. A complete stop is only mandatory if there is a Stop sign or if pedestrians are actually crossing.",
+    "source": "RA 4136; LTO Warning Signs Guidelines"
+  },
+  {
+    "id": 92,
+    "category": "Road Signs",
+    "question": "A broken white line between lanes means you are prohibited from changing lanes.",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Broken-White-Line.png",
+    "options": [
+      "True",
+      "False",
+      "True, white lines separate traffic and cannot be crossed.",
+      "False, a BROKEN white line allows lane changing when safe; only SOLID white lines prohibit it."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Broken white lines separate lanes moving in the same direction and permit lane changes. Solid white lines indicate that lane changing is discouraged or prohibited.",
+    "source": "RA 4136 Section 37; LTO Pavement Markings"
+  },
+  {
+    "id": 93,
+    "category": "Road Signs",
+    "question": "A blue square sign with a white 'H' indicates a hospital is nearby.",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Hospital-Sign.png",
+    "options": [
+      "True",
+      "False",
+      "True, blue service signs with 'H' denote hospitals.",
+      "False, blue signs are for parking; hospitals are marked with red crosses."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The statement is TRUE. Blue square/rectangular signs are Service/Informational signs. A white 'H' on a blue background specifically indicates the direction or location of a hospital.",
+    "source": "LTO Guide/Informational Signs Manual"
+  },
+  {
+    "id": 94,
+    "category": "Road Signs",
+    "question": "If you see a sign with a railroad crossbuck (X with 'RR'), you may proceed without stopping if no train is visible.",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Railroad-Crossing-Sign.png",
+    "options": [
+      "True",
+      "False",
+      "True, you only stop if the gates are down.",
+      "False, you must slow down, look, and listen. Some crossings require a mandatory stop even if no train is immediately visible."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE (in the context of 'proceed without caution'). While you don't always need a full stop if clear, the sign mandates extreme caution: slow down, look both ways, and listen. Many specific crossings (especially with Stop signs) require a mandatory stop regardless.",
+    "source": "RA 4136 Section 43; LTO Railroad Crossing Rules"
+  },
+  {
+    "id": 95,
+    "category": "Road Signs",
+    "question": "A 'No Horn' sign (trumpet with a slash) is usually placed near hospitals and schools.",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/No-Horn-Sign.png",
+    "options": [
+      "True",
+      "False",
+      "True, these zones require silence for patients and students.",
+      "False, horns are allowed everywhere for safety."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The statement is TRUE. Regulatory signs prohibiting the blowing of horns are typically installed near hospitals, schools, and residential zones to maintain quiet, unless necessary for emergency safety warnings.",
+    "source": "RA 4136; Local Traffic Ordinances"
+  },
+  {
+    "id": 96,
+    "category": "Road Signs",
+    "question": "A sign showing a downward sloping arrow with a percentage (e.g., '10%') means the road narrows.",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Steep-Descent-Sign.png",
+    "options": [
+      "True",
+      "False",
+      "True, the percentage indicates the reduction in width.",
+      "False, it indicates a steep descent (downhill grade); drivers should use lower gears."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. A downward arrow with a percentage indicates a Steep Descent (downhill slope). The percentage represents the grade. Drivers should shift to a lower gear to control speed without overheating brakes.",
+    "source": "LTO Warning Signs Manual; DPWH Standards"
+  },
+  {
+    "id": 97,
+    "category": "Road Signs",
+    "question": "Double solid yellow lines in the center of the road mean overtaking is allowed if the road is clear.",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Double-Yellow-Line.png",
+    "options": [
+      "True",
+      "False",
+      "True, yellow lines separate traffic but allow passing.",
+      "False, double solid yellow lines strictly prohibit overtaking or crossing the line from either side."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. Double solid yellow lines indicate a strict no-overtaking zone for traffic in both directions. Crossing them is illegal and dangerous.",
+    "source": "RA 4136 Section 37; LTO Pavement Markings"
+  },
+  {
+    "id": 98,
+    "category": "Road Signs",
+    "question": "A green arrow light at an intersection means you may proceed in the direction of the arrow even if the main light is red.",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Green-Arrow-Light.png",
+    "options": [
+      "True",
+      "False",
+      "True, green arrows indicate a protected turn.",
+      "False, red light always means stop, regardless of arrows."
+    ],
+    "correctAnswer": "C",
+    "explanation": "The statement is TRUE. A green arrow indicates a 'protected turn,' meaning you have the right-of-way to turn in that direction, even if the main circular light is red (provided you are in the correct lane).",
+    "source": "RA 4136; LTO Traffic Signal Rules"
+  },
+  {
+    "id": 99,
+    "category": "Road Signs",
+    "question": "A sign with a 'One Way' arrow means you can drive in the opposite direction if you are turning into a driveway.",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/One-Way-Sign.png",
+    "options": [
+      "True",
+      "False",
+      "True, driveways are exceptions to One Way rules.",
+      "False, one Way means ALL traffic moves in that direction; driving against it is illegal and dangerous."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. A One Way sign means traffic flows ONLY in the direction of the arrow. Driving against the flow (wrong way) is a severe violation and highly dangerous, even for driveways (you must enter driveways from the correct flow).",
+    "source": "RA 4136; LTO Regulatory Signs"
+  },
+  {
+    "id": 100,
+    "category": "Road Signs",
+    "question": "Flashing YELLOW traffic lights at an intersection mean you should stop and wait for a green light.",
+    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Flashing-Yellow-Light.png",
+    "options": [
+      "True",
+      "False",
+      "True, flashing lights act like a Stop sign.",
+      "False, flashing Yellow means 'Caution'; slow down and proceed with care, yielding to pedestrians."
+    ],
+    "correctAnswer": "D",
+    "explanation": "The statement is FALSE. A flashing YELLOW light means 'Caution.' You do not need to stop completely unless necessary for safety. A flashing RED light, however, acts as a Stop sign.",
+    "source": "RA 4136 Section 39; LTO Traffic Signals"
+  }
+]

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import MoleculeQuestionItem from './MoleculeQuestionItem.vue'
-import type { QuizCategory, QuizQuestion } from '@/data/quizData'
+import type { QuizCategory, QuizQuestion } from '@/types'
 
 const meta: Meta<typeof MoleculeQuestionItem> = {
   component: MoleculeQuestionItem,

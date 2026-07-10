@@ -63,6 +63,9 @@ function getCategoryValue(category) {
 
 module.exports = function (plop) {
   plop.setHelper('eq', (a, b) => a === b)
+  plop.setHelper('hasModelValue', (props) => {
+    return Array.isArray(props) && props.some((p) => p.propName === 'modelValue')
+  })
   plop.setGenerator('component', {
     description: 'Create a Vue component with spec and story',
 
