@@ -18,7 +18,7 @@ let package = Package(
         .package(name: "CapacitorGeolocation", path: "..\..\..\node_modules\.pnpm\@capacitor+geolocation@8.2.0_@capacitor+core@8.4.1\node_modules\@capacitor\geolocation"),
         .package(name: "CapacitorShare", path: "..\..\..\node_modules\.pnpm\@capacitor+share@8.0.1_@capacitor+core@8.4.1\node_modules\@capacitor\share"),
         .package(name: "CapacitorStatusBar", path: "..\..\..\node_modules\.pnpm\@capacitor+status-bar@8.0.2_@capacitor+core@8.4.1\node_modules\@capacitor\status-bar"),
-        .package(name: "CapgoCapacitorSpeechSynthesis", path: "..\..\..\node_modules\.pnpm\@capgo+capacitor-speech-syn_f00e5ebe278cc31e68e8f29c7032cddc\node_modules\@capgo\capacitor-speech-synthesis")
+        .package(name: "CapgoCapacitorSpeechSynthesis", path: "..\..\..\node_modules\.pnpm\@capgo+capacitor-speech-syn_239a4a40db04773f0c86d8952de08d85\node_modules\@capgo\capacitor-speech-synthesis")
     ],
     targets: [
         .target(

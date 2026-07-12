@@ -21,4 +21,4 @@ include ':capacitor-status-bar'
 project(':capacitor-status-bar').projectDir = new File('../node_modules/.pnpm/@capacitor+status-bar@8.0.2_@capacitor+core@8.4.1/node_modules/@capacitor/status-bar/android')
 
 include ':capgo-capacitor-speech-synthesis'
-project(':capgo-capacitor-speech-synthesis').projectDir = new File('../node_modules/.pnpm/@capgo+capacitor-speech-syn_f00e5ebe278cc31e68e8f29c7032cddc/node_modules/@capgo/capacitor-speech-synthesis/android')
+project(':capgo-capacitor-speech-synthesis').projectDir = new File('../node_modules/.pnpm/@capgo+capacitor-speech-syn_239a4a40db04773f0c86d8952de08d85/node_modules/@capgo/capacitor-speech-synthesis/android')
