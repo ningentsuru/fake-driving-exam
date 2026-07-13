@@ -9,7 +9,7 @@ import {
 } from "reka-ui"
 import { cn } from "@/lib/utils"
 
-const props = defineProps< /* @vue-ignore */ AccordionTriggerProps & { class?: HTMLAttributes["class"] }>()
+const props = defineProps<AccordionTriggerProps & { class?: HTMLAttributes["class"] }>()
 
 const delegatedProps = reactiveOmit(props, "class")
 </script>

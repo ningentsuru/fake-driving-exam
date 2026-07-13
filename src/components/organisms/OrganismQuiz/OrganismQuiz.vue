@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { useQuiz } from '@/composables/useQuiz'
-import { useQuizSpeech } from '@/composables/useQuizSpeech'
+import { useExam } from '@/composables/useExam'
+import { useExamSpeech } from '@/composables/useExamSpeech'
+import { useExamConfigStore } from '@/stores/examConfig'
+
+const store = useExamConfigStore()
+const examLength = computed(() => store.examLength)
 
 const {
-  selectedCategory,
   filteredQuestions,
   userAnswers,
   handleAnswer,
@@ -15,9 +18,9 @@ const {
   scorePercentage,
   isQuizFinished,
   questionLimit,
-} = useQuiz()
+} = useExam()
 
-const { speakingIndex, speakQuestion } = useQuizSpeech()
+const { speakingIndex, speakQuestion } = useExamSpeech()
 
 const showResultDrawer = ref(false)
 
@@ -46,14 +49,12 @@ const handleTryAgain = () => {
 }
 
 onMounted(() => {
-  questionLimit.value = 5
+  questionLimit.value = examLength.value
 })
 </script>
 
 <template>
   <div class="organism-quiz">
-    <MoleculeQuizHeader title="Driving Theory Quiz" v-model="selectedCategory" />
-
     <MoleculeQuestionItem
       :questions="filteredQuestions"
       :user-answers="userAnswers"
@@ -74,9 +75,8 @@ onMounted(() => {
     </Button>
 
     <MoleculeScoreDrawer
-      v-model:open="showResultDrawer"
+      v-model="showResultDrawer"
       :message="scoreMessage"
-      :category="selectedCategory"
       :score="score"
       :total-answered="totalAnswered"
       :score-percentage="scorePercentage"

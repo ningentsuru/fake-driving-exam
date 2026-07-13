@@ -43,6 +43,7 @@ declare module 'vue' {
     MoleculeQuizHeader: typeof import('./src/components/molecules/MoleculeQuizHeader/MoleculeQuizHeader.vue')['default']
     MoleculeScoreDrawer: typeof import('./src/components/molecules/MoleculeScoreDrawer/MoleculeScoreDrawer.vue')['default']
     OrganismApplicationSetting: typeof import('./src/components/organisms/OrganismApplicationSetting/OrganismApplicationSetting.vue')['default']
+    OrganismExamConfigurationForm: typeof import('./src/components/organisms/OrganismExamConfigurationForm/OrganismExamConfigurationForm.vue')['default']
     OrganismFooter: typeof import('./src/components/organisms/OrganismFooter/OrganismFooter.vue')['default']
     OrganismHeader: typeof import('./src/components/organisms/OrganismHeader/OrganismHeader.vue')['default']
     OrganismQuiz: typeof import('./src/components/organisms/OrganismQuiz/OrganismQuiz.vue')['default']

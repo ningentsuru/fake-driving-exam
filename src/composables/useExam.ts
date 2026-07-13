@@ -1,7 +1,7 @@
-import type { QuizQuestion } from '@/types'
+import type { ExamQuestion } from '@/types'
 import staticData from '@/data/exam.json'
 
-function getFullyRandomizedQuiz(quizQuestions: QuizQuestion[]): QuizQuestion[] {
+function getFullyRandomizedQuiz(quizQuestions: ExamQuestion[]): ExamQuestion[] {
   const questions = [...quizQuestions].sort(() => Math.random() - 0.5)
 
   return questions.map((q) => {
@@ -20,18 +20,13 @@ function getFullyRandomizedQuiz(quizQuestions: QuizQuestion[]): QuizQuestion[] {
   })
 }
 
-export function useQuiz() {
-  const allQuestions = ref<QuizQuestion[]>([])
-  const selectedCategory = ref<string>('all')
+export function useExam() {
+  const allQuestions = ref<ExamQuestion[]>([])
   const userAnswers = ref<Record<number, string[]>>({})
   const questionLimit = ref<number | null>(10)
 
   const filteredQuestions = computed(() => {
     let questions = allQuestions.value
-
-    if (selectedCategory.value !== 'all') {
-      questions = questions.filter((q) => q.category === selectedCategory.value)
-    }
 
     if (questionLimit.value !== null && questions.length > questionLimit.value) {
       questions = questions.slice(0, questionLimit.value)
@@ -84,17 +79,16 @@ export function useQuiz() {
   }
 
   const resetQuiz = () => {
-    allQuestions.value = getFullyRandomizedQuiz(staticData as QuizQuestion[])
+    allQuestions.value = getFullyRandomizedQuiz(staticData as ExamQuestion[])
     userAnswers.value = {}
   }
 
   onMounted(() => {
-    allQuestions.value = getFullyRandomizedQuiz(staticData as QuizQuestion[])
+    allQuestions.value = getFullyRandomizedQuiz(staticData as ExamQuestion[])
   })
 
   return {
     allQuestions,
-    selectedCategory,
     userAnswers,
     filteredQuestions,
     handleAnswer,

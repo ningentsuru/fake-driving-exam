@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Button } from '@/components/ui/button'
 import { Sun, Moon } from '@lucide/vue'
 import { useDark, useToggle } from '@vueuse/core'
 import { StatusBar, Style } from '@capacitor/status-bar'

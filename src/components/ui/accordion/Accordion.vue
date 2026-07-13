@@ -5,8 +5,8 @@ import {
   useForwardPropsEmits,
 } from "reka-ui"
 
-const props = defineProps</* @vue-ignore */ AccordionRootProps>()
-const emits = defineEmits</* @vue-ignore */ AccordionRootEmits>()
+const props = defineProps<AccordionRootProps>()
+const emits = defineEmits<AccordionRootEmits>()
 
 const forwarded = useForwardPropsEmits(props, emits)
 </script>

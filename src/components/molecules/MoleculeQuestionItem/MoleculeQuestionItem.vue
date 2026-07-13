@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { QuizCategory, QuizQuestion } from '@/types'
+import type { ExamCategory, ExamQuestion } from '@/types'
 import { Square, Volume2 } from '@lucide/vue'
 
 interface Props {
-  questions: QuizQuestion[]
+  questions: ExamQuestion[]
   userAnswers: Record<number, string[]>
   speakingIndex: number | null
-  speakQuestion: (index: number, question: QuizQuestion) => void
+  speakQuestion: (index: number, question: ExamQuestion) => void
   handleAnswer: (id: number, selected: string, correctAnswer: string) => void
   getOptionStatus: (
     id: number,
@@ -20,7 +20,7 @@ const props = withDefaults(defineProps<Props>(), {
     [
       {
         id: 0,
-        category: '' as QuizCategory,
+        category: '' as ExamCategory,
         question: '',
         image: '',
         options: [''],
@@ -28,7 +28,7 @@ const props = withDefaults(defineProps<Props>(), {
         explanation: '',
         source: '',
       },
-    ] as QuizQuestion[],
+    ] as ExamQuestion[],
   userAnswers: () => ({}) as Record<number, string[]>,
   speakingIndex: null,
   speakQuestion: () => {},
@@ -48,7 +48,7 @@ function clearAnswer(id: number) {
   emit('clear-answer', id)
 }
 
-function handleAsk(question: QuizQuestion, site: 'google' | 'brave'): string {
+function handleAsk(question: ExamQuestion, site: 'google' | 'brave'): string {
   const answerData = props.userAnswers[question.id]
 
   if (!answerData) {

@@ -1,9 +1,9 @@
-export type QuizCategory =
+export type ExamCategory =
   'Road Signs' | 'Traffic Rules' | 'Penalties' | 'Defensive Driving' | 'General & Republic Acts'
 
-export interface QuizQuestion {
+export interface ExamQuestion {
   id: number
-  category: QuizCategory
+  category: ExamCategory
   question: string
   image: string
   options: string[]

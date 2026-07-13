@@ -1,10 +1,10 @@
 import { SpeechSynthesis, type SpeakOptions } from '@capgo/capacitor-speech-synthesis'
-import type { QuizQuestion } from '@/types'
+import type { ExamQuestion } from '@/types'
 
-export function useQuizSpeech() {
+export function useExamSpeech() {
   const speakingIndex = ref<number | null>(null)
 
-  const speakQuestion = async (index: number, q: QuizQuestion) => {
+  const speakQuestion = async (index: number, q: ExamQuestion) => {
     await SpeechSynthesis.cancel()
 
     if (speakingIndex.value === index) {

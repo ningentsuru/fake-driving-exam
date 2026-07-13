@@ -52,7 +52,6 @@
     "storybook": "cross-env STORYBOOK=true storybook dev -p 6006",
     "build-storybook": "storybook build",
     "ui:add": "pnpx shadcn-vue@latest add",
-    "ui:fix": "tsx scripts/fix-reka-ui-types.ts",
     "make-component": "plop component"
   },
   "dependencies": {

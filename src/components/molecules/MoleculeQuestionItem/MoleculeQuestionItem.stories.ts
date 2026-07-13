@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3-vite'
 import MoleculeQuestionItem from './MoleculeQuestionItem.vue'
-import type { QuizCategory, QuizQuestion } from '@/types'
+import type { ExamCategory, ExamQuestion } from '@/types'
 
 const meta: Meta<typeof MoleculeQuestionItem> = {
   component: MoleculeQuestionItem,
@@ -15,7 +15,7 @@ export const Default: Story = {
     questions: [
       {
         id: 0,
-        category: '' as QuizCategory,
+        category: '' as ExamCategory,
         question: '',
         image: '',
         options: [''],
@@ -23,7 +23,7 @@ export const Default: Story = {
         explanation: '',
         source: '',
       },
-    ] as QuizQuestion[],
+    ] as ExamQuestion[],
     userAnswers: {} as Record<number, string[]>,
     speakQuestion: () => undefined,
     handleAnswer: () => undefined,

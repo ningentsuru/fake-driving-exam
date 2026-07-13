@@ -2,13 +2,13 @@ import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
 import MoleculeQuestionItem from './MoleculeQuestionItem.vue'
 import { Default } from './MoleculeQuestionItem.stories'
-import type { QuizQuestion } from '@/types'
+import type { ExamQuestion } from '@/types'
 
 interface defaultProps {
-  questions: QuizQuestion[]
+  questions: ExamQuestion[]
   userAnswers: Record<number, string[]>
   speakingIndex: number | null
-  speakQuestion: (index: number, question: QuizQuestion) => void
+  speakQuestion: (index: number, question: ExamQuestion) => void
   handleAnswer: (id: number, selected: string, correctAnswer: string) => void
   getOptionStatus: (
     id: number,
@@ -34,7 +34,7 @@ describe('MoleculeQuestionItem', () => {
     const speakQuestionFn = wrapper.props('speakQuestion') as () => void
     const handleAnswerFn = wrapper.props('handleAnswer') as () => void
 
-    // Verify question (QuizQuestion[])
+    // Verify question (ExamQuestion[])
     expect(wrapper.props('questions')).toEqual([
       {
         id: 0,
