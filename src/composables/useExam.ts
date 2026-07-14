@@ -1,4 +1,5 @@
 import type { ExamQuestion } from '@/types'
+import { useExamConfigStore } from '@/stores/examConfig'
 import staticData from '@/data/exam.json'
 
 function getFullyRandomizedQuiz(quizQuestions: ExamQuestion[]): ExamQuestion[] {
@@ -21,12 +22,17 @@ function getFullyRandomizedQuiz(quizQuestions: ExamQuestion[]): ExamQuestion[] {
 }
 
 export function useExam() {
+  const store = useExamConfigStore()
   const allQuestions = ref<ExamQuestion[]>([])
   const userAnswers = ref<Record<number, string[]>>({})
   const questionLimit = ref<number | null>(10)
 
   const filteredQuestions = computed(() => {
     let questions = allQuestions.value
+
+    if (store.examCategory !== 'all') {
+      questions = questions.filter((q) => q.category === store.examCategory)
+    }
 
     if (questionLimit.value !== null && questions.length > questionLimit.value) {
       questions = questions.slice(0, questionLimit.value)
