@@ -5,8 +5,8 @@ declare const process: { env: { CAPACITOR_DEV?: string } }
 const isDev = process.env.CAPACITOR_DEV === 'true'
 
 const config: CapacitorConfig = {
-  appId: 'com.omnivue.boilerplate',
-  appName: 'fake-driving-exam',
+  appId: 'com.fake.exam',
+  appName: 'fake-exam',
   webDir: 'dist',
   plugins: {
     SystemBars: {

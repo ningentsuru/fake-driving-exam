@@ -1,1455 +1,1462 @@
 [
   {
     "id": 1,
-    "category": "Defensive Driving",
-    "question": "You are approaching an uncontrolled intersection (no signs or signals) at the same time as another vehicle on your right. Both of you arrive simultaneously. What is the safest and legal action?",
+    "category": "Core Reactivity",
+    "question": "In Vue 3, you need to create a reactive reference for a primitive value (e.g., a counter) that will be accessed and modified in both the script and template. Which API should you use?",
     "image": "",
-    "options": [
-      "Accelerate slightly to cross before the other vehicle",
-      "Yield the right-of-way to the vehicle on your right",
-      "Sound your horn to claim your right-of-way",
-      "Flash your headlights to signal the other driver to stop"
-    ],
+    "options": ["reactive()", "ref()", "computed()", "watch()"],
     "correctAnswer": "B",
-    "explanation": "Under RA 4136 Sec. 42, at an uncontrolled intersection, the driver on the LEFT must yield to the vehicle on the RIGHT when both arrive at approximately the same time. Defensive driving dictates yielding even if you feel you arrived first to avoid collision.",
-    "source": "Republic Act No. 4136 (Land Transportation and Traffic Code), Section 42; LTO Exam Reviewer 2026"
+    "explanation": "The ref() function is designed to create reactive references for primitive values (strings, numbers, booleans). It wraps the value in an object with a .value property, which is automatically unwrapped in templates. reactive() is intended for objects, while computed() is for derived state.",
+    "source": "Vue 3 Documentation - Reactivity Fundamentals; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 2,
-    "category": "Defensive Driving",
-    "question": "While driving uphill and parking parallel to the curb, you turn off your engine. In the event of brake failure, how should your front wheels be positioned to prevent the car from rolling into traffic?",
+    "category": "Performance Optimization",
+    "question": "You are rendering a large list of 10,000 items. The application is experiencing significant lag during initial load and updates. What is the most effective strategy to optimize this?",
     "image": "",
     "options": [
-      "Turned sharply towards the curb",
-      "Turned sharply away from the curb (towards the road)",
-      "Kept straight and parallel to the curb",
-      "Turned at a 45-degree angle towards the sidewalk"
+      "Use v-show instead of v-if for all items",
+      "Implement virtual scrolling to render only visible items",
+      "Increase the server's bandwidth",
+      "Convert the list to a computed property"
     ],
     "correctAnswer": "B",
-    "explanation": "When parking uphill with a curb, wheels should be turned away from the curb. If the brakes fail, the vehicle will roll backward, and the curb will block the rear tire, or the front wheels will catch on the curb, preventing the car from rolling into the street.",
-    "source": "LTO Theoretical Driving Course (TDC) Manual; Philippine Road Safety Action Plan"
+    "explanation": "Virtual scrolling (windowing) renders only the items currently visible in the viewport, drastically reducing the DOM node count and improving performance for large lists. v-show keeps all items in the DOM, which would worsen the memory usage.",
+    "source": "ParikshaPatr - Vue.js Performance Optimization; SecondTalent Interview Guide"
   },
   {
     "id": 3,
-    "category": "Defensive Driving",
-    "question": "A vehicle approaching you at night has high beams on, blinding your vision. What is the immediate defensive action you should take?",
+    "category": "TypeScript Integration",
+    "question": "When using <script setup lang=\"ts\">, how do you define props with TypeScript to ensure type safety and autocomplete support?",
     "image": "",
     "options": [
-      "Switch your own high beams on to signal them to lower theirs",
-      "Stare directly at their lights to gauge their distance",
-      "Look quickly towards the right edge of the road and slow down",
-      "Flash your lights repeatedly until they respond"
+      "Use the props option with Object.defineProperty",
+      "Use defineProps<{ propName: Type }>()",
+      "Use interface PropTypes and cast the context",
+      "Use PropTypes.string.isRequired equivalent"
     ],
-    "correctAnswer": "C",
-    "explanation": "Staring at glaring lights causes temporary blindness. The safest response is to avoid looking directly at the light, glance toward the right side of the road to maintain lane position, and reduce speed until the vehicle passes.",
-    "source": "LTO Driver's License Exam Reviewer 2026; RA 4136 Safety Guidelines"
+    "correctAnswer": "B",
+    "explanation": "In Vue 3 with TypeScript and <script setup>, defineProps<{ propName: Type }>() is the compiler macro used to declare props with full type inference. This eliminates the need for runtime prop type definitions and provides better IDE support.",
+    "source": "Curotec 125 Vue.js Interview Questions 2026; Digiqt Vue.js Interview Questions"
   },
   {
     "id": 4,
-    "category": "Defensive Driving",
-    "question": "You have the right-of-way at an intersection, but another driver aggressively attempts to cut you off. What is the correct defensive driving response?",
+    "category": "Component Lifecycle",
+    "question": "You need to make an API call to fetch data immediately after the component is mounted to the DOM. Which Composition API hook should you use?",
     "image": "",
-    "options": [
-      "Accelerate to maintain your right-of-way",
-      "Sound your horn continuously to warn them",
-      "Yield and let them pass to avoid an accident",
-      "Flash your headlights to assert your position"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Defensive driving principle states that the safest response, even if you have the right-of-way, is to not force your rights. Preventing an accident is more important than proving you are legally correct.",
-    "source": "LTO Theoretical Driving Course (TDC) Module on Defensive Driving"
+    "options": ["onCreated()", "onMounted()", "onUpdated()", "setup()"],
+    "correctAnswer": "B",
+    "explanation": "onMounted() is the Composition API equivalent of the mounted() lifecycle hook. It runs after the component's DOM has been inserted, making it the correct place for DOM-dependent logic or initial data fetching. setup() runs before the component is created.",
+    "source": "Curotec 125 Vue.js Interview Questions 2026; GreatFrontEnd Vue Interview Questions"
   },
   {
     "id": 5,
-    "category": "Defensive Driving",
-    "question": "You are driving on a two-lane highway with a broken yellow line on your side and a solid yellow line on the opposing side. What does this indicate?",
+    "category": "State Management",
+    "question": "For a new Vue 3 project requiring global state management, which library is currently recommended over Vuex due to better TypeScript support and a simpler API?",
     "image": "",
-    "options": [
-      "Overtaking is prohibited for both directions",
-      "Overtaking is allowed only for vehicles on the side with the broken line",
-      "Overtaking is allowed on the right side only",
-      "The road is restricted to emergency vehicles only"
-    ],
-    "correctAnswer": "B",
-    "explanation": "A broken yellow line on your side indicates that you may overtake if the way is clear. The solid line on the other side means oncoming traffic is prohibited from overtaking. Overtaking on the right is generally prohibited unless there are multiple lanes in one direction.",
-    "source": "Republic Act No. 4136, Section 37 & 38; LTO Road Markings Guide"
+    "options": ["Redux", "MobX", "Pinia", "EventBus"],
+    "correctAnswer": "C",
+    "explanation": "Pinia is the officially recommended state management library for Vue 3. It offers a simpler API (no mutations), better TypeScript inference without complex wrappers, and a smaller bundle size compared to Vuex.",
+    "source": "SecondTalent Interview Guide; Digiqt Vue.js Interview Questions"
   },
   {
     "id": 6,
-    "category": "Defensive Driving",
-    "question": "When approaching a curve, when should you apply your brakes to maintain maximum control?",
+    "category": "Directives & Rendering",
+    "question": "What is the key difference between v-if and v-show when toggling the visibility of an element?",
     "image": "",
     "options": [
-      "While turning inside the curve",
-      "Just as you enter the curve",
-      "Before entering the curve, while still on the straight section",
-      "After exiting the curve to stabilize the vehicle"
+      "v-if uses CSS display:none; v-show removes the element from the DOM",
+      "v-if removes the element from the DOM; v-show uses CSS display:none",
+      "v-if is faster for frequent toggling; v-show has higher initial cost",
+      "There is no difference; they are aliases"
     ],
-    "correctAnswer": "C",
-    "explanation": "Braking while turning can cause the vehicle to skid or lose traction. Defensive driving requires slowing down to a safe speed *before* entering the curve, then accelerating gently once you are through the apex.",
-    "source": "LTO Practical Driving Course (PDC) Guidelines; RA 4136 Safety Standards"
+    "correctAnswer": "B",
+    "explanation": "v-if physically adds or removes the element from the DOM, which has a higher toggle cost but lower initial render cost if false. v-show always renders the element and toggles its CSS display property, making it better for frequent toggling.",
+    "source": "Curotec 125 Vue.js Interview Questions 2026; ParikshaPatr Performance Optimization"
   },
   {
     "id": 7,
-    "category": "Defensive Driving",
-    "question": "Why is overtaking near the foot of a pedestrian bridge or intersection considered highly dangerous?",
+    "category": "Accessibility (a11y)",
+    "question": "When building a custom modal component, what is a critical accessibility requirement to ensure keyboard users can interact with it safely?",
     "image": "",
     "options": [
-      "The road surface is usually slippery in these areas",
-      "Pedestrians are legally allowed to cross anywhere near a bridge",
-      "Your view of oncoming vehicles and pedestrians is obstructed",
-      "The speed limit is automatically reduced to 10 kph"
+      "Disable all keyboard events",
+      "Implement a focus trap and handle the Escape key",
+      "Use v-show to hide the modal instead of v-if",
+      "Automatically close the modal after 5 seconds"
     ],
-    "correctAnswer": "C",
-    "explanation": "Overtaking is prohibited where visibility is limited. Structures like bridges or intersections block the line of sight, making it impossible to see oncoming traffic or pedestrians stepping onto the road, significantly increasing accident risk.",
-    "source": "Republic Act No. 4136, Section 41 (Overtaking Restrictions)"
+    "correctAnswer": "B",
+    "explanation": "A focus trap ensures that keyboard navigation (Tab key) stays within the modal while it is open. Handling the Escape key allows users to close the modal intuitively. These are essential for WCAG compliance.",
+    "source": "GreatFrontEnd Vue Interview Questions; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 8,
-    "category": "Defensive Driving",
-    "question": "You are following a large truck that obscures your view of the road ahead and traffic signals. What is the safest course of action?",
+    "category": "Composition API",
+    "question": "You want to reuse a piece of stateful logic (e.g., mouse tracking or data fetching) across multiple components. What is the modern Vue 3 pattern for this?",
     "image": "",
-    "options": [
-      "Tailgate slightly to force the truck to move over",
-      "Increase your following distance until you can see around the truck",
-      "Overtake immediately on the right shoulder",
-      "Flash your lights to ask the truck to speed up"
-    ],
-    "correctAnswer": "B",
-    "explanation": "If you cannot see the road ahead or traffic signals because of a large vehicle, you are driving blind. Increasing your following distance restores your view of the road and gives you more time to react to sudden stops.",
-    "source": "LTO Defensive Driving Principles; RA 10913 (Anti-Distracted Driving Act) context on visibility"
+    "options": ["Mixins", "Higher-Order Components", "Composables", "Global variables"],
+    "correctAnswer": "C",
+    "explanation": "Composables are functions that leverage the Composition API to encapsulate and reuse stateful logic. They replace mixins, which often suffer from namespace collisions and unclear data sources.",
+    "source": "Curotec 125 Vue.js Interview Questions 2026; SecondTalent Interview Guide"
   },
   {
     "id": 9,
-    "category": "Defensive Driving",
-    "question": "What is the primary purpose of the '15-second rule' in defensive driving when scanning the road ahead?",
+    "category": "Routing",
+    "question": "How do you protect a route so that only authenticated users can access it in Vue Router?",
     "image": "",
     "options": [
-      "To ensure you check your mirrors every 15 seconds",
-      "To identify potential hazards 12 to 15 seconds ahead of your vehicle",
-      "To count the seconds before a traffic light changes",
-      "To time how long it takes to change lanes safely"
+      "Add a v-if check in the component template",
+      "Use a global or per-route navigation guard (beforeEach)",
+      "Store the user token in localStorage only",
+      "Disable the link to the route in the navbar"
     ],
     "correctAnswer": "B",
-    "explanation": "Defensive drivers scan the road 12 to 15 seconds ahead (about one city block or a quarter mile on highways) to identify potential hazards early, giving them ample time to react smoothly rather than panic braking.",
-    "source": "LTO Theoretical Driving Course (TDC) 2026; National Road Safety Program"
+    "explanation": "Navigation guards (like router.beforeEach) allow you to intercept navigation before it happens. You can check authentication status there and redirect unauthorized users to a login page, ensuring security at the routing level.",
+    "source": "Digiqt Vue.js Interview Questions; UpGrad Vue.js Questions"
   },
   {
     "id": 10,
-    "category": "Defensive Driving",
-    "question": "In a roundabout (rotunda), a vehicle is already circulating inside the ring while you are approaching the entry point. Who has the right-of-way?",
+    "category": "Reactivity System",
+    "question": "Why does Vue 3's reactivity system handle array index assignment (e.g., arr[0] = newVal) better than Vue 2?",
     "image": "",
     "options": [
-      "The vehicle approaching the roundabout",
-      "The vehicle already inside the roundabout",
-      "The larger vehicle regardless of position",
-      "The vehicle on the right side of the entry"
+      "Vue 3 uses Object.defineProperty for arrays",
+      "Vue 3 uses JavaScript Proxies to intercept operations",
+      "Vue 3 automatically converts arrays to objects",
+      "Vue 3 requires Vue.set for all array changes"
     ],
     "correctAnswer": "B",
-    "explanation": "Vehicles already inside the roundabout have the right-of-way over vehicles attempting to enter. Entering drivers must yield and wait for a safe gap in the circulating traffic before merging.",
-    "source": "Republic Act No. 4136; LTO Memorandum Circular on Roundabout Rules"
+    "explanation": "Vue 3 uses JavaScript Proxies instead of Object.defineProperty. Proxies can intercept direct property access and assignment, including array index changes and new property additions, making the reactivity system more robust and intuitive.",
+    "source": "Curotec 125 Vue.js Interview Questions 2026; SecondTalent Interview Guide"
   },
-
   {
     "id": 11,
-    "category": "Defensive Driving",
-    "question": "According to defensive driving principles, you should always insist on your legal right-of-way to prevent other drivers from taking advantage of you.",
+    "category": "Security",
+    "question": "Which of the following is a primary security consideration when displaying user-generated content in Vue templates?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, but only on highways",
-      "False, unless the other driver signals"
+      "Always use v-html to ensure formatting",
+      "Rely on Vue's automatic XSS escaping in text interpolation",
+      "Disable Content Security Policy (CSP)",
+      "Store all user data in cookies"
     ],
     "correctAnswer": "B",
-    "explanation": "FALSE. A core principle of defensive driving is to never insist on your right-of-way if it leads to a collision. It is safer to yield than to be legally right and involved in an accident.",
-    "source": "LTO Theoretical Driving Course (TDC) Module 4; RA 4136 Safety Principles"
+    "explanation": "Vue automatically escapes content in text interpolations ({{ }}) and standard bindings to prevent Cross-Site Scripting (XSS). Developers should avoid using v-html with untrusted content, as it bypasses this protection.",
+    "source": "FinalRoundAI Vue.js Developer Interview Questions; Vintti Interview Questions"
   },
   {
     "id": 12,
-    "category": "Defensive Driving",
-    "question": "When driving on wet roads, the safe following distance should be doubled to at least 4 seconds instead of the standard 2 seconds.",
+    "category": "Computed Properties",
+    "question": "When should you use a computed property instead of a method for deriving data in a template?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, but only for trucks",
-      "False, the 2-second rule applies to all conditions"
+      "When the result needs to be cached based on reactive dependencies",
+      "When you need to pass arguments to the function",
+      "When the calculation involves asynchronous operations",
+      "When you want the function to run on every render"
     ],
     "correctAnswer": "A",
-    "explanation": "TRUE. Wet roads reduce tire traction and increase stopping distance. Defensive driving requires doubling the following distance to 4 seconds to allow adequate time to stop safely.",
-    "source": "LTO Defensive Driving Guidelines; RA 4136 Section on Safe Following Distance"
+    "explanation": "Computed properties are cached based on their reactive dependencies and only re-evaluate when those dependencies change. Methods run on every render, which can be inefficient for expensive calculations.",
+    "source": "Curotec 125 Vue.js Interview Questions 2026; ParikshaPatr Performance Optimization"
   },
   {
     "id": 13,
-    "category": "Defensive Driving",
-    "question": "It is legal to overtake another vehicle on a curve if you sound your horn to warn oncoming traffic.",
+    "category": "Component Communication",
+    "question": "In a parent-child component relationship, what is the recommended way for a child component to request a change in a prop value?",
     "image": "",
-    "options": ["True", "False", "True, if the curve is wide", "False, unless it is daytime"],
+    "options": [
+      "Mutate the prop directly in the child",
+      "Emit an event to the parent with the new value",
+      "Use a global store for the specific value",
+      "Access the parent component instance via $parent"
+    ],
     "correctAnswer": "B",
-    "explanation": "FALSE. Overtaking on a curve is strictly prohibited under RA 4136 Sec. 41 because visibility is obstructed. Sounding the horn does not make the maneuver legal or safe.",
-    "source": "Republic Act No. 4136, Section 41 (Restrictions on Overtaking)"
+    "explanation": "Props are read-only. To maintain one-way data flow, a child component should emit an event (e.g., update:modelValue) to notify the parent, which then updates the prop and passes the new value down.",
+    "source": "Curotec 125 Vue.js Interview Questions 2026; GreatFrontEnd Vue Interview Questions"
   },
   {
     "id": 14,
-    "category": "Defensive Driving",
-    "question": "When waiting to make a left turn at an intersection, your front wheels should be kept straight to prevent being pushed into oncoming traffic if rear-ended.",
+    "category": "Lists & Keys",
+    "question": "What is the consequence of omitting the :key attribute in a v-for loop when the list order changes?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, but only for automatic cars",
-      "False, wheels should be turned left to prepare"
+      "Vue will throw a compilation error",
+      "Vue may reuse DOM elements incorrectly, causing state bugs",
+      "The list will not render at all",
+      "Performance will improve significantly"
     ],
-    "correctAnswer": "A",
-    "explanation": "TRUE. Keeping wheels straight while waiting ensures that if you are hit from behind, the car moves forward into the intersection rather than being pushed into the path of oncoming vehicles.",
-    "source": "LTO Practical Driving Course (PDC) Manual; Defensive Driving Best Practices"
+    "correctAnswer": "B",
+    "explanation": "The :key attribute helps Vue identify each node uniquely. Without it, Vue uses an in-place patch strategy, which can lead to incorrect DOM updates and state leakage when items are reordered, added, or removed.",
+    "source": "Curotec 125 Vue.js Interview Questions 2026; ParikshaPatr Performance Optimization"
   },
   {
     "id": 15,
-    "category": "Defensive Driving",
-    "question": "Scanning the road 12 to 15 seconds ahead of your vehicle is a recommended technique to identify potential hazards early.",
+    "category": "Async Components",
+    "question": "How can you reduce the initial bundle size of a Vue application by loading components only when they are needed?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, but only in city traffic",
-      "False, you should only look 5 seconds ahead"
+      "Import all components at the top of the file",
+      "Use dynamic imports with defineAsyncComponent or route lazy-loading",
+      "Use v-show to hide unused components",
+      "Minify the CSS files only"
     ],
-    "correctAnswer": "A",
-    "explanation": "TRUE. Scanning 12–15 seconds ahead (about one city block) allows drivers to anticipate hazards like pedestrians or slowing traffic, providing time to react smoothly without panic braking.",
-    "source": "LTO Theoretical Driving Course (TDC) 2026; National Road Safety Program"
+    "correctAnswer": "B",
+    "explanation": "Dynamic imports (e.g., () => import('./Component.vue')) allow Webpack or Vite to split code into separate chunks. These chunks are loaded only when the component is actually rendered, improving initial load time.",
+    "source": "ParikshaPatr Performance Optimization; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 16,
-    "category": "Defensive Driving",
-    "question": "If a vehicle approaches you with high beams on at night, the safest defensive action is to flash your own high beams repeatedly to signal them to lower theirs.",
+    "category": "Watchers",
+    "question": "You need to perform an asynchronous operation (like an API call) whenever a specific route parameter changes. Which API is most appropriate?",
     "image": "",
-    "options": [
-      "True",
-      "False",
-      "True, flashing lights is the universal signal to request lower beams.",
-      "False, you should look toward the right edge of the road and slow down to avoid temporary blindness."
-    ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Flashing lights can escalate aggression or blind the other driver further. The correct defensive action is to avoid looking directly at the lights, glance at the right road edge, and reduce speed.",
-    "source": "LTO Exam Reviewer 2026; RA 4136 Safety Guidelines on Night Driving"
+    "options": ["computed()", "watch() with an async callback", "onMounted()", "ref()"],
+    "correctAnswer": "B",
+    "explanation": "The watch() function allows you to observe changes to a specific source (like a route param) and execute a callback. This callback can be async, making it ideal for side effects like data fetching that depend on changing values.",
+    "source": "SharpSkill Essential Vue.js Interview Questions; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 17,
-    "category": "Defensive Driving",
-    "question": "When parking downhill with a curb, you should turn your wheels away from the curb so the car rolls into the street if the brakes fail.",
+    "category": "Styling & Scoping",
+    "question": "What does the scoped attribute do in a Vue Single File Component (SFC) <style> tag?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, this engages the transmission gear more effectively.",
-      "False, wheels must be turned TOWARDS the curb so the curb blocks the tire if the car rolls."
+      "It encrypts the CSS to prevent theft",
+      "It adds a unique data attribute to elements to scope styles locally",
+      "It makes the CSS global to the entire application",
+      "It disables CSS preprocessing"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. When parking downhill, wheels must be turned TOWARDS the curb. If brakes fail, the car rolls forward and the curb acts as a block. Turning them away would let the car roll into traffic.",
-    "source": "LTO Theoretical Driving Course (TDC) Manual; Philippine Road Safety Action Plan"
+    "correctAnswer": "B",
+    "explanation": "The scoped attribute adds a unique data attribute (e.g., data-v-12345) to the component's elements and modifies the CSS selectors to only match elements with that attribute, preventing style leakage to other components.",
+    "source": "Vue 3 Documentation - SFC CSS Features; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 18,
-    "category": "Defensive Driving",
-    "question": "Overtaking on the right side is strictly prohibited in the Philippines under all circumstances, even in business districts with multiple lanes.",
+    "category": "Error Handling",
+    "question": "Which lifecycle hook allows a parent component to catch errors occurring in its child components during rendering?",
     "image": "",
-    "options": [
-      "True",
-      "False",
-      "True, RA 4136 mandates overtaking only on the left side for safety.",
-      "False, RA 4136 Sec. 39 allows overtaking on the right in business/residential districts with multiple lanes."
-    ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. While overtaking is generally done on the left, RA 4136 Sec. 39 explicitly permits overtaking on the right in business or residential districts where there are multiple lanes for traffic in the same direction.",
-    "source": "Republic Act No. 4136, Section 39"
+    "options": ["errorCaptured()", "mounted()", "beforeUpdate()", "renderTracked()"],
+    "correctAnswer": "A",
+    "explanation": "errorCaptured() is a lifecycle hook that is invoked when an error from any descendant component is captured. It allows the parent to handle the error gracefully, log it, or prevent it from propagating further.",
+    "source": "CodeInterview Vue.js Questions; Vue 3 Documentation - Error Handling"
   },
   {
     "id": 19,
-    "category": "Defensive Driving",
-    "question": "If you feel drowsy while driving, opening the window or turning up the radio is an effective long-term solution to stay alert.",
+    "category": "Architecture",
+    "question": "In a large-scale Vue application, why is the Composition API often preferred over the Options API for complex components?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, fresh air and noise stimulate the brain effectively.",
-      "False, these are temporary; the only safe action is to pull over and rest or sleep."
+      "It requires less code overall for simple components",
+      "It allows grouping related logic by feature rather than by option type",
+      "It is the only API supported in Vue 3",
+      "It automatically optimizes performance without developer input"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Tricks like cold air or loud music do not prevent microsleep. The only effective defensive measure against drowsiness is to stop driving and rest, as drowsy driving is comparable to drunk driving.",
-    "source": "LTO Defensive Driving Principles; RA 10586 context on impairment"
+    "correctAnswer": "B",
+    "explanation": "The Composition API allows developers to organize code by logical concern (e.g., search logic, form handling) within composables, rather than scattering related code across data, methods, and mounted hooks. This improves maintainability in large components.",
+    "source": "C-SharpCorner Composition vs Options API; SecondTalent Interview Guide"
   },
   {
     "id": 20,
-    "category": "Defensive Driving",
-    "question": "When entering a roundabout, you have the right-of-way over vehicles already circulating inside the ring if you arrive at the entry point first.",
+    "category": "Testing",
+    "question": "When unit testing a Vue composable, what is the primary advantage over testing a mixin?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, the 'first come, first served' rule applies to all intersections.",
-      "False, vehicles already inside the roundabout always have the right-of-way over entering vehicles."
+      "Composables cannot be tested",
+      "Composables are plain functions that can be imported and tested in isolation",
+      "Mixins are faster to test",
+      "Composables require a full DOM environment to test"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. The golden rule of roundabouts is that circulating traffic has the right-of-way. Entering drivers must yield regardless of who arrived first, waiting for a safe gap to merge.",
-    "source": "Republic Act No. 4136; LTO Memorandum Circular on Roundabout Rules"
+    "correctAnswer": "B",
+    "explanation": "Composables are standard JavaScript functions that return reactive state or methods. They do not require a component instance to be instantiated, making them easy to import and test in isolation without mocking a Vue component context.",
+    "source": "SecondTalent Interview Guide; Digiqt Vue.js Interview Questions"
   },
-
   {
     "id": 21,
-    "category": "Traffic Rules",
-    "question": "You are approaching an intersection with a green light, but the traffic ahead is stopped, blocking the intersection box. What is the correct legal action?",
+    "category": "Advanced Reactivity",
+    "question": "You have a large, deeply nested object that causes performance issues when made fully reactive. Which Vue 3 API should you use to optimize this?",
     "image": "",
-    "options": [
-      "Proceed into the intersection and wait for the traffic to move",
-      "Enter the intersection partially to show you are ready",
-      "Stop behind the stop line and wait until the intersection is clear",
-      "Flash your headlights to signal the traffic ahead to move"
-    ],
-    "correctAnswer": "C",
-    "explanation": "Even with a green light, you are prohibited from entering an intersection if you cannot clear it completely. Blocking the intersection (gridlock) is a violation of RA 4136 and causes traffic congestion.",
-    "source": "Republic Act No. 4136, Section 42; LTO Traffic Rules on Intersection Blocking"
+    "options": ["reactive()", "shallowReactive()", "readonly()", "toRef()"],
+    "correctAnswer": "B",
+    "explanation": "shallowReactive() creates a reactive proxy for the root level of the object but leaves nested properties as raw objects. This avoids the performance overhead of deeply converting large datasets when deep reactivity is not required.",
+    "source": "Vue 3 Documentation - Advanced Reactivity; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 22,
-    "category": "Traffic Rules",
-    "question": "When is a 'Right Turn on Red' legally permissible in the Philippines?",
+    "category": "Security",
+    "question": "Why is storing sensitive authentication tokens (like JWTs) in localStorage generally discouraged in Vue applications?",
     "image": "",
     "options": [
-      "Always, provided you slow down",
-      "Only if there are no pedestrians crossing",
-      "After a complete stop, yielding to all traffic and pedestrians, and if no sign prohibits it",
-      "Never, right turns on red are illegal in the Philippines"
+      "It slows down the application significantly",
+      "It is vulnerable to Cross-Site Scripting (XSS) attacks",
+      "LocalStorage has a very small size limit",
+      "It does not persist across browser sessions"
     ],
-    "correctAnswer": "C",
-    "explanation": "Right turn on red is allowed ONLY after coming to a complete stop, yielding to pedestrians and cross-traffic, and ensuring no 'No Turn on Red' sign is posted. Failing to stop completely is a violation.",
-    "source": "Republic Act No. 4136; LTO Memorandum on Right Turn on Red"
+    "correctAnswer": "B",
+    "explanation": "LocalStorage is accessible via JavaScript, meaning any XSS vulnerability in the app or a third-party library can expose the token. HttpOnly cookies are preferred as they are inaccessible to JavaScript, mitigating XSS token theft.",
+    "source": "Digiqt Vue.js Security Best Practices; FinalRoundAI Vue.js Developer Interview Questions"
   },
   {
     "id": 23,
-    "category": "Traffic Rules",
-    "question": "What is the maximum speed limit for a car passing through a school zone during school hours, unless otherwise posted?",
+    "category": "Testing",
+    "question": "When unit testing a Vue component that performs an asynchronous API call on mount, what utility is essential to wait for the DOM update before making assertions?",
     "image": "",
-    "options": ["60 kph", "40 kph", "30 kph", "20 kph"],
-    "correctAnswer": "D",
-    "explanation": "The standard maximum speed limit in school zones is strictly 20 kph during school hours to ensure the safety of children. This is lower than the 40 kph for city streets and 60 kph for open roads.",
-    "source": "Republic Act No. 4136, Section 35; RA 10697 (Comprehensive Highway Safety Program)"
+    "options": [
+      "setTimeout()",
+      "flushPromises() or await wrapper.vm.$nextTick()",
+      "watch()",
+      "onMounted()"
+    ],
+    "correctAnswer": "B",
+    "explanation": "flushPromises() resolves all pending promises, ensuring that async operations (like API calls) and subsequent reactivity updates have completed. This prevents race conditions where assertions run before the DOM reflects the new state.",
+    "source": "Curotec 125 Vue.js Interview Questions 2026; GreatFrontEnd Vue Interview Questions"
   },
   {
     "id": 24,
-    "category": "Traffic Rules",
-    "question": "You are driving on a two-way road with a SOLID YELLOW line on your side. What does this indicate?",
+    "category": "Architecture",
+    "question": "In a large-scale Vue application, what is the primary benefit of using the 'Provide/Inject' pattern over passing props down many levels?",
     "image": "",
     "options": [
-      "You may overtake if the road is clear",
-      "Overtaking is prohibited; do not cross the line",
-      "You are entering a no-parking zone",
-      "The road is restricted to emergency vehicles only"
+      "It makes the data reactive automatically",
+      "It avoids 'prop drilling' through intermediate components",
+      "It improves performance by caching data",
+      "It allows child components to mutate parent data directly"
     ],
     "correctAnswer": "B",
-    "explanation": "A solid yellow line on your side of the road indicates a no-overtaking zone. You are prohibited from crossing this line to pass another vehicle due to limited visibility or high risk.",
-    "source": "Republic Act No. 4136, Section 37; LTO Road Markings Guide"
+    "explanation": "Provide/Inject allows an ancestor component to provide data that any descendant can inject, regardless of how deep the hierarchy is. This eliminates the need to pass props through every intermediate component (prop drilling).",
+    "source": "SecondTalent Interview Guide; Vue 3 Documentation - Provide/Inject"
   },
   {
     "id": 25,
-    "category": "Traffic Rules",
-    "question": "An ambulance with sirens and flashing lights is approaching you from behind in heavy traffic. What is your legal obligation?",
+    "category": "Directives",
+    "question": "You need to create a custom directive that focuses an input element automatically when it is inserted into the DOM. Which lifecycle hook in the directive definition should you use?",
     "image": "",
-    "options": [
-      "Speed up to clear the way before it reaches you",
-      "Maintain your lane and let it pass through the gap",
-      "Pull over to the rightmost edge of the road and stop until it passes",
-      "Stop immediately in the middle of the lane regardless of traffic"
-    ],
-    "correctAnswer": "C",
-    "explanation": "RA 4136 Sec. 49 requires drivers to yield to emergency vehicles. You must pull over to the right edge of the road and stop to give a clear path. Stopping abruptly in the middle of the lane can cause accidents.",
-    "source": "Republic Act No. 4136, Section 49; RA 10697"
+    "options": ["created()", "mounted()", "updated()", "beforeUnmount()"],
+    "correctAnswer": "B",
+    "explanation": "The mounted() hook in a custom directive is called after the element has been inserted into the DOM. This is the correct time to perform DOM-dependent actions like focusing an input element.",
+    "source": "Vue 3 Documentation - Custom Directives; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 26,
-    "category": "Traffic Rules",
-    "question": "Pedestrians always have the right-of-way, even if they are jaywalking (crossing outside a designated crosswalk).",
+    "category": "TypeScript",
+    "question": "When defining a composable that returns a generic type, how do you ensure TypeScript correctly infers the type of the returned ref?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, drivers must always yield to pedestrians regardless of where they cross.",
-      "False, pedestrians must use crosswalks; while drivers must exercise caution, jaywalkers do not have absolute right-of-way."
+      "Use 'any' for the return type",
+      "Use TypeScript generics in the function signature",
+      "Cast the return value using 'as unknown'",
+      "Define the type inside the composable only"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. While drivers must exercise extreme caution to avoid hitting pedestrians, the law (RA 4136 Sec. 44) grants absolute right-of-way to pedestrians only at marked crosswalks. Jaywalkers are technically violating the law, though drivers can still be held liable for negligence if an accident occurs.",
-    "source": "Republic Act No. 4136, Section 44; LTO Guidelines on Pedestrian Right of Way"
+    "correctAnswer": "B",
+    "explanation": "Using TypeScript generics (e.g., function useFetch<T>(url: string): Ref<T | null>) allows the composable to be reusable across different data types while maintaining strict type safety and autocomplete support for the consumer.",
+    "source": "Curotec 125 Vue.js Interview Questions 2026; Yeasir Arafat Vue Composition API Advanced Patterns"
   },
   {
     "id": 27,
-    "category": "Traffic Rules",
-    "question": "If you miss your exit on an expressway, it is legal to reverse slightly on the shoulder to reach it if no traffic is coming.",
+    "category": "Performance",
+    "question": "What is the purpose of the v-memo directive introduced in Vue 3.2?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, reversing on the shoulder is allowed in emergencies only.",
-      "False, reversing on an expressway is strictly prohibited; you must proceed to the next exit."
+      "To cache the entire component instance",
+      "To memoize a sub-tree of the template based on dependencies",
+      "To store data in local storage",
+      "To prevent the component from ever re-rendering"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Reversing, backing up, or driving against the flow of traffic on an expressway is extremely dangerous and illegal under RA 4136. You must continue to the next exit and make a U-turn there.",
-    "source": "Republic Act No. 4136; Expressway Rules and Regulations (NLEX/SLEX/MCX)"
+    "correctAnswer": "B",
+    "explanation": "v-memo allows you to memoize a specific sub-tree of the template. Vue will skip re-rendering that part of the DOM if the dependencies specified in the v-memo array have not changed, offering fine-grained performance optimization.",
+    "source": "Vue 3 Documentation - v-memo; ParikshaPatr Performance Optimization"
   },
   {
     "id": 28,
-    "category": "Traffic Rules",
-    "question": "A white rectangular sign with black text usually indicates a regulatory rule that must be obeyed, such as a speed limit.",
+    "category": "Routing",
+    "question": "How do you handle scroll behavior when navigating between routes in Vue Router to ensure the user lands at the top of the page?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, white signs are regulatory and mandatory.",
-      "False, white signs are only for information; regulatory signs are yellow."
+      "Manually call window.scrollTo(0, 0) in every component",
+      "Configure the scrollBehavior option in the router instance",
+      "Use a global mixin to reset scroll",
+      "It happens automatically by default in all cases"
     ],
-    "correctAnswer": "C",
-    "explanation": "The statement is TRUE. In the Philippines, white signs with black text (or red circles) are Regulatory Signs, indicating laws that must be obeyed (e.g., Speed Limit, No Parking, One Way). Yellow signs are for Warning.",
-    "source": "LTO Road Signs Manual; RA 4136 on Traffic Control Devices"
+    "correctAnswer": "B",
+    "explanation": "Vue Router provides a scrollBehavior option in its configuration. You can define a function here to control scroll position (e.g., always returning { x: 0, y: 0 } or restoring scroll from history) when navigating.",
+    "source": "Vue Router Documentation - Scroll Behavior; Digiqt Vue.js Interview Questions"
   },
   {
     "id": 29,
-    "category": "Traffic Rules",
-    "question": "When two vehicles arrive at a four-way stop intersection at the exact same time, the vehicle turning left has the right-of-way.",
+    "category": "State Management",
+    "question": "In Pinia, what is the difference between a 'getter' and an 'action'?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, turning vehicles have priority to clear the intersection faster.",
-      "False, the vehicle going straight has right-of-way; if both go straight, the vehicle on the right proceeds first."
+      "Getters are async; Actions are sync",
+      "Getters are computed properties; Actions are methods for logic/mutations",
+      "Getters modify state; Actions read state",
+      "There is no difference"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. At a four-way stop, if vehicles arrive simultaneously, the vehicle going straight has priority over a turning vehicle. If both are going straight or both turning, the vehicle on the RIGHT has the right-of-way.",
-    "source": "Republic Act No. 4136, Section 42; LTO Right-of-Way Rules"
+    "correctAnswer": "B",
+    "explanation": "Getters in Pinia are equivalent to computed properties; they derive state and are cached. Actions are functions that can contain asynchronous logic and are responsible for committing changes to the state (similar to mutations in Vuex).",
+    "source": "Pinia Documentation; SecondTalent Interview Guide"
   },
   {
     "id": 30,
-    "category": "Traffic Rules",
-    "question": "It is legal to park within 6 meters of a fire hydrant or fire station entrance as long as you leave your hazard lights on.",
+    "category": "Security",
+    "question": "If you must render raw HTML provided by a user in a Vue template, what is the mandatory security step to prevent XSS?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, hazard lights indicate temporary parking is allowed.",
-      "False, parking near fire hydrants/stations is strictly prohibited regardless of hazard lights to ensure emergency access."
+      "Use v-html directly",
+      "Sanitize the content using a library like DOMPurify before binding",
+      "Wrap the content in a <pre> tag",
+      "Encode the content manually using JSON.stringify"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. RA 4136 prohibits parking within 6 meters of a fire station entrance or fire hydrant. Using hazard lights does not exempt you from this rule, as it obstructs emergency response.",
-    "source": "Republic Act No. 4136, Section 47 (Prohibited Parking Areas)"
+    "correctAnswer": "B",
+    "explanation": "v-html bypasses Vue's automatic XSS protection. To safely render user-generated HTML, you must sanitize it first using a library like DOMPurify to strip out malicious scripts and event handlers.",
+    "source": "Digiqt Vue.js Security Best Practices; 30DaysCoding Securing Your Vue.js Application"
   },
-
   {
     "id": 31,
-    "category": "Traffic Rules",
-    "question": "You are driving on a national highway outside a city proper. Unless a sign indicates otherwise, what is the maximum speed limit for a private car?",
+    "category": "Component Patterns",
+    "question": "What is the primary use case for a 'Functional Component' in Vue?",
     "image": "",
-    "options": ["40 kph", "60 kph", "80 kph", "100 kph"],
+    "options": [
+      "To manage complex internal state",
+      "To render simple UI elements with minimal overhead",
+      "To handle lifecycle hooks like mounted",
+      "To provide dependency injection"
+    ],
     "correctAnswer": "B",
-    "explanation": "The default maximum speed limit for cars on open country roads (national highways) without posted signs is 60 kph under RA 4136 Sec. 35. 80-100 kph is only allowed on specific expressways with posted signs.",
-    "source": "Republic Act No. 4136, Section 35; LTO Speed Limits Guide 2026"
+    "explanation": "Functional components are stateless and have no instance (no 'this' context). They are purely for rendering props and slots, making them lighter and faster for simple presentational components.",
+    "source": "Micro1.ai Vue.js Developer Interview Questions; ParikshaPatr Performance Optimization"
   },
   {
     "id": 32,
-    "category": "Traffic Rules",
-    "question": "A traffic enforcer signals you to stop, but the traffic light ahead is green. What is your legal obligation?",
+    "category": "Testing",
+    "question": "When mocking API calls in Vue unit tests, what is a key advantage of using MSW (Mock Service Worker) over vi.mock()?",
     "image": "",
     "options": [
-      "Ignore the enforcer and proceed because the light is green",
-      "Slow down and proceed with caution",
-      "Stop immediately as the enforcer's signal overrides the traffic light",
-      "Flash your headlights to ask for clarification"
+      "MSW is faster to execute",
+      "MSW intercepts requests at the network level, testing the actual fetch path",
+      "vi.mock() cannot mock async functions",
+      "MSW requires no setup"
     ],
-    "correctAnswer": "C",
-    "explanation": "Human traffic control signals (from LTO, PNP, or authorized enforcers) always override mechanical traffic lights. If an enforcer signals you to stop, you must stop regardless of the green light.",
-    "source": "Republic Act No. 4136, Section 39; LTO Traffic Control Hierarchy"
+    "correctAnswer": "B",
+    "explanation": "MSW intercepts requests at the network layer, allowing you to test the actual API integration logic without changing the application code. vi.mock() replaces the module entirely, which is faster but tests a more isolated unit.",
+    "source": "Digiqt Vue.js Interview Questions; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 33,
-    "category": "Traffic Rules",
-    "question": "Which of the following vehicles is EXEMPT from the 'No Contact Apprehension Policy' (NCAP) when responding to an emergency?",
+    "category": "Reactivity System",
+    "question": "What happens if you destructure a reactive object returned by reactive() without using toRefs()?",
     "image": "",
     "options": [
-      "Private sedans with hazard lights on",
-      "Government vehicles with official plates",
-      "Emergency vehicles (Ambulance/Fire Truck) with sirens and flashing lights",
-      "Motorcycles weaving through traffic"
+      "The destructured variables remain reactive",
+      "The destructured variables lose their reactivity",
+      "Vue throws a compilation error",
+      "The original object becomes non-reactive"
     ],
-    "correctAnswer": "C",
-    "explanation": "Emergency vehicles responding to calls with active sirens and flashing lights are exempt from certain traffic restrictions (like red lights or speed limits) provided they do so safely. They are also prioritized in NCAP exemptions during emergency response.",
-    "source": "Republic Act No. 4136, Section 49; MMDA NCAP Guidelines"
+    "correctAnswer": "B",
+    "explanation": "Destructuring a reactive object extracts the raw values, breaking the proxy connection. toRefs() converts each property into a ref, maintaining the reactive link to the original object.",
+    "source": "Vue 3 Documentation - Reactivity Fundamentals; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 34,
-    "category": "Traffic Rules",
-    "question": "You see a YELLOW diamond-shaped sign with a symbol of a car skidding. What does this indicate?",
+    "category": "Accessibility",
+    "question": "Which ARIA role is most appropriate for a dynamic region of the page that updates frequently (e.g., live search results) to announce changes to screen readers?",
     "image": "",
     "options": [
-      "Road construction ahead",
-      "Slippery road when wet",
-      "End of the highway",
-      "Mandatory chain-up area"
+      "role=\"button\"",
+      "role=\"status\" or aria-live=\"polite\"",
+      "role=\"dialog\"",
+      "role=\"navigation\""
     ],
     "correctAnswer": "B",
-    "explanation": "A yellow diamond is a Warning Sign. The skidding car symbol specifically warns that the road surface becomes slippery when wet, requiring reduced speed and increased following distance.",
-    "source": "LTO Road Signs Manual; DOTr Standard Warning Signs"
+    "explanation": "role=\"status\" or aria-live=\"polite\" informs assistive technologies that the content in this region has changed and should be announced to the user without interrupting their current task.",
+    "source": "GreatFrontEnd Vue Interview Questions; Digiqt Vue.js Interview Questions"
   },
   {
     "id": 35,
-    "category": "Traffic Rules",
-    "question": "When is it legal to drive in the 'shoulder' of an expressway?",
+    "category": "Async Components",
+    "question": "How does the <Suspense> component enhance the user experience when using async components?",
     "image": "",
     "options": [
-      "When traffic is heavy and you are in a hurry",
-      "To overtake a slow-moving vehicle on the right",
-      "Only in case of vehicle breakdown or emergency, or when directed by traffic enforcers",
-      "During rush hour (7 AM - 9 AM)"
+      "It prevents the component from loading",
+      "It allows defining fallback content (e.g., loaders) while async setup resolves",
+      "It automatically retries failed requests",
+      "It converts async components to synchronous ones"
     ],
-    "correctAnswer": "C",
-    "explanation": "The shoulder is strictly for emergencies (breakdowns, accidents) or when opened by enforcers during extreme congestion. Using it for overtaking or beating traffic is a violation subject to fines and demerit points.",
-    "source": "Expressway Rules and Regulations (NLEX/SLEX); RA 4136 Sec. 54"
+    "correctAnswer": "B",
+    "explanation": "<Suspense> wraps async components and allows you to define a #fallback slot. This content is displayed while the async component's setup() function is resolving, providing a smooth loading state.",
+    "source": "Vue 3 Documentation - Suspense; Digiqt Vue.js Interview Questions"
   },
   {
     "id": 36,
-    "category": "Traffic Rules",
-    "question": "A 'No Parking' sign with an arrow pointing to the right means parking is prohibited only on the right side of the street.",
+    "category": "Build & Tooling",
+    "question": "What is the primary benefit of using Vite over Webpack for modern Vue 3 projects?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, the arrow indicates the side of the road affected.",
-      "False, the arrow indicates the DIRECTION and DISTANCE the prohibition applies, not just the side."
+      "It supports older browsers better",
+      "It uses native ES modules for instant server start and HMR",
+      "It requires no configuration files",
+      "It bundles everything into a single file immediately"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. The arrow on a No Parking sign indicates the direction (forward or backward) and the extent of the zone where parking is prohibited, not which side of the street. It applies to the side of the road where the sign is posted.",
-    "source": "LTO Road Signs Manual; MMDA Parking Guidelines"
+    "correctAnswer": "B",
+    "explanation": "Vite leverages native ES modules in the browser during development, serving files on demand without bundling. This results in significantly faster server start times and Hot Module Replacement (HMR) compared to Webpack.",
+    "source": "Vite Documentation; SecondTalent Interview Guide"
   },
   {
     "id": 37,
-    "category": "Traffic Rules",
-    "question": "It is legal to make a U-turn at an intersection if there is no 'No U-Turn' sign posted.",
+    "category": "Component Communication",
+    "question": "When using v-model on a custom component in Vue 3, what prop and event name are used by default?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, U-turns are allowed everywhere unless explicitly prohibited.",
-      "False, U-turns are prohibited at intersections unless a 'U-Turn Permitted' sign is present, regardless of 'No U-Turn' signs."
+      "value prop and input event",
+      "modelValue prop and update:modelValue event",
+      "data prop and change event",
+      "bind prop and sync event"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Under current MMDA and LTO rules, U-turns are generally PROHIBITED at intersections unless there is a specific 'U-Turn Permitted' sign. The absence of a 'No U-Turn' sign does not automatically make it legal.",
-    "source": "MMDA Joint Memorandum Circular on U-Turn Rules; LTO Traffic Regulations"
+    "correctAnswer": "B",
+    "explanation": "In Vue 3, the default v-model binding uses the modelValue prop and emits an update:modelValue event. This unifies the behavior that was split between v-model (value/input) and :sync in Vue 2.",
+    "source": "Vue 3 Documentation - v-model; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 38,
-    "category": "Traffic Rules",
-    "question": "A solid WHITE line between lanes moving in the same direction means you are allowed to change lanes if safe.",
+    "category": "Error Handling",
+    "question": "How can you globally handle uncaught errors in a Vue 3 application to prevent the app from crashing silently?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, white lines separate traffic moving in the same direction and can be crossed.",
-      "False, a SOLID white line prohibits lane changing; only BROKEN white lines allow lane changes."
+      "Use try-catch in every component",
+      "Configure app.config.errorHandler",
+      "Use a global mixin",
+      "Disable production mode"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. While white lines do separate traffic moving in the same direction, a SOLID white line indicates that lane changing is discouraged or prohibited (e.g., near intersections or tunnels). Only BROKEN white lines permit lane changes.",
-    "source": "RA 4136 Section 37; LTO Pavement Markings Guide"
+    "correctAnswer": "B",
+    "explanation": "app.config.errorHandler allows you to define a global handler that catches uncaught errors from component render functions, watchers, and lifecycle hooks, enabling centralized logging or user notification.",
+    "source": "Vue 3 Documentation - Error Handling; CodeInterview Vue.js Questions"
   },
   {
     "id": 39,
-    "category": "Traffic Rules",
-    "question": "Motorcycles are allowed to filter (weave) between lanes of stopped or slow-moving traffic at any speed.",
+    "category": "Performance",
+    "question": "Why is using a unique, stable ID for the :key attribute in v-for preferred over using the array index?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, motorcycles have the right to filter through traffic to reduce congestion.",
-      "False, lane filtering is only allowed at low speeds (typically under 30 kph) and with extreme caution; reckless weaving is penalized."
+      "It makes the code shorter",
+      "It prevents bugs when reordering or removing items in the list",
+      "It improves the initial render speed only",
+      "It is required by TypeScript"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. While lane filtering is tolerated under specific guidelines (low speed, safe distance), doing so at high speeds or recklessly weaving between cars is considered dangerous driving and is penalized under RA 4136.",
-    "source": "LTO Motorcycle Safety Guidelines; RA 4136 on Reckless Driving"
+    "correctAnswer": "B",
+    "explanation": "Using the array index as a key can cause Vue to reuse DOM elements incorrectly when the list order changes or items are deleted, leading to state bugs (e.g., wrong input values staying with the wrong item).",
+    "source": "Curotec 125 Vue.js Interview Questions 2026; ParikshaPatr Performance Optimization"
   },
   {
     "id": 40,
-    "category": "Traffic Rules",
-    "question": "If your vehicle breaks down on an expressway, you should push it to the leftmost lane to wait for help.",
+    "category": "Architecture",
+    "question": "What is the 'Composable Composition Pattern' in Vue 3 architecture?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, the left lane is closer to the median and safer.",
-      "False, you must move the vehicle to the RIGHTMOST shoulder or emergency bay to avoid high-speed traffic."
+      "Nesting components infinitely",
+      "Combining small, focused composables to build complex domain-specific logic",
+      "Using multiple stores for a single feature",
+      "Writing all logic in the setup() function"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. On expressways, traffic moves fastest in the left lane. If you break down, you must attempt to coast to the RIGHTMOST shoulder or an emergency bay. Staying in the left lane is extremely dangerous and illegal.",
-    "source": "Expressway Rules and Regulations (NLEX/SLEX); RA 4136 Safety Standards"
+    "correctAnswer": "B",
+    "explanation": "This pattern involves creating small, reusable composables (e.g., usePagination, useApi) and combining them to form larger, domain-specific logic units. This promotes modularity, testability, and code reuse.",
+    "source": "Yeasir Arafat Vue Composition API Advanced Patterns; SecondTalent Interview Guide"
   },
-
   {
     "id": 41,
-    "category": "Penalties",
-    "question": "What is the penalty for a first-time offense of using a mobile phone while driving under RA 10913 (Anti-Distracted Driving Act)?",
+    "category": "Vue 3.4+ Features",
+    "question": "In Vue 3.4+, what is the primary benefit of using the defineModel() macro in <script setup>?",
     "image": "",
     "options": [
-      "₱1,000 fine",
-      "₱3,000 fine",
-      "₱5,000 fine",
-      "₱10,000 fine and immediate suspension"
+      "It replaces the need for props entirely",
+      "It simplifies two-way binding by automatically handling the prop and event",
+      "It makes the component state global",
+      "It disables reactivity for the model"
     ],
-    "correctAnswer": "C",
-    "explanation": "Under RA 10913, the fine for the first offense of distracted driving (using a mobile phone) is ₱5,000. Suspension only occurs on the third offense.",
-    "source": "Republic Act No. 10913, Section 6; LTO Fine Schedule 2026"
+    "correctAnswer": "B",
+    "explanation": "defineModel() is a compiler macro introduced to simplify v-model usage in components. It automatically declares a prop (modelValue by default) and an update event, returning a ref that syncs both, reducing boilerplate code significantly.",
+    "source": "Vue 3.4 Release Notes; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 42,
-    "category": "Penalties",
-    "question": "How many demerit points will a driver incur for 'Reckless Driving' resulting in an accident?",
+    "category": "Performance",
+    "question": "What is 'Vapor Mode' in the context of Vue.js performance optimization?",
     "image": "",
-    "options": ["1 Point", "3 Points", "5 Points", "10 Points"],
-    "correctAnswer": "C",
-    "explanation": "Reckless driving is classified as a Grave Violation. Under the LTO Demerit System, grave violations carry 5 demerit points. If it results in an accident, penalties are higher, but the base demerit is 5.",
-    "source": "LTO Demerit Points System 2026; RA 4136"
+    "options": [
+      "A mode that disables all reactivity",
+      "A compilation strategy that removes the Virtual DOM for fine-grained reactivity",
+      "A server-side rendering technique",
+      "A debugging tool for memory leaks"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vapor Mode is an experimental compilation strategy in Vue 3.5+ that removes the Virtual DOM overhead entirely. It uses fine-grained reactivity to update only the specific text nodes or attributes that change, similar to SolidJS, offering significant performance gains for specific use cases.",
+    "source": "RivuletIQ Vue 3 Performance Optimization; Vue.js Core Team Announcements 2026"
   },
   {
     "id": 43,
-    "category": "Penalties",
-    "question": "What happens to a driver's license if they accumulate 40 or more demerit points?",
+    "category": "Security",
+    "question": "Besides avoiding v-html, what is the most effective HTTP header to mitigate XSS attacks in a Vue application?",
     "image": "",
     "options": [
-      "The license is suspended for 3 months",
-      "The license is suspended for 1 year",
-      "The license is revoked",
-      "The driver must attend a seminar but keeps the license"
+      "X-Frame-Options",
+      "Content-Security-Policy (CSP)",
+      "Strict-Transport-Security",
+      "Access-Control-Allow-Origin"
     ],
-    "correctAnswer": "C",
-    "explanation": "Accumulating 40 or more demerit points leads to License Revocation. The driver is barred from applying for a new license for up to two years.",
-    "source": "LTO Demerit Points System 2026; LTO Administrative Order"
+    "correctAnswer": "B",
+    "explanation": "Content-Security-Policy (CSP) allows developers to define trusted sources for scripts, styles, and other resources. It effectively mitigates XSS by preventing the browser from executing inline scripts or loading resources from untrusted domains, even if an injection occurs.",
+    "source": "Digiqt Vue.js Security Best Practices; OWASP Secure Coding Practices"
   },
   {
     "id": 44,
-    "category": "Penalties",
-    "question": "A driver is caught driving under the influence of alcohol (DUI) for the first time. What is the mandatory penalty under RA 10586?",
+    "category": "Testing",
+    "question": "When using Vitest for Vue components, what is the advantage of using HappyDOM over jsdom?",
     "image": "",
     "options": [
-      "₱5,000 fine and warning",
-      "₱20,000 fine, 12-month license suspension, and community service",
-      "₱10,000 fine and 3-month suspension",
-      "Immediate license revocation"
+      "HappyDOM is slower but more accurate",
+      "HappyDOM is significantly faster and lighter, designed specifically for modern testing",
+      "jsdom supports Vue 3, HappyDOM does not",
+      "HappyDOM requires a real browser to run"
     ],
     "correctAnswer": "B",
-    "explanation": "RA 10586 mandates a fine of ₱20,000 to ₱80,000, a 12-month license suspension for the first offense, and mandatory community service. Revocation happens on the second offense.",
-    "source": "Republic Act No. 10586 (Anti-Drunk and Drugged Driving Act); LTO Guidelines 2026"
+    "explanation": "HappyDOM is a lightweight implementation of the DOM standard built for speed. It is significantly faster than jsdom (often 10x+), making it the preferred environment for Vitest when running large suites of Vue component tests locally or in CI.",
+    "source": "Vitest Documentation; Reddit r/vuejs Testing Strategies 2026"
   },
   {
     "id": 45,
-    "category": "Penalties",
-    "question": "If a driver fails to pay a traffic violation fine within 15 days, what is the likely consequence?",
+    "category": "State Management",
+    "question": "In Pinia, how do you persist state across page reloads without manually writing to localStorage in every action?",
     "image": "",
     "options": [
-      "The fine amount is doubled automatically",
-      "A warrant of arrest is immediately issued",
-      "Late payment surcharges are added, and license renewal is blocked",
-      "The violation is erased from the record"
+      "It happens automatically by default",
+      "Use the pinia-plugin-persistedstate plugin",
+      "Enable the 'persistent' option in defineStore",
+      "Wrap the store in a computed property"
     ],
-    "correctAnswer": "C",
-    "explanation": "Unpaid fines incur late payment surcharges. More critically, the violation will flag the driver's record, blocking any license renewal or vehicle registration until settled.",
-    "source": "LTO Payment Guidelines 2026; RA 4136"
+    "correctAnswer": "B",
+    "explanation": "Pinia does not persist state by default. The standard approach is to use the community-maintained pinia-plugin-persistedstate, which allows you to configure persistence strategies (localStorage, sessionStorage, cookies) per store with minimal configuration.",
+    "source": "Pinia Documentation; SecondTalent Interview Guide"
   },
   {
     "id": 46,
-    "category": "Penalties",
-    "question": "What is the fine for 'No Contact Apprehension' (NCAP) violation for beating the red light in Metro Manila (MMDA)?",
+    "category": "Advanced Reactivity",
+    "question": "What is the specific use case for shallowRef() compared to ref()?",
     "image": "",
-    "options": ["₱1,000", "₱2,000", "₱5,000", "₱10,000"],
+    "options": [
+      "To create a ref that cannot be changed",
+      "To create a ref where only the .value assignment triggers updates, ignoring nested changes",
+      "To create a ref that works only in templates",
+      "To create a ref that is automatically serialized"
+    ],
     "correctAnswer": "B",
-    "explanation": "Under MMDA's NCAP, beating the red light carries a fine of ₱2,000. This is higher than the standard ₱1,000 for simple disregard of traffic signs.",
-    "source": "MMDA NCAP Fine Schedule 2026"
+    "explanation": "shallowRef() creates a ref that only tracks changes to its .value property itself. It does not make nested properties reactive. This is useful for performance optimization when dealing with large, immutable data structures or third-party class instances where deep reactivity is unnecessary.",
+    "source": "Vue 3 Documentation - Advanced Reactivity; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 47,
-    "category": "Penalties",
-    "question": "A student permit holder accumulates 5 demerit points. What is the consequence?",
+    "category": "Routing",
+    "question": "How do you pass complex state (like an object) between routes in Vue Router without exposing it in the URL?",
     "image": "",
     "options": [
-      "They must attend a seminar",
-      "The permit is suspended for 30 days",
-      "The student permit is revoked",
-      "They are fined an additional ₱5,000"
+      "Use route params",
+      "Use route query strings",
+      "Use the 'state' option in router.push() (History State)",
+      "Store it in a global variable only"
     ],
     "correctAnswer": "C",
-    "explanation": "For Student Permit holders, accumulating just 5 demerit points results in immediate revocation of the permit. They cannot apply for a new one for one year.",
-    "source": "LTO Demerit Points System 2026; Student Permit Guidelines"
+    "explanation": "Vue Router supports passing a 'state' object in the navigation options (e.g., router.push({ path, state })). This data is stored in the browser's History API state object, allowing complex data transfer between routes without appearing in the URL or requiring a global store.",
+    "source": "Vue Router Documentation; Digiqt Vue.js Interview Questions"
   },
   {
     "id": 48,
-    "category": "Penalties",
-    "question": "What is the penalty for a third offense of speeding more than 41 kph over the limit?",
+    "category": "Architecture",
+    "question": "What is the 'Backend-for-Frontend' (BFF) pattern and why is it recommended for Vue security?",
     "image": "",
     "options": [
-      "₱3,000 fine",
-      "₱5,000 fine",
-      "₱10,000 fine and impounding of the vehicle",
-      "₱15,000 fine and license revocation"
+      "It is a database proxy",
+      "It is a server layer that handles authentication and token management, keeping secrets off the client",
+      "It is a caching layer for static assets",
+      "It is a tool for generating TypeScript types"
     ],
-    "correctAnswer": "C",
-    "explanation": "Speeding 41+ kph over the limit is a severe violation. On the third offense, the fine is ₱10,000, and the vehicle is subject to impounding.",
-    "source": "LTO Fine Schedule 2026; RA 4136 Section 35"
+    "correctAnswer": "B",
+    "explanation": "The BFF pattern involves a dedicated backend layer for the frontend application. It handles sensitive operations like OAuth token exchange and stores tokens in HttpOnly cookies, preventing the Vue app (and potential XSS attacks) from ever accessing sensitive credentials directly.",
+    "source": "Digiqt Vue.js Security Best Practices; Frontegg Vue Authentication"
   },
   {
     "id": 49,
-    "category": "Penalties",
-    "question": "Which of the following violations carries the highest fine for a first offense?",
+    "category": "Tooling",
+    "question": "In a Vite-based Vue project, how does 'Rollup' contribute to the production build?",
     "image": "",
     "options": [
-      "No Seatbelt (₱1,000)",
-      "Distracted Driving (₱5,000)",
-      "Reckless Driving (₱2,000)",
-      "Illegal Parking (₱1,000)"
+      "It serves the development server",
+      "It bundles the code for production, performing tree-shaking and optimization",
+      "It compiles TypeScript to JavaScript",
+      "It runs the unit tests"
     ],
     "correctAnswer": "B",
-    "explanation": "Among the choices, Distracted Driving (RA 10913) has the highest first-offense fine at ₱5,000. Reckless driving is ₱2,000, while seatbelt and parking are ₱1,000.",
-    "source": "LTO Fine Schedule 2026; RA 10913"
+    "explanation": "Vite uses Rollup for production builds. Rollup is highly efficient at bundling ES modules, performing advanced tree-shaking to remove unused code, and optimizing the output for smaller bundle sizes and faster loading in production.",
+    "source": "Vite Documentation; SecondTalent Interview Guide"
   },
   {
     "id": 50,
-    "category": "Penalties",
-    "question": "If a driver has zero demerit points upon license renewal, what reward do they receive?",
+    "category": "Component Patterns",
+    "question": "What is the purpose of the <Teleport> component in Vue?",
     "image": "",
     "options": [
-      "A cash rebate",
-      "A 10-year license validity",
-      "Exemption from future fines",
-      "A free driving seminar"
+      "To move a component's DOM nodes to a different part of the document",
+      "To transfer state between components",
+      "To route to a different page",
+      "To clone a component instance"
     ],
-    "correctAnswer": "B",
-    "explanation": "Drivers with a clean record (zero demerit points) upon renewal are eligible for a 10-year license validity instead of the standard 5 years.",
-    "source": "LTO Demerit Points System 2026; RA 10930"
+    "correctAnswer": "A",
+    "explanation": "<Teleport> allows you to render a component's template content in a different DOM location (e.g., directly under <body>) while keeping the component logically within the Vue tree. This is essential for modals, tooltips, and notifications to avoid z-index or overflow issues.",
+    "source": "Vue 3 Documentation - Teleport; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 51,
-    "category": "Penalties",
-    "question": "Paying a traffic fine immediately erases the demerit points from your driving record.",
+    "category": "Testing",
+    "question": "What is the primary benefit of 'UI Coverage' in modern Cypress testing for Vue?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, payment clears all records instantly.",
-      "False, paying the fine settles the monetary penalty, but demerit points remain on your record for 12 months."
+      "It measures lines of code executed",
+      "It visually maps which parts of the UI have been exercised by tests, highlighting gaps",
+      "It automatically fixes visual bugs",
+      "It generates screenshots of every test"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Paying the fine removes the financial obligation and allows license renewal, but the demerit points stay on your record for 12 months from the date of violation.",
-    "source": "LTO Demerit Points System 2026"
+    "correctAnswer": "B",
+    "explanation": "UI Coverage is an advanced feature (often via Cypress Cloud or plugins) that overlays test execution data on the actual UI. It helps teams identify untested interactive areas or components, ensuring comprehensive visual and functional coverage beyond simple code metrics.",
+    "source": "Zignuts Cypress with Vue 2026 Guide"
   },
   {
     "id": 52,
-    "category": "Penalties",
-    "question": "A driver caught using a hands-free headset to talk on the phone while driving is violating RA 10913.",
+    "category": "Performance",
+    "question": "When optimizing a Vue app with large lists, what is the role of the Intersection Observer API?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, any phone use while driving is prohibited.",
-      "False, hands-free devices (Bluetooth/Earphones) are allowed as long as the driver does not hold the phone."
+      "To sort the list items",
+      "To lazily load content or images only when they scroll into the viewport",
+      "To animate the list items",
+      "To filter the list based on search"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. RA 10913 prohibits *holding* or *manipulating* a device. Using hands-free modes (speaker, Bluetooth) without touching the phone is legal.",
-    "source": "Republic Act No. 10913, Section 4"
+    "correctAnswer": "B",
+    "explanation": "The Intersection Observer API allows you to detect when an element enters the viewport. In Vue, this is used (often via composables like useIntersectionObserver) to implement lazy loading of images or components, reducing initial load time and memory usage.",
+    "source": "MetaDesign Solutions Optimizing Vue.js Apps 2025"
   },
   {
     "id": 53,
-    "category": "Penalties",
-    "question": "If your license is revoked due to accumulating 40 demerit points, you can apply for a new license immediately after paying the fines.",
+    "category": "TypeScript",
+    "question": "How do you type the 'emit' function in a <script setup> component using TypeScript?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, payment reinstates all driving privileges.",
-      "False, revocation means you are barred from applying for a new license for up to two years."
+      "Use defineEmits<{ eventName: [argType] }>()",
+      "Use props: { emit: Function }",
+      "Use interface Emit { ... }",
+      "TypeScript cannot type emits"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. License Revocation (40+ points) is more severe than suspension. You cannot apply for a new license for a period of up to two years, even if fines are paid.",
-    "source": "LTO Demerit Points System 2026"
+    "correctAnswer": "A",
+    "explanation": "defineEmits() is a compiler macro that accepts a type argument to define the types of events and their payloads. This provides full type safety and autocomplete for the emit function within the component.",
+    "source": "Curotec 125 Vue.js Interview Questions 2026; Vue 3 Documentation - TypeScript"
   },
   {
     "id": 54,
-    "category": "Penalties",
-    "question": "The penalty for DUI (Driving Under the Influence) is the same for private car drivers and Public Utility Vehicle (PUV) drivers.",
+    "category": "Security",
+    "question": "Why is 'SameSite=Strict' or 'SameSite=Lax' important for cookies in Vue applications?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, the law applies equally to all drivers.",
-      "False, PUV drivers face higher fines (₱30,000+) and stricter penalties for DUI than private drivers."
+      "It makes cookies last longer",
+      "It prevents the browser from sending cookies on cross-site requests, mitigating CSRF",
+      "It encrypts the cookie content",
+      "It allows cookies to be shared across all subdomains"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. RA 10586 imposes heavier penalties on PUV drivers, school bus drivers, and those hauling hazardous materials. A first offense for a PUV driver can cost ₱30,000.",
-    "source": "Republic Act No. 10586, Section 5"
+    "correctAnswer": "B",
+    "explanation": "The SameSite attribute restricts when cookies are sent with cross-site requests. Setting it to Strict or Lax prevents the browser from including authentication cookies in requests initiated from other sites, effectively mitigating Cross-Site Request Forgery (CSRF) attacks.",
+    "source": "Frontegg Vue Authentication; OWASP CSRF Prevention Cheat Sheet"
   },
   {
     "id": 55,
-    "category": "Penalties",
-    "question": "Unsettled MMDA NCAP violations will prevent you from renewing your vehicle registration at the LTO.",
+    "category": "Advanced Reactivity",
+    "question": "What does the toRaw() function do in Vue 3?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, LTO and MMDA systems are linked; unpaid fines block renewal.",
-      "False, NCAP violations are separate and do not affect LTO registration."
+      "It converts a ref to a reactive object",
+      "It returns the original object from a reactive proxy, bypassing reactivity",
+      "It creates a deep copy of the object",
+      "It freezes the object"
     ],
-    "correctAnswer": "C",
-    "explanation": "The statement is TRUE. Unpaid NCAP violations create a 'hit' on the vehicle's plate number in the LTO system, blocking registration renewal until the fine is settled.",
-    "source": "MMDA NCAP Guidelines 2026; LTO Registration Requirements"
+    "correctAnswer": "B",
+    "explanation": "toRaw() returns the original, raw object from a reactive proxy. This is useful when you need to pass an object to an external library that doesn't work well with proxies, or when you want to read/write without triggering reactivity or tracking.",
+    "source": "Vue 3 Documentation - Advanced Reactivity; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 56,
-    "category": "Penalties",
-    "question": "A driver with a suspended license due to reckless driving can still drive if they are accompanied by a licensed instructor.",
+    "category": "Build & Tooling",
+    "question": "What is the purpose of 'Tree Shaking' in a Vue production build?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, supervised driving is allowed during suspension.",
-      "False, a suspended license means ZERO driving privileges; driving while suspended is a criminal offense."
+      "To compress images",
+      "To remove unused code and dependencies from the final bundle",
+      "To minify CSS only",
+      "To split the code into multiple files"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. License suspension means you have no legal right to drive any motor vehicle on public roads, even with an instructor. Doing so is 'Driving Without a Valid License'.",
-    "source": "RA 4136; LTO Suspension Guidelines"
+    "correctAnswer": "B",
+    "explanation": "Tree shaking is a dead code elimination technique used by bundlers like Rollup (in Vite). It analyzes the dependency graph and removes any exported code that is not actually imported or used, significantly reducing the final bundle size.",
+    "source": "MetaDesign Solutions Optimizing Vue.js Apps 2025; Vite Documentation"
   },
   {
     "id": 57,
-    "category": "Penalties",
-    "question": "The fine for 'No Helmet' for motorcycle riders is ₱1,500 for the first offense.",
+    "category": "Component Communication",
+    "question": "When using scoped slots, what data is available to the parent component?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, this is the standard fine under RA 10000.",
-      "False, the fine is ₱3,000 for the first offense under the updated 2026 schedule."
+      "Only global store data",
+      "Data explicitly exposed by the child component via the slot props",
+      "All internal state of the child component",
+      "No data is available"
     ],
-    "correctAnswer": "A",
-    "explanation": "The statement is TRUE (based on standard RA 10000 implementation). The fine for the first offense of not wearing a helmet is typically ₱1,500. (Note: Some LGUs may vary, but ₱1,500 is the national baseline).",
-    "source": "Republic Act No. 10000; LTO Fine Schedule 2026"
+    "correctAnswer": "B",
+    "explanation": "Scoped slots allow a child component to pass specific data (slot props) up to the parent's slot content. The parent can then use this data to customize the rendering of the child's content, enabling flexible, reusable component patterns like data tables.",
+    "source": "GreatFrontEnd Vue Interview Questions; Vue 3 Documentation - Slots"
   },
   {
     "id": 58,
-    "category": "Penalties",
-    "question": "If you commit the same light violation (1 point) three times within 12 months, your license will be suspended.",
+    "category": "Error Handling",
+    "question": "What is the benefit of using 'errorCaptured' over a global error handler?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, three strikes of any violation lead to suspension.",
-      "False, repeating the same violation 3 times requires a seminar and exam, but suspension usually requires accumulating 10+ points or a grave violation."
+      "It catches errors in the backend",
+      "It allows a specific ancestor component to handle errors from its descendants locally",
+      "It prevents all errors from occurring",
+      "It is faster than global handling"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Repeating the same violation 3 times triggers a requirement to attend a reorientation course and pass the theoretical exam. Suspension typically requires accumulating 10+ demerit points or a specific grave offense.",
-    "source": "LTO Demerit Points System 2026"
+    "correctAnswer": "B",
+    "explanation": "errorCaptured() allows a specific component to intercept errors from its descendant tree. This enables localized error handling (e.g., showing a fallback UI for a specific widget) without affecting the entire application or requiring a global handler for every case.",
+    "source": "Vue 3 Documentation - Error Handling; CodeInterview Vue.js Questions"
   },
   {
     "id": 59,
-    "category": "Penalties",
-    "question": "Smoke belching penalties include vehicle impounding for the third offense.",
+    "category": "Performance",
+    "question": "How does 'v-once' improve performance in a Vue template?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, repeat offenders face impounding to enforce emission standards.",
-      "False, smoke belching only results in fines, never impounding."
+      "It runs the component only once",
+      "It renders the element once and skips it in future re-renders",
+      "It prevents the component from being destroyed",
+      "It caches the API response"
     ],
-    "correctAnswer": "C",
-    "explanation": "The statement is TRUE. For repeated smoke belching offenses (3rd offense), the LTO/MMDA may impound the vehicle to force compliance with emission standards.",
-    "source": "RA 8749 (Clean Air Act); LTO Smoke Belching Guidelines"
+    "correctAnswer": "B",
+    "explanation": "The v-once directive tells Vue to render the element or component only once. On subsequent re-renders, Vue skips this part of the DOM entirely, even if the reactive data it depends on changes. This is useful for static content that never needs updating.",
+    "source": "ParikshaPatr Performance Optimization; Curotec 125 Vue.js Interview Questions 2026"
   },
   {
     "id": 60,
-    "category": "Penalties",
-    "question": "A driver caught driving with an expired license (more than 1 year) is treated as 'Driving Without a Valid License' and faces vehicle impounding.",
+    "category": "Architecture",
+    "question": "What is the 'Module Federation' pattern in the context of Vue micro-frontends?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, an license expired >1 year is deemed invalid, leading to impounding.",
-      "False, expired licenses only incur a renewal fee penalty, not impounding."
-    ],
-    "correctAnswer": "C",
-    "explanation": "The statement is TRUE. If a license is expired for more than one year, it is considered invalid. Driving with it is equivalent to 'Driving Without a Valid License', which carries a ₱10,000 fine and vehicle impounding.",
-    "source": "LTO License Renewal Guidelines 2026; RA 4136"
-  },
-
-  {
-    "id": 61,
-    "category": "General & Republic Acts",
-    "question": "Under RA 11229 (Child Safety in Motor Vehicles Act), children of what age are PROHIBITED from sitting in the front seat of a motor vehicle?",
-    "image": "",
-    "options": [
-      "Below 10 years old",
-      "Below 12 years old",
-      "Below 13 years old",
-      "Below 15 years old"
+      "Combining all code into one file",
+      "Allowing multiple independent Vue builds to share dependencies and load remote components at runtime",
+      "Sharing a single database between apps",
+      "Using a monolithic repository for all code"
     ],
     "correctAnswer": "B",
-    "explanation": "RA 11229 strictly prohibits children 12 years old and below from sitting in the front seat. They must be seated in the rear and secured in an appropriate Child Restraint System (CRS) based on their age, height, and weight.",
-    "source": "Republic Act No. 11229, Section 5; LTO Guidelines on Child Safety"
+    "explanation": "Module Federation (supported by Webpack 5 and Vite plugins) allows separate Vue applications to be built and deployed independently while sharing dependencies (like Vue itself) and dynamically loading remote components at runtime. This is key for scaling micro-frontend architectures.",
+    "source": "SecondTalent Interview Guide; Advanced Vue.js Architecture Patterns 2026"
+  },
+  {
+    "id": 61,
+    "category": "Vue 3.5+ Features",
+    "question": "What is the primary purpose of the new 'effectScope' improvements in Vue 3.5?",
+    "image": "",
+    "options": [
+      "To replace Pinia stores entirely",
+      "To better manage the lifecycle of reactive effects outside of components",
+      "To automatically optimize CSS rendering",
+      "To enable server-side rendering without hydration"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vue 3.5 refined effectScope to allow more robust management of reactive effects (like watchers and computed properties) created outside of component instances. This is crucial for libraries and composables that need to manually control when reactive listeners are stopped to prevent memory leaks.",
+    "source": "Vue 3.5 Release Notes; Tech Insider Vue vs React 2026"
   },
   {
     "id": 62,
-    "category": "General & Republic Acts",
-    "question": "What is the validity period of a Non-Professional Driver's License issued to a driver with a clean record (zero demerit points)?",
+    "category": "Performance",
+    "question": "In the context of Vue 3.6+ 'Alien Signals', what is the expected benefit over the current reactivity system?",
     "image": "",
-    "options": ["3 years", "5 years", "8 years", "10 years"],
-    "correctAnswer": "D",
-    "explanation": "Under RA 10930, a driver with a clean record (no violations/demerit points) upon renewal is eligible for a 10-year validity license. Those with violations receive the standard 5-year license.",
-    "source": "Republic Act No. 10930; LTO License Renewal Guidelines 2026"
+    "options": [
+      "It removes the need for TypeScript",
+      "It provides a ground-up rewrite for even finer-grained reactivity tracking and performance",
+      "It replaces the need for a build step",
+      "It allows Vue to run in older browsers like IE11"
+    ],
+    "correctAnswer": "B",
+    "explanation": "'Alien Signals' is a reactivity primitive previewed in Vue 3.6 that aims to rewrite the core reactivity system for maximum efficiency. It promises even finer-grained tracking than the current Proxy-based system, further reducing overhead in complex applications.",
+    "source": "Tech Insider Vue vs React 2026; Vue.js Core Updates June 2026"
   },
   {
     "id": 63,
-    "category": "General & Republic Acts",
-    "question": "Which Republic Act mandates the use of seatbelts for ALL passengers in the front and rear seats of private vehicles?",
+    "category": "Security",
+    "question": "What is the role of 'Trusted Types' in securing a Vue application alongside CSP?",
     "image": "",
-    "options": ["RA 4136", "RA 8750", "RA 10586", "RA 10913"],
+    "options": [
+      "It encrypts all network traffic",
+      "It restricts DOM sinks to only accept safe, sanitized content, preventing DOM XSS",
+      "It validates user passwords on the client",
+      "It automatically fixes insecure npm packages"
+    ],
     "correctAnswer": "B",
-    "explanation": "RA 8750 (Seat Belts Use Act of 1999) mandates that all drivers and front-seat passengers wear seatbelts. Amendments and LTO enforcement now extend this to rear-seat passengers in private vehicles as well.",
-    "source": "Republic Act No. 8750; LTO Enforcement Guidelines 2026"
+    "explanation": "Trusted Types is a web standard that works with Content Security Policy (CSP) to prevent DOM XSS. It forces developers to explicitly sanitize content before passing it to dangerous DOM sinks (like innerHTML), making it impossible to accidentally inject unsanitized scripts.",
+    "source": "Digiqt Vue.js Security Best Practices; Frontend World Secure Your Vue.js App"
   },
   {
     "id": 64,
-    "category": "General & Republic Acts",
-    "question": "A driver with Restriction Code '7' on their license is permitted to drive which type of vehicle?",
+    "category": "Testing",
+    "question": "Why is 'HappyDOM' increasingly preferred over 'jsdom' for running Vitest unit tests in 2026?",
     "image": "",
     "options": [
-      "Motorcycles only",
-      "Vehicles with Manual Transmission only",
-      "Vehicles with Automatic Transmission only",
-      "Heavy trucks and buses"
+      "It supports older browsers",
+      "It is significantly faster and lighter, offering near-instant test execution",
+      "It requires a real browser to function",
+      "It automatically writes tests for you"
     ],
-    "correctAnswer": "C",
-    "explanation": "Restriction Code 7 indicates 'Automatic Transmission Only'. The driver is legally prohibited from driving manual transmission vehicles. Violating this carries a fine and potential suspension.",
-    "source": "LTO Restriction Codes Guide 2026; RA 4136"
+    "correctAnswer": "B",
+    "explanation": "HappyDOM is a lightweight, fast implementation of the DOM standards designed specifically for testing. It is often 10x faster than jsdom, making it the default choice for Vitest in modern Vue workflows to ensure rapid feedback loops during development.",
+    "source": "Reddit r/vuejs Testing Strategies 2026; Vitest Documentation"
   },
   {
     "id": 65,
-    "category": "General & Republic Acts",
-    "question": "Under RA 10586, what is the Blood Alcohol Concentration (BAC) limit for a Professional Driver (PUV/Truck/Bus)?",
+    "category": "Architecture",
+    "question": "What is the 'Shared Composables' pattern recommended for in Vue 3.5+ architecture?",
     "image": "",
-    "options": ["0.05%", "0.08%", "0.00% (Zero Tolerance)", "0.10%"],
-    "correctAnswer": "C",
-    "explanation": "Professional drivers (PUV, trucks, buses) are held to a Zero Tolerance policy under RA 10586. Any detectable amount of alcohol (0.00%) is a violation. Non-professional drivers have a 0.05% limit.",
-    "source": "Republic Act No. 10586, Section 5; LTO DUI Guidelines"
+    "options": [
+      "Replacing all Pinia stores",
+      "Managing local component state that needs to be shared without global store overhead",
+      "Sharing CSS styles between components",
+      "Connecting to multiple databases"
+    ],
+    "correctAnswer": "B",
+    "explanation": "The 'Shared Composables' pattern suggests using composables with internal reactive state (often backed by a singleton or weak map) to share logic and state between specific components. This keeps Pinia stores reserved for truly global application state, reducing boilerplate and improving modularity.",
+    "source": "OneHorizon AI Vue Best Practices 2026; SecondTalent Interview Guide"
   },
   {
     "id": 66,
-    "category": "General & Republic Acts",
-    "question": "How long before the expiration date can a driver's license be renewed without needing to take the written and practical exams again?",
+    "category": "Performance",
+    "question": "When using Vapor Mode, what is a critical consideration regarding third-party UI libraries?",
     "image": "",
-    "options": ["30 days", "60 days", "90 days", "Up to 6 months before expiration"],
-    "correctAnswer": "D",
-    "explanation": "Licenses can be renewed up to 6 months (180 days) before expiration without additional exams. If expired beyond 1 year, the driver must retake the theoretical and practical exams.",
-    "source": "LTO License Renewal Guidelines 2026; RA 4136"
+    "options": [
+      "They work automatically without changes",
+      "They may not be compatible if they rely heavily on Virtual DOM assumptions",
+      "They must be rewritten in React",
+      "They increase the bundle size by 50%"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vapor Mode removes the Virtual DOM. Third-party libraries that rely on VDOM patches or specific Vue runtime behaviors might not work correctly within a Vapor region. Teams must verify compatibility or isolate Vapor usage to custom components where full control is maintained.",
+    "source": "RivuletIQ Vue 3 Performance Optimization; Tech Insider Vue vs React 2026"
   },
   {
     "id": 67,
-    "category": "General & Republic Acts",
-    "question": "What is the mandatory requirement for all motor vehicles registered in the Philippines to cover liability for death or injury to third parties?",
+    "category": "Security",
+    "question": "Why is storing authentication tokens in 'memory' (variable) considered safer than localStorage, even with XSS risks?",
     "image": "",
     "options": [
-      "Comprehensive Insurance",
-      "Compulsory Third Party Liability (CTPL) Insurance",
-      "Personal Accident Insurance",
-      "Vehicle Warranty"
+      "It makes the app faster",
+      "It ensures tokens are lost on page reload, limiting the window of opportunity for attackers",
+      "It encrypts the token automatically",
+      "It allows tokens to be shared across tabs"
     ],
     "correctAnswer": "B",
-    "explanation": "CTPL (Compulsory Third Party Liability) insurance is mandatory for vehicle registration under RA 4136. It covers death or injury to third parties only, not damage to the owner's vehicle.",
-    "source": "Republic Act No. 4136, Section 21; LTO Registration Requirements"
+    "explanation": "Storing tokens in memory (JavaScript variables) means they are wiped when the tab is closed or reloaded. While XSS can still steal them during the session, this approach prevents persistent theft via localStorage and limits the lifespan of a compromised token compared to persistent storage.",
+    "source": "Digiqt Vue.js Security Best Practices; Frontegg Vue Authentication"
   },
   {
     "id": 68,
-    "category": "General & Republic Acts",
-    "question": "Under RA 10913, which of the following is ALLOWED while driving?",
+    "category": "Testing",
+    "question": "What is the primary advantage of 'UI Coverage' in Cypress Cloud for Vue projects?",
     "image": "",
     "options": [
-      "Holding the phone to check GPS directions",
-      "Writing a text message while stopped at a red light",
-      "Using a hands-free device (Bluetooth/Earphone) without holding the phone",
-      "Video calling using a mounted device"
+      "It counts lines of code",
+      "It visually highlights which parts of the rendered UI have been interacted with during tests",
+      "It automatically fixes visual bugs",
+      "It generates documentation"
     ],
-    "correctAnswer": "C",
-    "explanation": "RA 10913 prohibits holding or manipulating a device. Using hands-free modes (Bluetooth, speakerphone, earphones) is allowed as long as the driver does not hold the phone or look at the screen excessively.",
-    "source": "Republic Act No. 10913, Section 4; LTO Distracted Driving Guidelines"
+    "correctAnswer": "B",
+    "explanation": "UI Coverage overlays test execution data onto the actual application UI, showing exactly which buttons, forms, and components were exercised. This helps teams identify 'dead zones' in their testing strategy that code coverage metrics might miss.",
+    "source": "Zignuts Cypress with Vue 2026 Guide"
   },
   {
     "id": 69,
-    "category": "General & Republic Acts",
-    "question": "What is the penalty for driving a motor vehicle with an expired registration for MORE than one year?",
+    "category": "Vue 3.5+ Features",
+    "question": "What new capability does Vue 3.5 add for 'defineCustomElement' regarding Shadow DOM?",
     "image": "",
     "options": [
-      "Simple fine with surcharge",
-      "Vehicle impounding and ₱10,000 fine",
-      "Confiscation of the vehicle",
-      "Warning and 7-day grace period"
+      "It forces Shadow DOM on all elements",
+      "It allows mounting custom elements WITHOUT Shadow DOM (shadowRoot: false)",
+      "It removes the need for custom elements",
+      "It automatically styles elements globally"
     ],
     "correctAnswer": "B",
-    "options": [
-      "Simple fine with surcharge",
-      "Vehicle impounding and ₱10,000 fine",
-      "Confiscation of the vehicle",
-      "Warning and 7-day grace period"
-    ],
-    "correctAnswer": "B",
-    "explanation": "Driving with a registration expired for more than one year is treated as 'Operating an Unregistered Vehicle'. This carries a ₱10,000 fine and vehicle impounding until registration is renewed.",
-    "source": "LTO Penalty Matrix 2026; RA 4136"
+    "explanation": "Vue 3.5 improved the defineCustomElement API to support mounting custom elements without attaching a Shadow DOM by passing shadowRoot: false. This is useful for scenarios where global styles or specific DOM nesting structures are required, such as in some micro-frontend integrations.",
+    "source": "Vue 3.5 Release Notes; Blog.vuejs.org"
   },
   {
     "id": 70,
-    "category": "General & Republic Acts",
-    "question": "Which document must be carried by the driver at all times while operating a motor vehicle?",
+    "category": "Performance",
+    "question": "How does 'Nuxt 4 Hybrid Rendering' contribute to Vue performance in 2026?",
     "image": "",
     "options": [
-      "Official Receipt (OR) and Certificate of Registration (CR) only",
-      "Driver's License only",
-      "Driver's License, OR, and CR of the vehicle",
-      "Insurance policy only"
+      "It only uses Client-Side Rendering",
+      "It combines SSR for SEO-critical pages and CSR for dynamic dashboards to optimize speed and SEO",
+      "It disables JavaScript entirely",
+      "It forces all pages to be static"
     ],
-    "correctAnswer": "C",
-    "explanation": "Drivers must carry their valid Driver's License, and the vehicle's Original OR/CR (or certified copies). Failure to present these upon apprehension results in fines and potential vehicle impounding.",
-    "source": "Republic Act No. 4136, Section 15 & 21; LTO Enforcement Guidelines"
+    "correctAnswer": "B",
+    "explanation": "Nuxt 4's Hybrid Rendering allows developers to choose the rendering strategy per route. Marketing pages can use SSR/SSG for SEO and fast first paint, while complex dashboard views can use CSR to reduce server load and improve interactivity, offering the best of both worlds.",
+    "source": "OneHorizon AI Vue Best Practices 2026"
   },
   {
     "id": 71,
-    "category": "General & Republic Acts",
-    "question": "A Student Permit holder is allowed to drive alone on public roads as long as they have completed the Theoretical Driving Course (TDC).",
+    "category": "Tooling",
+    "question": "What is the benefit of using 'Oxlint' with Vite 7 in a Vue 3 project?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, TDC completion grants solo driving privileges.",
-      "False, student Permit holders must ALWAYS be accompanied by a licensed driver (Non-Pro or Pro) inside the vehicle."
+      "It replaces the need for TypeScript",
+      "It provides native-speed linting, significantly faster than traditional ESLint setups",
+      "It automatically fixes all logic bugs",
+      "It bundles the application"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. A Student Permit does NOT allow solo driving. The holder must be accompanied by a duly licensed driver (Non-Professional or Professional) sitting beside them at all times.",
-    "source": "LTO Student Permit Guidelines 2026; RA 4136"
+    "correctAnswer": "B",
+    "explanation": "Oxlint is a high-performance linter written in Rust. Integrated with Vite 7, it offers near-instant linting feedback, removing the bottleneck of slower JavaScript-based linters and keeping the development experience snappy even in massive codebases.",
+    "source": "OneHorizon AI Vue Best Practices 2026"
   },
   {
     "id": 72,
-    "category": "General & Republic Acts",
-    "question": "Motorcycles with an engine displacement below 400cc are allowed to use expressways like NLEX and SLEX.",
+    "category": "Security",
+    "question": "Why is 'PKCE' (Proof Key for Code Exchange) mandatory for OAuth flows in Vue SPAs?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, all motorcycles with valid plates can use expressways.",
-      "False, motorcycles must be 400cc or larger to legally enter expressways for safety reasons."
+      "It speeds up the login process",
+      "It prevents authorization code interception attacks, securing the token exchange",
+      "It allows passwords to be stored in the browser",
+      "It bypasses the need for a backend"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Under LTO and TRB regulations, only motorcycles with 400cc displacement or higher are allowed on limited-access expressways (NLEX, SLEX, Skyway) due to speed safety requirements.",
-    "source": "LTO Administrative Order 2008-15; TRB Expressway Rules"
+    "correctAnswer": "B",
+    "explanation": "PKCE adds a dynamic secret to the OAuth flow that prevents attackers from intercepting the authorization code and exchanging it for a token. It is the standard security requirement for public clients like Vue SPAs that cannot securely store a client secret.",
+    "source": "Digiqt Vue.js Security Best Practices; OWASP OAuth Guidelines"
   },
   {
     "id": 73,
-    "category": "General & Republic Acts",
-    "question": "A Non-Professional Driver's License allows the holder to drive a vehicle for hire (e.g., Grab, Taxi, Jeepney).",
+    "category": "Testing",
+    "question": "What is the recommended selector strategy for stable Cypress/Vue tests in 2026?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, non-Pro licenses cover all light vehicles including for-hire.",
-      "False, driving for hire requires a Professional Driver's License regardless of vehicle size."
+      "Use CSS classes like .btn-primary",
+      "Use XPath based on text content",
+      "Use semantic data attributes like data-test or data-cy",
+      "Use component instance IDs"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. A Non-Professional license is for private use only. Driving a vehicle for hire (transporting passengers/goods for payment) requires a Professional Driver's License.",
-    "source": "LTO License Classifications 2026; RA 4136"
+    "correctAnswer": "C",
+    "explanation": "Using dedicated data attributes (e.g., data-test, data-cy) decouples tests from CSS styling or DOM structure changes. This makes tests more resilient to refactoring and UI updates, ensuring stability without cluttering production CSS or relying on fragile text matching.",
+    "source": "Zignuts Cypress with Vue 2026 Guide; Reddit r/vuejs Testing Strategies"
   },
   {
     "id": 74,
-    "category": "General & Republic Acts",
-    "question": "If your license is lost, you can immediately apply for a duplicate without reporting the loss to the police.",
+    "category": "Architecture",
+    "question": "What is the 'BFF' (Backend-for-Frontend) pattern's role in Vue security?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, LTO only requires an affidavit of loss.",
-      "False, an Affidavit of Loss is required, and in some cases, a police report is needed to prevent fraud before a duplicate is issued."
+      "It serves static assets faster",
+      "It acts as a secure proxy to handle tokens and secrets, keeping them off the client",
+      "It replaces the need for a database",
+      "It generates Vue components automatically"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE (with nuance). While an Affidavit of Loss is the primary requirement, LTO strictly verifies records to prevent fraud. In many cases, especially for recent losses, a police report or strict verification is mandated before a duplicate is released.",
-    "source": "LTO Duplicate License Requirements 2026; RA 4136"
+    "correctAnswer": "B",
+    "explanation": "The BFF pattern introduces a server layer specifically for the Vue app. It handles sensitive operations like token exchange and stores secrets/cookies server-side (HttpOnly), ensuring the browser never sees sensitive credentials, thus mitigating XSS and token theft risks.",
+    "source": "Digiqt Vue.js Security Best Practices; Frontegg Vue Authentication"
   },
   {
     "id": 75,
-    "category": "General & Republic Acts",
-    "question": "The 'No Contact Apprehension Policy' (NCAP) allows authorities to issue tickets based solely on camera footage without stopping the vehicle.",
+    "category": "Performance",
+    "question": "How does 'v-memo' differ from 'computed' in optimization strategy?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, NCAP uses cameras to record violations and mail tickets to owners.",
-      "False, NCAP requires the vehicle to be stopped first before a ticket is issued."
+      "v-memo caches entire template sub-trees; computed caches JavaScript values",
+      "v-memo is for async data; computed is for sync data",
+      "v-memo replaces the need for keys",
+      "There is no difference"
     ],
-    "correctAnswer": "C",
-    "explanation": "The statement is TRUE. NCAP utilizes CCTV and cameras to capture violations. The ticket is then sent to the registered owner via mail or email, without the need for a traffic enforcer to stop the vehicle at the scene.",
-    "source": "MMDA NCAP Guidelines 2026; LTO Joint Memorandum Circular"
+    "correctAnswer": "A",
+    "explanation": "v-memo operates at the template level, skipping the re-rendering and diffing of a specific DOM sub-tree if dependencies haven't changed. Computed properties cache JavaScript return values. v-memo is a heavier optimization for expensive template structures, while computed is for logic.",
+    "source": "RivuletIQ Vue 3 Performance Optimization; Vue 3 Documentation"
   },
   {
     "id": 76,
-    "category": "General & Republic Acts",
-    "question": "A driver with a Restriction Code '8' is prohibited from driving at night.",
+    "category": "Vue 3.5+ Features",
+    "question": "What does the 'useHost()' API enable in Vue Custom Elements?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, Code 8 indicates night blindness.",
-      "False, Code 8 means the driver must wear corrective lenses (glasses/contacts) at all times while driving."
+      "Access to the database",
+      "Direct access to the custom element's host node within the component logic",
+      "Ability to change the URL",
+      "Automatic styling"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Restriction Code 8 means 'With Corrective Lenses'. The driver must wear glasses or contact lenses while driving, day or night. It does not ban night driving.",
-    "source": "LTO Restriction Codes Guide 2026"
+    "correctAnswer": "B",
+    "explanation": "Introduced in Vue 3.5, useHost() (along with useShadowRoot()) allows developers composing Custom Elements to access the host element directly within the setup function. This facilitates advanced DOM manipulations or integrations that require knowledge of the custom element container itself.",
+    "source": "Vue 3.5 Release Notes; Blog.vuejs.org"
   },
   {
     "id": 77,
-    "category": "General & Republic Acts",
-    "question": "It is legal to modify a vehicle's exhaust system to make it louder as long as the engine performance is improved.",
+    "category": "Security",
+    "question": "Why is 'SameSite=Lax' or 'Strict' insufficient alone for CSRF protection on state-changing API calls?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, performance modifications are allowed under RA 4136.",
-      "False, RA 4136 and RA 8749 prohibit modifications that increase noise or exceed emission standards."
+      "It is sufficient for all cases",
+      "Some older browsers don't support it, and top-level navigations might still leak; double-submit tokens are recommended",
+      "It slows down the network",
+      "It conflicts with CORS"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Modifying exhaust systems to increase noise (tintin/tambay exhaust) is prohibited under RA 4136 and the Clean Air Act (RA 8749). Such vehicles fail inspection and face fines/impounding.",
-    "source": "Republic Act No. 4136; RA 8749 (Clean Air Act); LTO Modification Guidelines"
+    "correctAnswer": "B",
+    "explanation": "While SameSite cookies mitigate most CSRF risks, they are not 100% foolproof (e.g., in older browsers or specific top-level navigation scenarios). Best practice dictates combining SameSite cookies with anti-CSRF tokens (double-submit pattern) for defense in depth on sensitive mutations.",
+    "source": "Digiqt Vue.js Security Best Practices; OWASP CSRF Cheat Sheet"
   },
   {
     "id": 78,
-    "category": "General & Republic Acts",
-    "question": "A Professional Driver's License is valid for 5 years regardless of the driver's record.",
+    "category": "Testing",
+    "question": "What is the primary use of 'Playwright' over Cypress in some Vue testing strategies?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, professional licenses have a fixed 5-year term.",
-      "False, a Professional driver with a clean record can also avail of a 10-year validity license under RA 10930."
+      "Playwright is slower",
+      "Playwright supports multi-browser testing (WebKit, Firefox, Chromium) and complex scenarios like multi-tab contexts natively",
+      "Cypress cannot test Vue",
+      "Playwright is only for mobile"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Under RA 10930, Professional Drivers with a clean record (zero demerit points) upon renewal are also eligible for a 10-year validity license, not just 5 years.",
-    "source": "Republic Act No. 10930; LTO License Renewal Guidelines"
+    "correctAnswer": "B",
+    "explanation": "Playwright is often chosen for its robust cross-browser support (including WebKit for Safari) and advanced features like multi-tab/context handling and network interception. It complements Cypress, which is traditionally strong in Chrome-centric developer experience.",
+    "source": "OneHorizon AI Vue Best Practices 2026; Zignuts Cypress with Vue 2026 Guide"
   },
   {
     "id": 79,
-    "category": "General & Republic Acts",
-    "question": "Foreigners with a valid driver's license from their home country can drive in the Philippines indefinitely without converting to a Philippine license.",
+    "category": "Performance",
+    "question": "What is the impact of 'accidental deep reactivity' on large datasets in Vue?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, international licenses are valid for life in the Philippines.",
-      "False, foreign licenses are valid for only 90 days from arrival; conversion to a Philippine license is required thereafter."
+      "It improves performance",
+      "It causes significant memory overhead and slow updates due to tracking unused nested properties",
+      "It has no impact",
+      "It automatically disables reactivity"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Foreign licenses are valid for only 90 days from the date of arrival in the Philippines. After 90 days, the foreigner must convert their license to a Philippine one at the LTO.",
-    "source": "LTO Foreign License Conversion Guidelines 2026; RA 4136"
+    "correctAnswer": "B",
+    "explanation": "When a large object is made reactive with reactive(), Vue recursively converts all nested properties to proxies. If this depth isn't needed, it wastes memory and slows down updates. Using shallowRef() or shallowReactive() prevents this deep traversal, optimizing performance for large, mostly immutable data.",
+    "source": "RivuletIQ Vue 3 Performance Optimization; OneHorizon AI Vue Best Practices 2026"
   },
   {
     "id": 80,
-    "category": "General & Republic Acts",
-    "question": "A vehicle with a 'For Hire' body marking can be used for private family trips without violating RA 4136.",
+    "category": "Architecture",
+    "question": "In a micro-frontend architecture using Vue, what is the role of 'Module Federation'?",
     "image": "",
     "options": [
-      "True",
-      "False",
-      "True, owners can use their for-hire vehicles for personal use anytime.",
-      "False, vehicles marked 'For Hire' must operate under a franchise/PCO; using them purely for private use without proper authorization can be a violation."
+      "To merge all code into one repo",
+      "To allow independent Vue apps to share dependencies and load remote components at runtime",
+      "To share a single database",
+      "To enforce a single CSS framework"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE (in context). While owners can use their vehicles, a vehicle marked 'For Hire' (e.g., Taxi, Jeepney) is legally bound to operate as public transport. Using it strictly as a private vehicle without proper de-registration or PCO compliance can lead to regulatory issues, though the primary violation is usually operating without a franchise if picking up passengers. However, for the exam: 'For Hire' implies public service, not private exclusivity.",
-    "source": "LTFRB Guidelines; RA 4136 on Public Utility Vehicles"
+    "correctAnswer": "B",
+    "explanation": "Module Federation (via Webpack 5 or Vite plugins) enables multiple independently deployed Vue applications to share a single instance of Vue (and other libs) and dynamically load components from each other at runtime. This is essential for scaling micro-frontends without duplicating code or breaking independence.",
+    "source": "SecondTalent Interview Guide; Advanced Vue.js Architecture Patterns 2026"
   },
-
   {
     "id": 81,
-    "category": "Road Signs",
-    "question": "You see an OCTAGON-shaped sign with a red background. Even if the text is faded, what action must you take?",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Stop-Sign.png",
+    "category": "Vue 3.6 Features",
+    "question": "In Vue 3.6, 'Alien Signals' have been stabilized. What is the primary architectural benefit of this new reactivity primitive?",
+    "image": "",
     "options": [
-      "Slow down and proceed if clear",
-      "Yield to traffic on the right",
-      "Come to a COMPLETE STOP",
-      "Stop only if there are pedestrians"
+      "It replaces the need for a Virtual DOM entirely",
+      "It allows Vue's reactivity system to be interoperable with signals from other frameworks like Solid or Preact",
+      "It removes the need for TypeScript in composables",
+      "It automatically migrates Vue 2 code to Vue 3"
     ],
-    "correctAnswer": "C",
-    "explanation": "The Octagon shape is exclusively used for the STOP sign. Regardless of visibility of the text, the shape alone mandates a complete stop at the stop line.",
-    "source": "LTO Road Signs Manual; RA 4136 Section on Regulatory Signs"
+    "correctAnswer": "B",
+    "explanation": "Alien Signals is a rewrite of Vue's reactivity internals that makes Vue's signal primitives composable with signal implementations from other frameworks. This opens significant interoperability opportunities for library authors building cross-framework utilities, while remaining transparent for existing application code.",
+    "source": "Tech Insider Vue.js 2026; Vue 3.6 Release Notes"
   },
   {
     "id": 82,
-    "category": "Road Signs",
-    "question": "What is the difference between a 'No Parking' sign and a 'No Stopping' sign?",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/No-Parking-Sign.png",
+    "category": "Performance",
+    "question": "As of mid-2026, what is the recommended adoption strategy for 'Vapor Mode' in large-scale production applications?",
+    "image": "",
     "options": [
-      "There is no difference; both mean do not stop",
-      "'No Parking' allows brief loading/unloading; 'No Stopping' prohibits any halt",
-      "'No Stopping' allows loading/unloading; 'No Parking' prohibits it",
-      "'No Parking' is only effective at night"
+      "Migrate the entire application immediately to gain maximum performance",
+      "Use it surgically for performance-sensitive sub-pages (dashboards, data grids) while keeping the rest on VDOM",
+      "Avoid it entirely as it is still experimental",
+      "Only use it for static marketing pages"
     ],
     "correctAnswer": "B",
-    "explanation": "'No Parking' (P with a slash) often allows temporary stopping for loading/unloading of passengers or goods. 'No Stopping' (often an X or specific text) prohibits the vehicle from halting for any reason, even briefly.",
-    "source": "LTO Road Signs Manual; MMDA Parking Guidelines"
+    "explanation": "While Vapor Mode is feature-complete in Vue 3.6, the pragmatic recommendation is to introduce it surgically. Teams should start with performance-sensitive sub-pages (like list views or dashboards) where rendering throughput is a bottleneck, and leave the rest of the app on the standard VDOM path until ecosystem coverage (libraries, plugins) fully solidifies.",
+    "source": "Blog.imseankim.com Vue 3.6 Vapor Mode; RivuletIQ Vue 3 Performance"
   },
   {
     "id": 83,
-    "category": "Road Signs",
-    "question": "A YELLOW diamond-shaped sign with a black symbol of a car leaving skid marks indicates:",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Slippery-Road-Sign.png",
+    "category": "Security",
+    "question": "When implementing OAuth 2.1 in a Vue SPA, why is PKCE (Proof Key for Code Exchange) considered mandatory?",
+    "image": "",
     "options": [
-      "Road construction ahead",
-      "Slippery road when wet",
-      "Race track nearby",
-      "Test driving zone"
+      "It reduces the size of the authentication token",
+      "It prevents authorization code interception attacks by binding the code to a dynamic secret",
+      "It allows the frontend to store the client secret securely",
+      "It bypasses the need for a backend server"
     ],
     "correctAnswer": "B",
-    "explanation": "This is the standard Warning Sign for a Slippery Road. It alerts drivers that the road surface has reduced traction, especially during rain.",
-    "source": "DPWH Standard Warning Signs; LTO Exam Reviewer"
+    "explanation": "PKCE adds a dynamic secret (code verifier) to the OAuth flow that prevents attackers from intercepting the authorization code and exchanging it for a token. Since SPAs cannot securely store a static client secret, PKCE is the standard security requirement to secure the token exchange.",
+    "source": "Digiqt Vue.js Security Best Practices; OWASP OAuth Guidelines 2026"
   },
   {
     "id": 84,
-    "category": "Road Signs",
-    "question": "What does a RED circle with a WHITE horizontal bar mean?",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/No-Entry-Sign.png",
-    "options": ["No Parking", "No Overtaking", "No Entry", "End of Road"],
-    "correctAnswer": "C",
-    "explanation": "A red circle with a white horizontal bar is the international symbol for 'No Entry'. It means vehicles are prohibited from entering that road or lane (often used for one-way exits).",
-    "source": "LTO Road Signs Manual; Vienna Convention on Road Signs"
+    "category": "Testing",
+    "question": "In a modern Vue testing stack (2026), what is the distinct role of Playwright compared to Vitest?",
+    "image": "",
+    "options": [
+      "Playwright is for unit testing composables; Vitest is for E2E",
+      "Playwright is for E2E and integration tests in real browsers; Vitest is for fast unit/component tests in Node/HappyDOM",
+      "Playwright replaces the need for Cypress entirely",
+      "Vitest is only for testing backend APIs"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vitest is used for fast unit and component tests running in Node or HappyDOM, providing instant feedback. Playwright is used for E2E and high-fidelity integration tests that run in real browsers (Chromium, Firefox, WebKit), ensuring the application works correctly in actual user environments.",
+    "source": "Reddit r/vuejs Testing Strategies 2026; Zignuts Cypress with Vue 2026"
   },
   {
     "id": 85,
-    "category": "Road Signs",
-    "question": "You see a BLUE circle with a white number '60' inside. What does this indicate on an expressway?",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Minimum-Speed-Sign.png",
+    "category": "Architecture",
+    "question": "What is the primary advantage of using '@module-federation/vite' over traditional npm package sharing in micro-frontends?",
+    "image": "",
     "options": [
-      "Maximum speed limit is 60 kph",
-      "Minimum speed limit is 60 kph",
-      "Recommended speed is 60 kph",
-      "Speed limit ends"
+      "It requires all teams to use the same repository",
+      "It allows independent deployments and runtime sharing of dependencies without version conflicts",
+      "It forces all micro-frontends to use the same CSS framework",
+      "It eliminates the need for a build step"
     ],
     "correctAnswer": "B",
-    "explanation": "While red circles indicate Maximum Speed, BLUE circles with white numbers indicate a MINIMUM speed limit. This is common on expressways to prevent slow-moving vehicles from obstructing traffic.",
-    "source": "Expressway Rules and Regulations; LTO Sign Color Code"
+    "explanation": "Module Federation with Vite allows multiple independently deployed Vue applications to share dependencies (like Vue itself) at runtime. This avoids the 'version hell' of npm packages and enables teams to deploy updates without requiring downstream apps to reinstall packages.",
+    "source": "PkgPulse Module Federation 2.0 2026; Dev.to Micro Frontend Using Vite"
   },
   {
     "id": 86,
-    "category": "Road Signs",
-    "question": "A GREEN rectangular sign with white text listing cities and distances is classified as:",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Destination-Sign.png",
-    "options": ["Regulatory Sign", "Warning Sign", "Guide/Informational Sign", "Construction Sign"],
-    "correctAnswer": "C",
-    "explanation": "Green rectangular signs are Guide Signs used on expressways and highways to provide directional information, destinations, and distances. They do not impose rules.",
-    "source": "LTO Road Signs Manual; DPWH Guide Signs Standard"
+    "category": "Vue 3.6 Features",
+    "question": "What new capability does Vue 3.6 provide for Custom Elements regarding the Shadow DOM?",
+    "image": "",
+    "options": [
+      "It forces all custom elements to use Shadow DOM",
+      "It allows mounting custom elements WITHOUT Shadow DOM (shadowRoot: false)",
+      "It removes the need for custom elements entirely",
+      "It automatically styles elements globally"
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vue 3.6 improved the defineCustomElement API to support mounting custom elements without attaching a Shadow DOM by passing shadowRoot: false. This is useful for scenarios where global styles or specific DOM nesting structures are required, such as in some micro-frontend integrations.",
+    "source": "Vue 3.5/3.6 Release Notes; Blog.vuejs.org"
   },
   {
     "id": 87,
-    "category": "Road Signs",
-    "question": "What is the shape of a 'YIELD' sign?",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Yield-Sign.png",
-    "options": ["Octagon", "Inverted Triangle", "Circle", "Diamond"],
+    "category": "Security",
+    "question": "Why is the 'Backend-for-Frontend' (BFF) pattern critical for securing Vue applications against XSS?",
+    "image": "",
+    "options": [
+      "It minifies the JavaScript bundle",
+      "It terminates OAuth and stores tokens in HttpOnly cookies, keeping them inaccessible to JavaScript",
+      "It validates all CSS styles",
+      "It encrypts the database connection"
+    ],
     "correctAnswer": "B",
-    "explanation": "The Yield sign is uniquely shaped as an inverted triangle (point down) with a red border and white center. It means you must slow down and give right-of-way.",
-    "source": "LTO Road Signs Manual; RA 4136"
+    "explanation": "The BFF pattern introduces a server layer specifically for the Vue app. It handles sensitive operations like token exchange and stores secrets/cookies server-side (HttpOnly), ensuring the browser never sees sensitive credentials, thus mitigating XSS and token theft risks.",
+    "source": "Digiqt Vue.js Security Best Practices; Frontegg Vue Authentication"
   },
   {
     "id": 88,
-    "category": "Road Signs",
-    "question": "An ORANGE diamond-shaped sign with a symbol of a person digging indicates:",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Road-Work-Sign.png",
+    "category": "Performance",
+    "question": "How does 'Alien Signals' in Vue 3.6 improve debugging compared to the previous reactivity system?",
+    "image": "",
     "options": [
-      "Pedestrian crossing",
-      "Road construction or maintenance ahead",
-      "Park nearby",
-      "School zone"
+      "It removes the need for debugging tools",
+      "It allows developers to inspect exactly which effects depend on a specific signal",
+      "It automatically fixes memory leaks",
+      "It disables reactivity in production"
     ],
     "correctAnswer": "B",
-    "explanation": "Orange is the standard color for temporary warning signs related to road construction, maintenance, or utility work. Drivers should reduce speed and watch for workers.",
-    "source": "DPWH Temporary Traffic Control Signs; LTO Exam Reviewer"
+    "explanation": "Alien Signals provides better debugging capabilities by allowing developers to inspect dependencies explicitly. Functions like getSubscribers() can show exactly which effects depend on a specific signal, making it easier to trace reactivity chains and optimize performance.",
+    "source": "Jeffbruchado.com.br Vue 3.6 Alien Signals; Tech Insider Vue.js 2026"
   },
   {
     "id": 89,
-    "category": "Road Signs",
-    "question": "A sign showing a 'T' shape indicates:",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/T-Intersection-Sign.png",
+    "category": "Testing",
+    "question": "What is the recommended selector strategy for stable Vue tests in 2026 to avoid brittleness?",
+    "image": "",
     "options": [
-      "Truck crossing",
-      "T-Intersection ahead (road ends)",
-      "Traffic light ahead",
-      "Turn left only"
+      "Use CSS classes like .btn-primary",
+      "Use XPath based on text content",
+      "Use semantic data attributes like data-test or data-cy",
+      "Use component instance IDs"
     ],
-    "correctAnswer": "B",
-    "explanation": "This is a Warning Sign for a T-Intersection. It means the road you are on ends soon, and you must turn either left or right.",
-    "source": "LTO Road Signs Manual; Warning Signs Category"
+    "correctAnswer": "C",
+    "explanation": "Using dedicated data attributes (e.g., data-test, data-cy) decouples tests from CSS styling or DOM structure changes. This makes tests more resilient to refactoring and UI updates, ensuring stability without cluttering production CSS or relying on fragile text matching.",
+    "source": "Zignuts Cypress with Vue 2026; Reddit r/vuejs Testing Strategies"
   },
   {
     "id": 90,
-    "category": "Road Signs",
-    "question": "What does a sign with a 'U-turn' symbol inside a red circle with a slash mean?",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/No-U-Turn-Sign.png",
+    "category": "Tooling",
+    "question": "What is the benefit of using 'Oxlint' in a Vite 7 + Vue 3 project?",
+    "image": "",
     "options": [
-      "U-turn permitted",
-      "U-turn only for trucks",
-      "No U-turn allowed",
-      "U-turn at next intersection"
+      "It replaces the need for TypeScript",
+      "It provides native-speed linting, significantly faster than traditional ESLint setups",
+      "It automatically fixes all logic bugs",
+      "It bundles the application"
     ],
-    "correctAnswer": "C",
-    "explanation": "A red circle with a slash is a prohibitory regulatory sign. Over a U-turn symbol, it strictly means 'No U-Turn' is allowed at that location.",
-    "source": "MMDA U-Turn Rules; LTO Regulatory Signs"
+    "correctAnswer": "B",
+    "explanation": "Oxlint is a high-performance linter written in Rust. Integrated with Vite 7, it offers near-instant linting feedback, removing the bottleneck of slower JavaScript-based linters and keeping the development experience snappy even in massive codebases.",
+    "source": "OneHorizon AI Vue Best Practices 2026"
   },
   {
     "id": 91,
-    "category": "Road Signs",
-    "question": "A yellow diamond sign with a school building and children means you must stop completely regardless of whether children are present.",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/School-Zone-Sign.png",
+    "category": "Security",
+    "question": "Why is 'SameSite=Lax' or 'Strict' insufficient alone for CSRF protection on state-changing API calls?",
+    "image": "",
     "options": [
-      "True",
-      "False",
-      "True, school zones always require a complete stop.",
-      "False, it is a warning to slow down and watch for children; a complete stop is only required at a Stop sign or crosswalk with pedestrians."
+      "It is sufficient for all cases",
+      "Some older browsers don't support it, and top-level navigations might still leak; double-submit tokens are recommended",
+      "It slows down the network",
+      "It conflicts with CORS"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. A School Zone sign is a WARNING sign. It requires drivers to reduce speed (usually to 20 kph) and be alert. A complete stop is only mandatory if there is a Stop sign or if pedestrians are actually crossing.",
-    "source": "RA 4136; LTO Warning Signs Guidelines"
+    "correctAnswer": "B",
+    "explanation": "While SameSite cookies mitigate most CSRF risks, they are not 100% foolproof (e.g., in older browsers or specific top-level navigation scenarios). Best practice dictates combining SameSite cookies with anti-CSRF tokens (double-submit pattern) for defense in depth on sensitive mutations.",
+    "source": "Digiqt Vue.js Security Best Practices; OWASP CSRF Cheat Sheet"
   },
   {
     "id": 92,
-    "category": "Road Signs",
-    "question": "A broken white line between lanes means you are prohibited from changing lanes.",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Broken-White-Line.png",
+    "category": "Performance",
+    "question": "What is the impact of 'accidental deep reactivity' on large datasets in Vue?",
+    "image": "",
     "options": [
-      "True",
-      "False",
-      "True, white lines separate traffic and cannot be crossed.",
-      "False, a BROKEN white line allows lane changing when safe; only SOLID white lines prohibit it."
+      "It improves performance",
+      "It causes significant memory overhead and slow updates due to tracking unused nested properties",
+      "It has no impact",
+      "It automatically disables reactivity"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Broken white lines separate lanes moving in the same direction and permit lane changes. Solid white lines indicate that lane changing is discouraged or prohibited.",
-    "source": "RA 4136 Section 37; LTO Pavement Markings"
+    "correctAnswer": "B",
+    "explanation": "When a large object is made reactive with reactive(), Vue recursively converts all nested properties to proxies. If this depth isn't needed, it wastes memory and slows down updates. Using shallowRef() or shallowReactive() prevents this deep traversal, optimizing performance for large, mostly immutable data.",
+    "source": "RivuletIQ Vue 3 Performance; OneHorizon AI Vue Best Practices 2026"
   },
   {
     "id": 93,
-    "category": "Road Signs",
-    "question": "A blue square sign with a white 'H' indicates a hospital is nearby.",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Hospital-Sign.png",
+    "category": "Architecture",
+    "question": "In a micro-frontend architecture using Vue, what is the role of 'Module Federation'?",
+    "image": "",
     "options": [
-      "True",
-      "False",
-      "True, blue service signs with 'H' denote hospitals.",
-      "False, blue signs are for parking; hospitals are marked with red crosses."
+      "To merge all code into one repo",
+      "To allow independent Vue apps to share dependencies and load remote components at runtime",
+      "To share a single database",
+      "To enforce a single CSS framework"
     ],
-    "correctAnswer": "C",
-    "explanation": "The statement is TRUE. Blue square/rectangular signs are Service/Informational signs. A white 'H' on a blue background specifically indicates the direction or location of a hospital.",
-    "source": "LTO Guide/Informational Signs Manual"
+    "correctAnswer": "B",
+    "explanation": "Module Federation (via Webpack 5 or Vite plugins) enables multiple independently deployed Vue applications to share a single instance of Vue (and other libs) and dynamically load components from each other at runtime. This is essential for scaling micro-frontends without duplicating code or breaking independence.",
+    "source": "SecondTalent Interview Guide; Advanced Vue.js Architecture Patterns 2026"
   },
   {
     "id": 94,
-    "category": "Road Signs",
-    "question": "If you see a sign with a railroad crossbuck (X with 'RR'), you may proceed without stopping if no train is visible.",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Railroad-Crossing-Sign.png",
+    "category": "Vue 3.6 Features",
+    "question": "What does the 'useHost()' API enable in Vue Custom Elements?",
+    "image": "",
     "options": [
-      "True",
-      "False",
-      "True, you only stop if the gates are down.",
-      "False, you must slow down, look, and listen. Some crossings require a mandatory stop even if no train is immediately visible."
+      "Access to the database",
+      "Direct access to the custom element's host node within the component logic",
+      "Ability to change the URL",
+      "Automatic styling"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE (in the context of 'proceed without caution'). While you don't always need a full stop if clear, the sign mandates extreme caution: slow down, look both ways, and listen. Many specific crossings (especially with Stop signs) require a mandatory stop regardless.",
-    "source": "RA 4136 Section 43; LTO Railroad Crossing Rules"
+    "correctAnswer": "B",
+    "explanation": "Introduced in Vue 3.5/3.6, useHost() (along with useShadowRoot()) allows developers composing Custom Elements to access the host element directly within the setup function. This facilitates advanced DOM manipulations or integrations that require knowledge of the custom element container itself.",
+    "source": "Vue 3.5/3.6 Release Notes; Blog.vuejs.org"
   },
   {
     "id": 95,
-    "category": "Road Signs",
-    "question": "A 'No Horn' sign (trumpet with a slash) is usually placed near hospitals and schools.",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/No-Horn-Sign.png",
+    "category": "Testing",
+    "question": "What is the primary use of 'Playwright' over Cypress in some Vue testing strategies?",
+    "image": "",
     "options": [
-      "True",
-      "False",
-      "True, these zones require silence for patients and students.",
-      "False, horns are allowed everywhere for safety."
+      "Playwright is slower",
+      "Playwright supports multi-browser testing (WebKit, Firefox, Chromium) and complex scenarios like multi-tab contexts natively",
+      "Cypress cannot test Vue",
+      "Playwright is only for mobile"
     ],
-    "correctAnswer": "C",
-    "explanation": "The statement is TRUE. Regulatory signs prohibiting the blowing of horns are typically installed near hospitals, schools, and residential zones to maintain quiet, unless necessary for emergency safety warnings.",
-    "source": "RA 4136; Local Traffic Ordinances"
+    "correctAnswer": "B",
+    "explanation": "Playwright is often chosen for its robust cross-browser support (including WebKit for Safari) and advanced features like multi-tab/context handling and network interception. It complements Cypress, which is traditionally strong in Chrome-centric developer experience.",
+    "source": "OneHorizon AI Vue Best Practices 2026; Zignuts Cypress with Vue 2026"
   },
   {
     "id": 96,
-    "category": "Road Signs",
-    "question": "A sign showing a downward sloping arrow with a percentage (e.g., '10%') means the road narrows.",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Steep-Descent-Sign.png",
+    "category": "Security",
+    "question": "What is the role of 'Trusted Types' in securing a Vue application alongside CSP?",
+    "image": "",
     "options": [
-      "True",
-      "False",
-      "True, the percentage indicates the reduction in width.",
-      "False, it indicates a steep descent (downhill grade); drivers should use lower gears."
+      "It encrypts all network traffic",
+      "It restricts DOM sinks to only accept safe, sanitized content, preventing DOM XSS",
+      "It validates user passwords on the client",
+      "It automatically fixes insecure npm packages"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. A downward arrow with a percentage indicates a Steep Descent (downhill slope). The percentage represents the grade. Drivers should shift to a lower gear to control speed without overheating brakes.",
-    "source": "LTO Warning Signs Manual; DPWH Standards"
+    "correctAnswer": "B",
+    "explanation": "Trusted Types is a web standard that works with Content Security Policy (CSP) to prevent DOM XSS. It forces developers to explicitly sanitize content before passing it to dangerous DOM sinks (like innerHTML), making it impossible to accidentally inject unsanitized scripts.",
+    "source": "Digiqt Vue.js Security Best Practices; Frontend World Secure Your Vue.js App"
   },
   {
     "id": 97,
-    "category": "Road Signs",
-    "question": "Double solid yellow lines in the center of the road mean overtaking is allowed if the road is clear.",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Double-Yellow-Line.png",
+    "category": "Performance",
+    "question": "How does 'v-memo' differ from 'computed' in optimization strategy?",
+    "image": "",
     "options": [
-      "True",
-      "False",
-      "True, yellow lines separate traffic but allow passing.",
-      "False, double solid yellow lines strictly prohibit overtaking or crossing the line from either side."
+      "v-memo caches entire template sub-trees; computed caches JavaScript values",
+      "v-memo is for async data; computed is for sync data",
+      "v-memo replaces the need for keys",
+      "There is no difference"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. Double solid yellow lines indicate a strict no-overtaking zone for traffic in both directions. Crossing them is illegal and dangerous.",
-    "source": "RA 4136 Section 37; LTO Pavement Markings"
+    "correctAnswer": "A",
+    "explanation": "v-memo operates at the template level, skipping the re-rendering and diffing of a specific DOM sub-tree if dependencies haven't changed. Computed properties cache JavaScript return values. v-memo is a heavier optimization for expensive template structures, while computed is for logic.",
+    "source": "RivuletIQ Vue 3 Performance; Vue 3 Documentation"
   },
   {
     "id": 98,
-    "category": "Road Signs",
-    "question": "A green arrow light at an intersection means you may proceed in the direction of the arrow even if the main light is red.",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Green-Arrow-Light.png",
+    "category": "Architecture",
+    "question": "What is the 'Shared Composables' pattern recommended for in Vue 3.5+ architecture?",
+    "image": "",
     "options": [
-      "True",
-      "False",
-      "True, green arrows indicate a protected turn.",
-      "False, red light always means stop, regardless of arrows."
+      "Replacing all Pinia stores",
+      "Managing local component state that needs to be shared without global store overhead",
+      "Sharing CSS styles between components",
+      "Connecting to multiple databases"
     ],
-    "correctAnswer": "C",
-    "explanation": "The statement is TRUE. A green arrow indicates a 'protected turn,' meaning you have the right-of-way to turn in that direction, even if the main circular light is red (provided you are in the correct lane).",
-    "source": "RA 4136; LTO Traffic Signal Rules"
+    "correctAnswer": "B",
+    "explanation": "The 'Shared Composables' pattern suggests using composables with internal reactive state (often backed by a singleton or weak map) to share logic and state between specific components. This keeps Pinia stores reserved for truly global application state, reducing boilerplate and improving modularity.",
+    "source": "OneHorizon AI Vue Best Practices 2026; SecondTalent Interview Guide"
   },
   {
     "id": 99,
-    "category": "Road Signs",
-    "question": "A sign with a 'One Way' arrow means you can drive in the opposite direction if you are turning into a driveway.",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/One-Way-Sign.png",
+    "category": "Performance",
+    "question": "In the context of Vue 3.6 'Alien Signals', what is the expected benefit over the current reactivity system?",
+    "image": "",
     "options": [
-      "True",
-      "False",
-      "True, driveways are exceptions to One Way rules.",
-      "False, one Way means ALL traffic moves in that direction; driving against it is illegal and dangerous."
+      "It removes the need for TypeScript",
+      "It provides a ground-up rewrite for even finer-grained reactivity tracking and performance",
+      "It replaces the need for a build step",
+      "It allows Vue to run in older browsers like IE11"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. A One Way sign means traffic flows ONLY in the direction of the arrow. Driving against the flow (wrong way) is a severe violation and highly dangerous, even for driveways (you must enter driveways from the correct flow).",
-    "source": "RA 4136; LTO Regulatory Signs"
+    "correctAnswer": "B",
+    "explanation": "'Alien Signals' is a reactivity primitive in Vue 3.6 that aims to rewrite the core reactivity system for maximum efficiency. It promises even finer-grained tracking than the current Proxy-based system, further reducing overhead in complex applications.",
+    "source": "Tech Insider Vue vs React 2026; Vue.js Core Updates June 2026"
   },
   {
     "id": 100,
-    "category": "Road Signs",
-    "question": "Flashing YELLOW traffic lights at an intersection mean you should stop and wait for a green light.",
-    "image": "https://ltophilippines.com/wp-content/uploads/2021/04/Flashing-Yellow-Light.png",
+    "category": "Security",
+    "question": "Why is storing authentication tokens in 'memory' (variable) considered safer than localStorage, even with XSS risks?",
+    "image": "",
     "options": [
-      "True",
-      "False",
-      "True, flashing lights act like a Stop sign.",
-      "False, flashing Yellow means 'Caution'; slow down and proceed with care, yielding to pedestrians."
+      "It makes the app faster",
+      "It ensures tokens are lost on page reload, limiting the window of opportunity for attackers",
+      "It encrypts the token automatically",
+      "It allows tokens to be shared across tabs"
     ],
-    "correctAnswer": "D",
-    "explanation": "The statement is FALSE. A flashing YELLOW light means 'Caution.' You do not need to stop completely unless necessary for safety. A flashing RED light, however, acts as a Stop sign.",
-    "source": "RA 4136 Section 39; LTO Traffic Signals"
+    "correctAnswer": "B",
+    "explanation": "Storing tokens in memory (JavaScript variables) means they are wiped when the tab is closed or reloaded. While XSS can still steal them during the session, this approach prevents persistent theft via localStorage and limits the lifespan of a compromised token compared to persistent storage.",
+    "source": "Digiqt Vue.js Security Best Practices; Frontegg Vue Authentication"
   }
-]
+]   

@@ -1,4 +1,4 @@
-# Fake-Driving-Exam
+# fake-exam
 
 Structure of the project
 

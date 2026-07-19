@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">fake-driving-exam</string>
-    <string name="title_activity_main">fake-driving-exam</string>
-    <string name="package_name">com.omnivue.boilerplate</string>
-    <string name="custom_url_scheme">com.omnivue.boilerplate</string>
+    <string name="app_name">fake-exam</string>
+    <string name="title_activity_main">fake-exam</string>
+    <string name="package_name">com.fake.exam</string>
+    <string name="custom_url_scheme">com.fake.exam</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.omnivue.boilerplate;
+package com.fake.exam;
 
 import com.getcapacitor.BridgeActivity;
 

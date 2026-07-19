@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "fake-driving-exam",
+  "productName": "fake-exam",
   "version": "0.1.0",
-  "identifier": "com.omnivue.boilerplate",
+  "identifier": "com.fake.exam",
   "build": {
     "frontendDist": "../dist",
     "devUrl": "http://localhost:5173",
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "fake-driving-exam",
+        "title": "fake-exam",
         "width": 800,
         "height": 600,
         "resizable": true,
